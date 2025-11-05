@@ -59,7 +59,7 @@ This Test Management Plan defines the strategy, objectives, scope, approach, res
 | Test Management     | Plan, track, and manage test cases and tasks   | Jira, GitHub Projects                            |
 | Documentation       | Document test plans      |            |
 |       | Results and reports      |            |
-| Testing Tools       |  | BrowserStack, Postman, Axe, Lighthouse         |
+| Testing Tools       |  |     |
 | Collaboration       | Team communication, file sharing and discussions | WhatsApp Messenger        |
 
 
@@ -72,3 +72,22 @@ This Test Management Plan defines the strategy, objectives, scope, approach, res
 | **Data Storage** | localStorage                          |
 | **Test Data**    | Mock users, sample pickup requests, admin accounts,Sample Blog Posts|
 
+## Scope
+### In Scope:
+We will cover both both functional and non-functionaltesting of the CleanCity application.
+| Type                    | Area                  | Key Focus                                           | Risk Category |
+| ----------------------- | -------------------- | -------------------------------------------------- | ------------- |
+| Functional Testing      | User Authentication   | Registration, login, logout, password reset       | High          |
+| Functional Testing      | Waste Management      | Schedule pickups, view history, cancel requests   | High          |
+| Functional Testing      | Admin Functions       | Manage requests, users, content moderation       | High       |
+| Functional Testing      | Content Features      | Blog posts, comments, community features         | Medium        |
+| Functional Testing      | Data Persistence      | localStorage data integrity and reliability      | High          |
+| Functional Testing      | Form Validation       | Input validation, error messages, required fields|High      |
+| Non-Functional Testing  | Performance           | Page load times, responsiveness                  | High          |
+| Non-Functional Testing  | Usability             | User-friendliness, intuitive navigation          | Medium        |
+| Non-Functional Testing  | Accessibility         | WCAG 2.1 compliance, screen reader support      | Medium        |
+| Non-Functional Testing  | Security              | Input sanitization, data protection              | High          |
+| Non-Functional Testing  | Compatibility         | Cross-browser and responsive design              | Medium        |
+
+
+### Out of Scope:
