@@ -52,7 +52,7 @@ This Test Management Plan defines the strategy, objectives, scope, approach, res
 |                                   |                                                        | Create video presentation & documentation      |               |                |               |
 
 ## 4. Resources and Tools
-# 🛠️ Tools and Resources
+# Tools and Resources
 
 | Category            | Purpose                                           | Tools / Platforms                                |
 |--------------------|-------------------------------------------------|-------------------------------------------------|
@@ -63,4 +63,12 @@ This Test Management Plan defines the strategy, objectives, scope, approach, res
 | Collaboration       | Team communication, file sharing and discussions | WhatsApp Messenger        |
 
 
+## 5. Test Envronment
+| Component        | Details                                            |
+| ---------------- | -------------------------------------------------- |
+| **Platform**     | Web Application                                    |
+| **Browsers**     | Chrome, Firefox, Safari, Edge                      |
+| **Devices**      | Desktop, Mobile, Tablet                            |
+| **Data Storage** | localStorage                          |
+| **Test Data**    | Mock users, sample pickup requests, admin accounts,Sample Blog Posts|
 
