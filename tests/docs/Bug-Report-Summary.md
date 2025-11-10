@@ -29,7 +29,7 @@ List 3 things the CleanCity app should do correctly.
 ---
 
 #### 🧩 Summary
-After registering a new user with a proper Full Name, the profile page displays the username portion of the email (e.g., `user1` from `user1@test.com`) instead of the Full Name (`Jane Doe`) provided during registration. This may cause confusion for users, as the system does not reflect the actual name they entered.
+After registering a new user with a proper Full Name, the profile page displays the username portion of the email (e.g., `user1` from `newuser@test.com`) instead of the Full Name (`New Test User`) provided during registration. This may cause confusion for users, as the system does not reflect the actual name they entered.
 
 ---
 
@@ -52,3 +52,4 @@ The profile page should display the **Full Name** entered during registration.
 #### ❌ Actual Result
 The profile page displays the **username derived from the email** instead of the Full Name.
 
+---
