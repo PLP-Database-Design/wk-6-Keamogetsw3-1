@@ -11,7 +11,7 @@
 
 | ID   | Feature                | Objective                                         | Expected Result                                         | Actual Result | Status  | Risk Link |
 |------|------------------------|--------------------------------------------------|--------------------------------------------------------|---------------|---------|-----------|
-| F001 | Registration           | Register new user with valid data                | Account created successfully                             | TBD           | TBD     | R002      |
+| TC001 | Registration           | Register new user with valid data                | Account created successfully                             | TBD           | TBD     | R002      |
 | F002 | Registration           | Register user with invalid email                 | Validation error displayed                                | TBD           | TBD     | R002      |
 | F003 | Login                  | Login with correct credentials                   | Access granted                                          | TBD           | TBD     | R003      |
 | F004 | Login                  | Login with wrong credentials                     | Error message displayed                                  | TBD           | TBD     | R003      |
