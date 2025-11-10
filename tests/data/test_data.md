@@ -15,9 +15,9 @@ This file contains test data and scenarios for various features of the project, 
 
 ### **Test Account for Registration Testing**
 
-| Test Case ID | Test Scenario                | Full Name | Email                                       | Password     | Expected Result                                   | Notes              |
-| ------------ | ---------------------------- | --------- | ------------------------------------------- | ------------ | ------------------------------------------------- | ------------------ |
-| TC001       | Registration           | New Test User | newuser@test.com   | NewPass123 | Registration successful                           | Positive test case |
+| Test Case ID | Test Scenario | Full Name     | Email                                       | Password   | Role | Expected Result         | Notes              |
+| ------------ | ------------- | ------------- | ------------------------------------------- | ---------- | ---- | ----------------------- | ------------------ |
+| TC001        | Registration  | New Test User | [newuser@test.com](mailto:newuser@test.com) | NewPass123 | User | Registration successful | Positive test case |
 
 
 
