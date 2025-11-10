@@ -22,6 +22,15 @@ This file contains test data and scenarios for various features of the project, 
 
 
 ### **Regular User Accounts**
+| Test Case ID | Test Scenario                | Email                                   | Password    | Expected Result                     | Notes              |
+| ------------ | ---------------------------- | --------------------------------------- | ----------- | ----------------------------------- | ------------------ |
+| TC002      | Valid login     | [newuser@test.com](mailto:newuser@test.com) | NewPass123 | Successfully registered / logged in | Positive test case |
+| TC003      | Valid login     | [user1@test.com](mailto:user1@test.com) | TestPass123 | Successfully registered / logged in | Positive test case |
+| TC004       | Valid login     | [user2@test.com](mailto:user2@test.com) | TestPass123 | Successfully registered / logged in | Positive test case |
+| TC005       | Valid login     | [user3@test.com](mailto:user3@test.com) | TestPass123 | Successfully registered / logged in | Positive test case |
+
+
+
 ```
 Email: user1@test.com
 Password: TestPass123
