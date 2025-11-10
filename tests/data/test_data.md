@@ -31,25 +31,7 @@ This file contains test data and scenarios for various features of the project, 
 
 
 
-```
-Email: user1@test.com
-Password: TestPass123
-Role: User
-Name: John Doe
-Phone: +1-555-0101
 
-Email: user2@test.com
-Password: TestPass123
-Role: User
-Name: Jane Smith
-Phone: +1-555-0102
-
-Email: user3@test.com
-Password: TestPass123
-Role: User
-Name: Mike Johnson
-Phone: +1-555-0103
-```
 
 ### **Admin User Accounts**
 ```
