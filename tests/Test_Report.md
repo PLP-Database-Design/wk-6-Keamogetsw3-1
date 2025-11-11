@@ -50,7 +50,7 @@ Manual and automated test cases were executed
 This section provides a detailed summary of the test cases executed during the Phase 3 (test execution) of this project.  
 The purpose of this report is to validate that the application meets its functional requirements
 
-### Table 4: Executed test cases, their results, and key observations.
+### Table 4: Executed test cases, their results and key observations.
 
 #### Table 4.1: Registration Test Cases
 | Test Case ID | Test Description                           | Test Type  | Expected Result                        | Actual Result                  | Status | Defect ID | Severity | Tester        | Date       |
