@@ -74,15 +74,18 @@
 | TC020 | Buttons | Minimum touch target size | Buttons are ≥44x44px on mobile | TBD | TBD | R010 |
 
 ---
+4. CROSS ROWSER COMPATABILITY TESTING
 
-### **4. Cross-Browser Compatibility Test Cases**
-
-| TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|--------------|----------|------------|----------------|----------------|---------|-----------|
-| TC021 | Registration | Test in Chrome, Firefox, Safari, Edge | Form works consistently in all browsers | TBD | TBD | R017 |
-| TC022 | Pickup Scheduling | Test in Chrome, Firefox, Safari, Edge | Requests can be created and viewed in all browsers | TBD | TBD | R017 |
-| TC023 | Blog Module | Test in Chrome, Firefox, Safari, Edge | Blog posts render correctly in all browsers | TBD | TBD | R017 |
-| TC024 | Community Module | Test in Chrome, Firefox, Safari, Edge | Posts, comments, and likes function in all browsers | TBD | TBD | R017 |
+| TC No. | Feature              | Objective                                           | Expected Result                                 | Actual Result                                      | Status     | Risk Link |
+|--------:|----------------------|----------------------------------------------------|--------------------------------------------------|----------------------------------------------------|-------------|------------|
+| TC021  | Registration         | Register new user with valid data                   | Account created successfully                     | Successfully registered new user in Chrome         | ✅ Pass     | R002       |
+| TC022  | Login                | Login with correct credentials                      | Access granted                                   | Successfully logged in with correct password       | ✅ Pass     | R003       |
+| TC023  | Login                | Login with wrong credentials                        | Error message displayed                          | Error “Wrong password” displayed as expected       | ✅ Pass     | R003       |
+| TC024  | Login                | Login with the same credentials across all browsers | Invalid email or wrong password message          | Failed to login — “Invalid email or wrong password”| ❌ Fail     | R003       |
+| TC025  | Dashboard Filters    | Filter by Status                                    | Only requests with selected status display       | Requests filtered correctly by status              | ✅ Pass     | R002       |
+| TC026  | Dashboard Filters    | Filter by Location                                  | Only requests in selected location display       | Requests filtered correctly by location            | ✅ Pass     | R002       |
+| TC027  | Pickup & Rescheduling| Verify pickup and rescheduling functions properly   | Request should be successfully rescheduled/picked| Function failed to reschedule/pickup request       | ❌ Fail     | R004       |
+| TC028  | Awareness Page       | Verify awareness page loads and displays content    | Awareness page loads successfully                | Awareness page displayed correctly with all content| ✅ Pass     | R005       |
 
 ---
 
