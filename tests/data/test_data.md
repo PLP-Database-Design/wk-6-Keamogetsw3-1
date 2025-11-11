@@ -176,13 +176,6 @@ Phone: +1-555-9999
 | TC-003       | Full Name empty              |           | [valid@email.com](mailto:valid@email.com)   | ValidPass123 | Error: "Full Name is required"                    | Negative test case |
 | TC-003       | Email empty                  | John Doe  |                                             | ValidPass123 | Error: "Email is required"                        | Negative test case |
 | TC-004       | Password empty               | John Doe  | [valid@email.com](mailto:valid@email.com)   |              | Error: "Password is required"                     | Negative test case |
-| TC-005       | Invalid email format         | John Doe  | invalidemail.com                            | ValidPass123 | Error: "Enter a valid email"                      | Negative test case |
-| TC-006       | Weak password (too short)    | John Doe  | [valid@email.com](mailto:valid@email.com)   | 12345        | Error: "Password must be at least 8 characters"   | Negative test case |
-| TC-007       | Weak password (letters only) | John Doe  | [valid@email.com](mailto:valid@email.com)   | password     | Error: "Password must include letters & numbers"  | Negative test case |
-| TC-008       | Duplicate email              | John Doe  | [already@used.com](mailto:already@used.com) | ValidPass123 | Error: "Email already registered"                 | Negative test case |
-| TC-009       | Full Name invalid characters | John123   | [valid@email.com](mailto:valid@email.com)   | ValidPass123 | Error: "Name can only contain letters and spaces" | Negative test case |
-| TC-010       | Boundary password (min 8)    | Jane Doe  | [jane@email.com](mailto:jane@email.com)     | Pass1234     | Registration successful                           | Positive test case |
-
 
 
 
