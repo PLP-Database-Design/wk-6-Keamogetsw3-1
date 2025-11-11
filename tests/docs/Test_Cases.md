@@ -12,6 +12,17 @@
 
 ### **1. Functional Test Cases**
 
+#### Registration Test Cases
+
+| TC ID | Feature      | Objective                         | Expected Result              | Risk Link |
+| ----- | ------------ | --------------------------------- | ---------------------------- | --------- |
+| TC001 | Registration | Register new user with valid data | Account created successfully | R002      |
+| TC002 | Registration | Register user with invalid email  | Validation error displayed   | R002      |
+| TC003 | Registration | Register user with empty name     | Validation error displayed   | R002      |
+| TC004 | Registration | Register user with empty email    | Validation error displayed   | R002      |
+| TC005 | Registration | Register user with empty password | Validation error displayed   | R002      |
+
+
 | TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
 |--------------|----------|------------|----------------|----------------|---------|-----------|
 | TC001 | Registration | Register new user with valid data | Account created successfully | Account successfully created | Pass ✅ | R002 |
