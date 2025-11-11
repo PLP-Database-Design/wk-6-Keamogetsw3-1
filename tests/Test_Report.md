@@ -55,11 +55,11 @@ The purpose of this report is to validate that the application meets its functio
 #### Table 4.1: Registration Test Cases
 | Test Case ID | Test Description                           | Test Type  | Expected Result                        | Actual Result                  | Status | Defect ID | Severity | Tester        | Date       |
 | ------------ | ------------------------------------------ | ---------- | -------------------------------------- | ------------------------------ | ------ | --------- | -------- | ------------- | ---------- |
-| TC001        | Verify registration with valid credentials | Functional | User should be registered successfully | User successfully registered   | Passed | —         | —        | Keamogetswe M | 2025-11-10 |
-| TC002        | Verify registration with invalid email     | Functional | System should ask for valid email      | System asked for correct email | Passed | —         | —        | Keamogetswe M | 2025-11-10 |
-| TC003        | Verify registration with empty name field  | Functional | System should ask for Name             | System asked for full name     | Passed | —         | —        | Keamogetswe M | 2025-11-10 |
-| TC004        | Verify registration with empty email       | Functional | System should ask for Email            | System asked for Email         | Passed | —         | —        | Keamogetswe M | 2025-11-10 |
-| TC005        | Verify registration with empty password    | Functional | System should ask for Password         | System asked for Password      | Passed | —         | —        | Keamogetswe M | 2025-11-10 |
+| TC001        | Verify registration with valid credentials | Functional | User should be registered successfully | User successfully registered   | Pass ✅ | —         | —        | Keamogetswe M | 2025-11-10 |
+| TC002        | Verify registration with invalid email     | Functional | System should ask for valid email      | System asked for correct email | Pass ✅ | —         | —        | Keamogetswe M | 2025-11-10 |
+| TC003        | Verify registration with empty name field  | Functional | System should ask for Name             | System asked for full name     | Pass ✅ | —         | —        | Keamogetswe M | 2025-11-10 |
+| TC004        | Verify registration with empty email       | Functional | System should ask for Email            | System asked for Email         | Pass ✅ | —         | —        | Keamogetswe M | 2025-11-10 |
+| TC005        | Verify registration with empty password    | Functional | System should ask for Password         | System asked for Password      | Pass ✅ | —         | —        | Keamogetswe M | 2025-11-10 |
 
 
 # 🧪 Test Case Table
