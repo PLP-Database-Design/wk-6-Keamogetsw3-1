@@ -15,21 +15,28 @@ Test Environment Details
 ### Manual Test
 | **Test Type**      | **Total Cases** | **Passed** | **Failed** | **Blocked** | **Pass %** |
 | ------------------ | --------------- | ---------- | ---------- | ----------- | ---------- |
-| Functional         |        10       |          |          | 0           | %        |
-|    Non-Functional          |   6           |         |         | 0           | %        |
-| UI/UX        |       4       |         |         | 0           | %        |
+| Functional         |            |          |          | 0           | %        |
+|    Non-Functional          |              |         |         | 0           | %        |
+| UI/UX        |              |         |         | 0           | %        |
 | **Total (Manual)** | ****          | ****     | ****      | **0**       | **%**  |
 
 ### Automated Test
 
 | **Test Type**      | **Total Cases** | **Passed** | **Failed** | **Blocked** | **Pass %** |
 | ------------------ | --------------- | ---------- | ---------- | ----------- | ---------- |
-| Functional         |     4          |          |          | 0           | %        |
-|     Non-Functional           |   4           |         |         | 0           | %        |
-|    UI/UX    |           5   |         |         | 0           | %        |
+| Functional         |               |          |          | 0           | %        |
+|     Non-Functional           |              |         |         | 0           | %        |
+|    UI/UX    |              |         |         | 0           | %        |
 | **Total (Manual)** | ****          | ****     | ****      | **0**       | **%**  |
 
 Defect Analysis and Categorization
 Risk Assessment
 Recommendations and Improvements
+📊 Overall Summary
+Category	Manual	Automated	Total
+Functional	10	10	20
+Non-Functional	6	6	12
+UI (Accessibility + Cross-Browser)	8	8	16
+Boundary/Edge	10	9	19
+💯 Grand Total	34	33	67 test cases
 
