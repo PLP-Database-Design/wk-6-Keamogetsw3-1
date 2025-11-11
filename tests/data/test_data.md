@@ -172,6 +172,7 @@ Phone: +1-555-9999
 | Test Case ID | Test Scenario                | Full Name | Email                                       | Password     | Expected Result                                   | Notes              |
 | ------------ | ---------------------------- | --------- | ------------------------------------------- | ------------ | ------------------------------------------------- | ------------------ |
 | TC-001       | Valid registration           | Valid Name  | [valid@email.com](mailto:valid@email.com)   | ValidPass123 | Registration successful                           | Positive test case |
+| TC-002       | Invalid email format         | Valid Name  | invalidemail.com                            | ValidPass123 | Error: "Enter a valid email"                      | Negative test case |
 | TS-002       | Full Name empty              |           | [valid@email.com](mailto:valid@email.com)   | ValidPass123 | Error: "Full Name is required"                    | Negative test case |
 | TC-003       | Email empty                  | John Doe  |                                             | ValidPass123 | Error: "Email is required"                        | Negative test case |
 | TC-004       | Password empty               | John Doe  | [valid@email.com](mailto:valid@email.com)   |              | Error: "Password is required"                     | Negative test case |
