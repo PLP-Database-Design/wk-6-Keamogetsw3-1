@@ -96,7 +96,7 @@ The purpose of this report is to validate that the application meets its functio
 | TC-019 | Verify system creates a new user account with “User” role upon successful registration | Functional | System automatically assigns the “User” role to newly registered accounts |  System assigned the “User” role to newly registered accounts| Pass ✅  | — | — | Keamogetswe  | 2025-11-12 |
 | TC-020 | Verify system supports two user roles: “User” and “Admin”. each user can have only one valid role assigned| Functional | System supports two user roles: “User” and “Admin” |  System supports two user roles: “User” and “Admin” and correctly assign role| Pass ✅  | — | — | Keamogetswe  | 2025-11-12 |
 | TC-021 | Verify only Admins can access Admin Dashboard | Functional | “User” role doesnt show Admin dashboard. “Admin” role can access successfully | “User” role doesnt show Admin dashboard. “Admin” role can access successfully | Pass ✅  | — | — | Keamogetswe. Sally Trizer | 2025-11-12 |
-
+| TC-022 |Verify direct URL access to Admin Dashboard is blocked for non-admin users | Functional | System restricts access and redirects to “Access Denied” or “Login” page | System restricts access and shows "This page isn’t working" | Pass ✅  | — | — | Keamogetswe | 2025-11-12 |
 
 # 🧪 Test Case Table
 
