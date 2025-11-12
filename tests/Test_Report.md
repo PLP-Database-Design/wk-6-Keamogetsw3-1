@@ -109,7 +109,7 @@ The purpose of this report is to validate that the application meets its functio
 | TC-026  | Invalid pickup request (empty Waste Type)            | Functional | System shows error indicating Waste Type is required |               |        |           |         |        |           |
 | TC-027  | Invalid pickup request (empty Location)              | Functional | System shows error indicating Location is required   |               |        |           |         |        |           |
 | TC-028  | Invalid pickup request (Very long text >200 chars)   | Functional | System truncates input or shows error for long text  |               |        |           |         |        |           |
-| FR-015  | The system shall prevent scheduling multiple pickups for the same date | Functional | System prevents creating duplicate pickups for the same date |               |        |           |         |        |           |
+| TC-029  | The system shall prevent scheduling multiple pickups for the same date | Functional | System prevents creating duplicate pickups for the same date |               |        |           |         |        |           |
 
 --
 # 🧪 Test Case Table
