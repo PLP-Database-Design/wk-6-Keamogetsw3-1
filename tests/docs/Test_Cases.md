@@ -45,6 +45,7 @@
 |--------------|--------------------------------------------------------|-----------------------------------------------------------------|---------|
 | TC-014  | Verify session data is stored in localStorage after login | localStorage contains session key | R003    |
 | TC-015  | Verify user session persists after page refresh        | User remains logged in; localStorage values persist | R003    |
+| TC-016  | Verify session persists after reopening browser tab    | User remains logged in; session data still stored in localStorage | R003|
 
 
 
