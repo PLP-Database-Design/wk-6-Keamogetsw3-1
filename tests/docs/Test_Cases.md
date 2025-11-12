@@ -11,6 +11,7 @@
 ## Functional Test Cases - Manual Testing
 
 ### **1. Authentication System**
+---
 
 #### 1.1 Registration Test Case
 
