@@ -65,12 +65,12 @@
 
 ---
 ### 2.1 
-
+---
 ## Functional Test Cases - Boundary and Edge Case Test Cases
 | Test Case ID | Feature | Objective | Expected Result | Risk Link  |
 |--------------|----------|------------|----------------|----------------|
 
-
+---
 
 | TC No. | Feature              | Objective                                           | Expected Result                                   | Actual Result                                         | Status     | Risk Link |
 |--------:|----------------------|----------------------------------------------------|----------------------------------------------------|-------------------------------------------------------|-------------|------------|
