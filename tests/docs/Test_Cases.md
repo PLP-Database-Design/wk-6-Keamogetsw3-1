@@ -64,7 +64,11 @@
 ### **2. 🗑️ Waste Management Requirements**
 
 ---
-### 2.1 
+### 2.1 Pickup Scheduling
+| Test Case ID | Objective                                              | Expected Result                                                 | Risk ID |
+|--------------|--------------------------------------------------------|-----------------------------------------------------------------|---------|
+| TC-023  | Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”) | Confirmation message showing that form is submitted and Pickup scheduled successfully | R-004 |
+
 ---
 ## Functional Test Cases - Boundary and Edge Case Test Cases
 | Test Case ID | Feature | Objective | Expected Result | Risk Link  |
