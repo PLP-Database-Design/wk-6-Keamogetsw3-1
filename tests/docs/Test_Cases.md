@@ -31,11 +31,11 @@
 | TC-008      | Login with non-existent user             | Error: "Invalid email or password"    | R-001      |
 ---
 ### 1.3 Logout Test Cases
-| Test Case ID | Objective                                       | Expected Result                                               | Risk ID |
-|--------------|-------------------------------------------------|---------------------------------------------------------------|---------|
-| TC-009  | Verify user can successfully log out            | User is logged out and redirected to the Home page         | R001    |
-| TC-010  | Verify user cannot access dashboard after logout| Attempting to access dashboard redirects to login page     | R001 | | TC-011  | Verify scheduling a pickup without login             | System should restrict access and redirect to login page   | R001 |
-
+| Test Case ID | Objective                                      | Expected Result                                               | Risk ID |
+|--------------|------------------------------------------------|---------------------------------------------------------------|---------|
+| TC-009       | Verify user can successfully log out           | User is logged out and redirected to the Home page            | R001    |
+| TC-010       | Verify user cannot access dashboard after logout | Attempting to access dashboard redirects to login page        | R001    |
+| TC-011       | Verify scheduling a pickup without login       | System should restrict access and redirect to login page      | R001    |
 
 ---
 ### 1.4 User Session Management (localStorage)
