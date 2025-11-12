@@ -43,10 +43,11 @@
 ### 1.4 User Session Management (localStorage)
 | Test Case ID | Objective                                              | Expected Result                                                 | Risk ID |
 |--------------|--------------------------------------------------------|-----------------------------------------------------------------|---------|
-| TC-014  | Verify session data is stored in localStorage after login | localStorage contains session key | R003    |
-| TC-015  | Verify user session persists after page refresh        | User remains logged in; localStorage values persist | R003    |
-| TC-016  | Verify session persists after reopening browser tab    | User remains logged in; session data still stored in localStorage | R003|
-| TC-017  | Verify session data is cleared after logout            | localStorage entries removed | R003    |
+| TC-014  | Verify session data is stored in localStorage after login | localStorage contains session key | R-003    |
+| TC-015  | Verify user session persists after page refresh        | User remains logged in; localStorage values persist | R-003    |
+| TC-016  | Verify session persists after reopening browser tab    | User remains logged in; session data still stored in localStorage | R-003|
+| TC-017  | Verify session data is cleared after logout            | localStorage entries removed | R-003    |
+| TC-018  | Verify access restricted when localStorage cleared manually | User is logged oute after refresh | R-003    |
 
 
 
