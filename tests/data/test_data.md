@@ -162,19 +162,11 @@ This file contains test data and scenarios for various features of the project, 
 | TC-007      | Invalid login (wrong password)     | user1@test.com    | WrongPassword  | Error: "Invalid email or password"    | Negative test case |
 | TC-008      | Invalid login (non-existent user) | nonexist@test.com | AnyPassword    | Error: "Invalid email or password"    | Negative test case |
 
-
 #### **Pickup Scheduling Form**
-- **Valid Data:**
-  - Date: Tomorrow's date
-  - Waste Type: General
-  - Quantity: Medium
-  - Instructions: "Please ring doorbell"
-
-- **Invalid Data:**
-  - Date: Yesterday's date
-  - Waste Type: (empty)
-  - Quantity: (empty)
-  - Instructions: (very long text > 200 chars)
+| **Data Type**    | **Date**                                | **Waste Type** | **Quantity** | **Instructions**                                                                                                                                                  |
+| ---------------- | --------------------------------------- | -------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Valid Data**   | Tomorrow’s date (e.g., **2025-11-13**)  | General        | Medium       | “Please ring doorbell”                                                                                                                                            |
+| **Invalid Data** | Yesterday’s date (e.g., **2025-11-11**) | *(empty)*      | *(empty)*    | Very long text (>200 chars), e.g. “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...” |
 
 ### **Boundary Testing Data**
 
