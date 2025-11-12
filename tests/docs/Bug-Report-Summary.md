@@ -1,4 +1,4 @@
-# 🐞 CleanCity Bug Report Summary
+# 🐞 CleanCity Bug Report Summary 
 
 **Project:** CleanCity – Waste Pickup Scheduler  
 **Version:** 1.0  
@@ -22,13 +22,10 @@ This document provides a summary of all defects identified during manual and aut
 **GitHub Link:** #28  
 **Requirement Affected:** User Registration – Profile Display  
 **Severity:** Low  
-
----
+**Environment:** Development, Google Chrome, Windows 10  
 
 #### Summary
 After registering a new user with a proper Full Name, the profile page displays the username portion of the email (e.g., `user1` from `newuser@test.com`) instead of the Full Name (`New Test User`) provided during registration. This may cause confusion for users, as the system does not reflect the actual name they entered.
-
----
 
 #### Steps to Reproduce
 1. Register a new user with:
@@ -39,52 +36,52 @@ After registering a new user with a proper Full Name, the profile page displays 
 3. Navigate to the **User Profile** page.  
 4. Observe that the profile shows the email username instead of the Full Name.
 
----
-
 #### Expected Result
 The profile page should display the **Full Name** entered during registration.
-
----
 
 #### Actual Result
 The profile page displays the **username derived from the email** instead of the Full Name.
 
 ---
-###🐞 BUG-002  
+
+### 🐞 BUG-002  
 **Title:** Existing user can log in with a different password than the one used during registration  
 **GitHub Link:** [#31](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)  
 **Requirement Affected:** User Login – Authentication  
 **Severity:** Critical  
+**Environment:** Development, Google Chrome, Windows 10  
 
-## Summary
+#### Summary
 An existing user is able to log in using a completely different password than the one set during registration. This is a major security issue because it allows unauthorized access to accounts, bypassing the intended authentication mechanism.  
 
-## Steps to Reproduce
+#### Steps to Reproduce
 1. Register a new user with:  
    - Full Name: Test User  
    - Email: user1@test.com
    - Password: TestPass123  
 2. Log out of the account.  
-3. Attempt to log in using the same email but a completely different password (e.g. WrongPassword).  
+3. Attempt to log in using the same email but a completely different password (e.g., WrongPassword).  
 4. Observe that the system allows login despite the incorrect password.  
 
-## Expected Result
+#### Expected Result
 The system should reject login attempts when the password does not match the one used during registration, displaying an error: "Invalid email or password."  
 
-## Actual Result
+#### Actual Result
 The system allows the user to log in even with a password different from the one set during registration.
 
 ---
-##🐞 BUG-003  
+
+### 🐞 BUG-003  
 **Title:** System allows login with unregistered credentials  
 **GitHub Link:** [#32](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)  
 **Requirement Affected:** User Login – Authentication Validation  
 **Severity:** Critical  
+**Environment:** Development, Google Chrome, Windows 10  
 
-## Summary
+#### Summary
 The system successfully logs in users even when the provided email and password do not belong to any registered account. This issue completely bypasses the authentication process and poses a severe security risk, as unauthorized users can gain access without registration.  
 
-## Steps to Reproduce
+#### Steps to Reproduce
 1. Open the login page.  
 2. Enter credentials that do not exist in the system, for example:  
    - Email: nonexist@test.com  
@@ -92,10 +89,33 @@ The system successfully logs in users even when the provided email and password 
 3. Click **Login**.  
 4. Observe that the system logs the user in successfully.  
 
-## Expected Result
+#### Expected Result
 The system should validate user credentials against the database and display an error message:  
 > “Invalid email or password.”  
 
-## Actual Result
+#### Actual Result
 The system allows login and grants access even though the credentials are not registered in the database.
 
+---
+
+### 🐞 BUG-004  
+**Title:** Pick-up request submitted without user registration  
+**GitHub Link:** [#33](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)  
+**Requirement Affected:** Pick-up Request – User Authentication  
+**Severity:** High  
+**Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The system allows a user to submit a waste pick-up request **without registering or logging in**, which violates the functional requirement that all pick-ups must be performed by authenticated users.
+
+#### Steps to Reproduce
+1. Open the CleanCity application.  
+2. Navigate to the pick-up request form.  
+3. Fill in valid pick-up details.  
+4. Submit the request **without creating an account or logging in**.  
+
+#### Expected Result
+The system should **prevent submission** and prompt the user to register or log in before creating a pick-up request.  
+
+#### Actual Result
+The pick-up request is successfully submitted without any authentication.
