@@ -41,6 +41,9 @@
 
 ---
 ### 1.4 User Session Management (localStorage)
+| Test Case ID | Objective                                              | Expected Result                                                 | Risk ID |
+|--------------|--------------------------------------------------------|-----------------------------------------------------------------|---------|
+| TC-014  | Verify session data is stored in localStorage after login | localStorage contains session key | R003    |
 
 
 
