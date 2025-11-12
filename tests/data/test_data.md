@@ -20,8 +20,6 @@ This file contains test data and scenarios for various features of the project, 
 | Registration  | New Test User | [newuser@test.com](mailto:newuser@test.com) | NewPass123 | User | Registration successful | Positive test case |
 
 
-
-
 ### **Regular User Accounts**
 | Test Scenario | Full Name     | Email                                       | Password    | Role | Expected Result        | Notes              |
 | ------------- | ------------- | ------------------------------------------- | ----------- | ---- | ---------------------- | ------------------ |
@@ -30,33 +28,13 @@ This file contains test data and scenarios for various features of the project, 
 | Login         | Jane Smith    | [user2@test.com](mailto:user2@test.com)     | TestPass123 | User | Successfully logged in | Positive test case |
 | Login         | Mike Johnson  | [user3@test.com](mailto:user3@test.com)     | TestPass123 | User | Successfully logged in | Positive test case |
 
-
-
-
-
+---
 
 ## **Admin User Accounts**
-```
-Email: admin@cleancity.com
-Password: AdminPass123
-Role: Admin
-Name: System Administrator
-Phone: +1-555-0001
-
-Email: moderator@cleancity.com
-Password: ModPass123
-Role: Admin
-Name: Content Moderator
-Phone: +1-555-0002
-```
-
-### **Test Account for Registration Testing**
-```
-Email: newuser@test.com
-Password: NewPass123
-Name: New Test User
-Phone: +1-555-9999
-```
+| **Test Scenario** | **Full Name**        | **Email**                                                 | **Password** | **Role** | **Expected Result**    | **Notes**          |
+| ----------------- | -------------------- | --------------------------------------------------------- | ------------ | -------- | ---------------------- | ------------------ |
+| Login             | System Administrator | [admin@cleancity.com](mailto:admin@cleancity.com)         | AdminPass123 | Admin    | Successfully logged in | Positive test case |
+| Login             | Content Moderator    | [moderator@cleancity.com](mailto:moderator@cleancity.com) | ModPass123   | Admin    | Successfully logged in | Positive test case |
 
 ---
 
