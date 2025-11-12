@@ -37,8 +37,8 @@
 | Test Case ID | Objective                                      | Expected Result                                               | Risk ID |
 |--------------|------------------------------------------------|---------------------------------------------------------------|---------|
 | TC-011       | Verify user can successfully log out           | User is logged out and redirected to the Home page           | R-001    |
-| TC-012       | Verify user cannot access dashboard after logout | Attempting to access dashboard redirects to login page     | R001    |
-| TC-013      | Verify scheduling a pickup without login       | System should restrict access and redirect to login page      | R001    |
+| TC-012       | Verify user cannot access dashboard after logout | Attempting to access dashboard redirects to login page     | R-001    |
+| TC-013      | Verify scheduling a pickup without login       | System should restrict access and redirect to login page      | R-001    |
 
 ---
 ### 1.4 User Session Management (localStorage)
@@ -67,7 +67,7 @@
 ### 2.1 Pickup Scheduling
 | Test Case ID | Objective                                              | Expected Result                                                 | Risk ID |
 |--------------|--------------------------------------------------------|-----------------------------------------------------------------|---------|
-| TC-023  | Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”) | Confirmation message showing that form is submitted and Pickup scheduled successfully | R-004 |
+| TC-023  | Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”) | Confirmation message showing that form is submitted and Pickup scheduled successfully | R-002 |
 
 ---
 ## Functional Test Cases - Boundary and Edge Case Test Cases
