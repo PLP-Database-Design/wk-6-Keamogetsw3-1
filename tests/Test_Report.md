@@ -83,7 +83,8 @@ The purpose of this report is to validate that the application meets its functio
 #### Table 4.4: User Session Management (localStorage) Test Cases
 | Test Case ID | Test Description                          | Test Type   | Expected Result                       | Actual Result                | Status  | Defect ID | Severity | Tester          | Date       |
 |--------------|-------------------------------------------|------------|---------------------------------------|------------------------------|---------|-----------|---------|----------------|-----------|
-| TC-014      | Verify session data is stored in localStorage after login    | Functional | localStorage contains session key | localStorage contains a key  `User`.  | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-12 |
+| TC-014      | Verify session data is stored in localStorage after login    | Functional | localStorage contains session key | localStorage contains a key  `User` | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-12 |
+| TC-015 | Verify user session persists after page refresh | Functional | User remains logged in; localStorage values persist  |User remains logged in; localStorage values persist | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-12 |
 
 
 
