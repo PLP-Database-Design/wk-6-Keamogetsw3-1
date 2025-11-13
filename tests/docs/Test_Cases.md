@@ -97,7 +97,7 @@
 | Test Case ID    | Objective                                                                                                     | Expected Result                                                                                       | Risk ID   |
 | --------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------- |
 | FC-093 |  Ensure users can access the FAQ section and all content is displayed correctly. | FAQ page loads with all questions and answers correctly |  |
-| FC-094 | Verify that contact information for support is displayed |  |  |
+| FC-094 | Verify that contact information for support is displayed | Support email, phone, and/or chat options are visible and clickable |  |
 
 
 
