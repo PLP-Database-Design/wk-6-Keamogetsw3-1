@@ -119,3 +119,40 @@ The system should **prevent submission** and prompt the user to register or log 
 
 #### Actual Result
 The pick-up request is successfully submitted without any authentication.
+---
+
+### 🐞 BUG-005
+**Title:** The pickup is scheduled even with invalid date 
+**GitHub Link:** #—  
+**Requirement Affected:** Pickup Scheduling – Date Validation  
+**Severity:** Medium  
+**Environment:** Development, Google Chrome, Windows 10  
+
+---
+
+### **Summary:**  
+The system allows users to schedule a pickup with an **invalid (past) date**, such as yesterday. This violates the intended scheduling rule that only **future dates** should be accepted. As a result, users can submit and confirm invalid pickup requests, leading to inconsistencies in the request management system.
+
+---
+
+### **Steps to Reproduce:**  
+1. Navigate to the **Pickup Request** form.  
+2. Enter the following details:  
+   - **Date:** Yesterday’s date  
+   - **Waste Type:** General  
+   - **Location:** Nairobi 
+   - **Instructions:** “Please ring doorbell”  
+3. Submit the request form.  
+
+---
+
+### **Expected Result:**  
+The system should **not allow scheduling for past dates** and must display a **validation message** stating that only future dates are valid for scheduling.  
+
+---
+
+### **Actual Result:**  
+The system **accepts the request with a past date**, allowing an invalid pickup to be scheduled.  
+
+---
+
