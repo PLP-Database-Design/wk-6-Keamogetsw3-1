@@ -171,7 +171,7 @@ This file contains test data and scenarios for various features of the project, 
 | TC-025       | Invalid pickup request (Yesterday’s date)     | Check User | checkuser@email.com    | Nairobi | General    | Yesterday’s date (e.g., **2025-11-12**) | “Please ring doorbell”          |
 | TC-026       | Invalid pickup request (empty Waste Type)     | Check User | checkuser@email.com    | Nairobi | *(empty)*  | Tomorrow’s date (e.g., **2025-11-14**) | “Please ring doorbell”          |
 | TC-027       | Invalid pickup request (empty Location)       | Check User | checkuser@email.com    | *(empty)* | General   | Tomorrow’s date (e.g., **2025-11-14**) | *(empty)*                        |
-| TC-028       | Invalid pickup request (Very long text >200 chars) | Check User | checkuser@email.com | Nairobi | General   | Tomorrow’s date (e.g., **2025-11-14**) | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...    |
+| TC-028       | Invalid pickup request (Very long text >200 chars) | Check User | checkuser@email.com | Nairobi | General   | Tomorrow’s date (e.g., **2025-11-14**) | Please collect all waste bags and recyclable items placed at the front of the property. Ensure that hazardous or sharp objects are handled with care. Avoid leaving any waste behind, and make sure bins are returned to their original positions after collection. Notify me if any items cannot be collected or if additional assistance is required |
 
 
 ### **Boundary Testing Data**
