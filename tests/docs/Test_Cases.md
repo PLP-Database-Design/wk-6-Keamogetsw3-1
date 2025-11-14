@@ -99,8 +99,19 @@
 | TC-093 |  Ensure users can access the FAQ section and all content is displayed correctly. | FAQ page loads with all questions and answers correctly |  |
 | TC-094 | Verify that contact information for support is displayed | Support email, phone, and/or chat options are visible and clickable |  |
 
+-----
 
 
+-----
+
+## ** Non-Functional Test Cases**
+-----
+This section focuses on testing the system's non-functional requirements, which define how the system performs rather than what it does. It includes aspects such as performance, usability, reliability, security and compatibility. Non-functional test cases ensure that the system meets quality standards and provides a good user experience under expected conditions.
+
+------
+
+
+------
 
 ---
 ## Functional Test Cases - Boundary and Edge Case Test Cases
