@@ -10,9 +10,7 @@ The purpose of the **tests** folder is to:
 - Track execution status and defect links  
 
 ---
-📂 Folder Structure
-## 📂 Folder Structure
-
+```bash
 /tests
 │
 ├── data/                                   # Contains all test data files
@@ -28,7 +26,7 @@ The purpose of the **tests** folder is to:
 │   ├── defect-reporting-standards.md       # Standards & guidelines for writing and managing defect reports
 │   └── Final-Test-Report.md                # Final summary report at test cycle completion
 │
-├── Scripts/                                # Automated scripts for testing or test data preparation
+├── Scripts/                                # Automated scripts for testing or preparing test data
 │   ├── setup_test_env.sh                   # Script to initialize test environment
 │   ├── run_tests.py                        # Script to execute automated tests
 │   ├── generate_summary.py                 # Script to generate summary reports
