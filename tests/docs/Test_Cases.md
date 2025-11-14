@@ -120,10 +120,14 @@ This section focuses on testing the system's non-functional requirements, which 
 |TC-0 | Verify the system displays correctly on mobile phones (320px to 767px)| Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur| R-008 |
 
 
-### Table .1: Test cases for Responsive Design
+### Table .2: Test cases for Accessibility
 | Test Case ID | Feature | Objective | Expected Result | Risk Link  |
 |--------------|----------|------------|----------------|----------------|
 |TC-0 |  | |  |
+|TC-0 |  | |  |
+|TC-0 |  | |  |
+|TC-0 |  | |  |
+
 
 ### Table .1: Test cases for Responsive Design
 | Test Case ID | Feature | Objective | Expected Result | Risk Link  |
