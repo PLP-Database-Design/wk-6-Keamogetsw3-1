@@ -77,5 +77,5 @@ The purpose of this report is to validate that the application meets its functio
 ## ** Functional Testing **
 ### Table 3: Automatically Executed Test Cases, their results and key observations
 
-## ** Non-Functional Testing **
-### Table 4: Automatically Executed Test Cases, their results and key observations
+## **Non-Functional Testing**
+### Table 4: Executed Test Cases, their results and key observations
