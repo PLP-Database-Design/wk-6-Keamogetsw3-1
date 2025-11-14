@@ -83,16 +83,16 @@ The purpose of this report is to validate that the application meets its functio
 #### Table 4.1: Responsive Design (📱 User Interface Requirements )
 | Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
 | ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
-| TC0  | Verify responsiveness when resizing the browser window dynamically | Non-Functional | Layout adapts in real-time without breaking or losing functionality |Menu bar expands excessively when resizing window, hiding all other content | Fail ❌ | [D-008](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/#) | Major | Keamogetswe| 2025-11-14 |
+| TC0  | Verify responsiveness when resizing the browser window dynamically | Non-Functional | Layout adapts in real-time without breaking or losing functionality |Menu bar expands excessively when resizing window, hiding all other content | Fail ❌ | [D-008](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) | Major | Keamogetswe| 2025-11-14 |
 | TC0  | Verify the system displays correctly on desktop screens (1920×1080 and above) | Non-Functional | All UI elements render properly and no horizontal scrolling occurs| All UI elements rendered properly and no horizontal scrolling occurs| Pass ✅ | — | —  | Keamogetswe| 2025-11-14 |
 | TC0  | Verify the system displays correctly on tablet screens (768px to 1024px) | Non-Functional | ayout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur  | |  | — | —  | |  |
 | TC0  | Verify the system displays correctly on mobile phones (320px to 767px) | Non-Functional | Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur | |  | — | —  | |  |
 
 
-#### Table 4.2: Accessibility (📱 User Interface Requirements )
+#### Table 4.2: Accessibility (📱 User Interface Requirements ) using Lighthouse Dev Tools in Chrome
 | Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
 | ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
+| TC0  | Verify contrast ratio meets WCAG 2.1 AA (minimum 4.5:1 for text) | Non-Functional | All text and UI elements meet required contrast ratios | Low Contrast Text Fails WCAG 2.1 AA | Fail ❌ | [D-009](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) | Major | Keamogetswe | 2025-11-14 |
 | TC0  |  | Non-Functional |  | |  | — | —  | |  |
 | TC0  |  | Non-Functional |  | |  | — | —  | |  |
 | TC0  |  | Non-Functional |  | |  | — | —  | |  |
