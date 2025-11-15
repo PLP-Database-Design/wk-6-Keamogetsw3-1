@@ -137,6 +137,14 @@ This section focuses on testing the system's non-functional requirements, which 
 |TC-0 |  | | R-008 |
 |TC-0 |  | | R-008 |
 
+### Table .2: Test cases for Accessibility (SonarQube)
+| Test Case ID | Objective | Expected Result | Risk Link  |
+|--------------|----------|------------|----------------|
+|TC-0 |Verify that form fields include labels or ARIA-labels |  | R-008|
+|TC-0 |  |  | R-008 |
+|TC-0 |  | | R-008 |
+|TC-0 |  | | R-008 |
+
 
 ### Table .1: Test cases for Responsive Design
 | Test Case ID | Feature | Objective | Expected Result | Risk Link  |
