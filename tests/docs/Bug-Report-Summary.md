@@ -268,3 +268,49 @@ Manual checks were done to confirm that the contrast ratios for these elements f
 
 ---
 
+🐞 BUG-010  
+Title: Layout breaks at 200% zoom — menu enlarges and hides content  
+GitHub Link: [D-010](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/59)  
+Requirement Affected: Accessibility – Zoom & Reflow (WCAG 2.1 AA, 1.4.4)  
+Severity: Medium  
+Environment: Development, Google Chrome, Windows 10  
+
+## Summary  
+When the browser zoom level is increased to **200%**, the menu enlarges disproportionately and pushes all other page content out of view. This causes the page to become unusable at high zoom levels, failing WCAG 2.1 AA accessibility requirements.  
+
+## Steps to Reproduce  
+1. Open the system in Google Chrome.  
+2. Navigate to any page containing the main menu.  
+3. Increase the browser zoom level to **200%** (Ctrl + +).  
+4. Observe the layout behavior.  
+
+## Expected Result  
+At 200% zoom, the layout should reflow properly, remain readable, and keep all content visible and accessible without overlap or loss of functionality.  
+
+## Actual Result  
+The menu becomes excessively enlarged, and all other page content becomes hidden or pushed off-screen, making the page unusable at 200% zoom.  
+
+---
+
+🐞 BUG-011  
+Title: Missing alt text for meaningful images on Awareness page  
+GitHub Link: [D-011](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/60) 
+Requirement Affected: Accessibility – Image Alt Text (WCAG 2.1 AA, 1.1.1)  
+Severity: Medium  
+Environment: Development, Google Chrome, Windows 10  
+
+## Summary  
+The Awareness page contains meaningful images that do not include descriptive **alt** attributes. This violates accessibility guidelines and prevents screen reader users from understanding the purpose and context of the images.
+
+## Steps to Reproduce  
+1. Navigate to the Awareness page.  
+2. Inspect the images displayed on the page using browser dev tools.  
+3. Check the HTML for each image and confirm the presence of the **alt** attribute.  
+4. Observe that some images have missing or empty alt text.
+
+## Expected Result  
+All meaningful images should contain clear, descriptive **alt text** that conveys the purpose or information represented by the image.
+
+## Actual Result  
+Several meaningful images on the Awareness page are missing **alt attributes**, resulting in inaccessible content for users relying on assistive technologies.
+
