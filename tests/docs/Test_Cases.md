@@ -120,7 +120,16 @@ This section focuses on testing the system's non-functional requirements, which 
 |TC-0 | Verify the system displays correctly on mobile phones (320px to 767px)| Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur| R-008 |
 
 
-### Table .2: Test cases for Accessibility
+### Table .2: Test cases for Accessibility (Manual Testing )
+| Test Case ID | Objective | Expected Result | Risk Link  |
+|--------------|----------|------------|----------------|
+|TC-0 |Verify contrast ratio meets WCAG 2.1 AA (minimum 4.5:1 for text) | All text and UI elements meet required contrast ratios | R-008|
+|TC-0 |  | | R-008 |
+|TC-0 |  | | R-008 |
+|TC-0 |  | | R-008 |
+
+
+### Table .2: Test cases for Accessibility (Lighthouse - Dev Tools )
 | Test Case ID | Objective | Expected Result | Risk Link  |
 |--------------|----------|------------|----------------|
 |TC-0 |Verify contrast ratio meets WCAG 2.1 AA (minimum 4.5:1 for text) | All text and UI elements meet required contrast ratios | R-008|
