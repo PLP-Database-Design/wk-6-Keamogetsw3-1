@@ -125,7 +125,7 @@ This section focuses on testing the system's non-functional requirements, which 
 |--------------|----------|------------|----------------|
 |TC-0 |Verify contrast ratio meets WCAG 2.1 AA (minimum 4.5:1 for text) | All text and UI elements meet required contrast ratios | R-008|
 |TC-0 | Verify zooming to 200% does not break layout | Page remains usable and responsive at 200% zoom | R-008 |
-|TC-0 |  | | R-008 |
+|TC-0 |Verift that the system support keyboard navigation | All fields accessible and focusable using **Tab** and **Enter** | R-008 |
 |TC-0 |  | | R-008 |
 
 
@@ -202,16 +202,6 @@ This section focuses on testing the system's non-functional requirements, which 
 
 ---
 
-### **2. Non-Functional Test Cases**
-
-| TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|--------------|----------|------------|----------------|----------------|---------|-----------|
-| TC011 | Performance | Load 5000+ pickup requests | UI should remain responsive | TBD | TBD | R016 |
-| TC012 | Performance | Load 1000+ user accounts | Application remains stable | TBD | TBD | R016 |
-| TC013 | Security | Test XSS payloads in inputs | Scripts should not execute | TBD | TBD | R012 |
-| TC014 | Security | Test SQL injection payloads | Should be rejected / sanitized | TBD | TBD | R012 |
-| TC015 | Usability | Validate responsive navigation | Works correctly on mobile and tablet | TBD | TBD | R009 |
-| TC016 | Data Persistence | Validate localStorage storage | Data persists across page reloads | TBD | TBD | R013 |
 
 ---
 
