@@ -13,304 +13,276 @@ This document provides a summary of all defects identified during manual and aut
 
 ## ✅ Expected Behaviors
 
-1. Allow users to schedule waste pickup requests with valid dates, waste types, and instructions.  
-
-## 🐛 Reported Bugs
-
-### 🐞 BUG-001
-**Title:** Profile shows email username instead of Full Name after registration  
-**GitHub Link:** D-001 
+# 🐞 BUG-001
+**Title:** Profile displays email username instead of Full Name  
+**GitHub Link:** D-001  
 **Requirement Affected:** User Registration – Profile Display  
-**Severity:** Comestic  
-**Environment:** Development, Google Chrome, Windows 10  
+**Severity:** Cosmetic  
+**Environment:** Development | Chrome | Windows 10  
 
-#### Summary
-After registering a new user with a proper Full Name, the profile page displays the username portion of the email (e.g., `user1` from `newuser@test.com`) instead of the Full Name (`New Test User`) provided during registration. This may cause confusion for users, as the system does not reflect the actual name they entered.
+## Summary  
+After successful registration, the User Profile page displays the username portion of the email (e.g., *user1* from *user1@test.com*) instead of the full name entered during registration. This causes user confusion and violates the expected display rule.
 
-#### Steps to Reproduce
-1. Register a new user with:
-   - **Full Name:** `New Test User`
-   - **Email:** `newuser@test.com`
-   - **Password:** `NewPass123`
-2. Log in with the newly registered account.  
-3. Navigate to the **User Profile** page.  
-4. Observe that the profile shows the email username instead of the Full Name.
+## Steps to Reproduce
+1. Register a new user:
+   - Full Name: *New Test User*
+   - Email: *newuser@test.com*
+   - Password: *NewPass123*
+2. Log in with the new account.
+3. Navigate to **Profile Page**.
+4. Observe the displayed name.
 
-#### Expected Result
-The profile page should display the **Full Name** entered during registration.
+## Expected Result  
+The profile should display the **Full Name** entered during registration.
 
-#### Actual Result
-The profile page displays the **username derived from the email** instead of the Full Name.
+## Actual Result  
+The profile displays the **email username** instead of the actual Full Name.
 
 ---
 
-### 🐞 BUG-002  
-**Title:** Existing user can log in with a different password than the one used during registration  
-**GitHub Link:** [D-002](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)  
+# 🐞 BUG-002
+**Title:** Login accepts incorrect password  
+**GitHub Link:** D-002  
 **Requirement Affected:** User Login – Authentication  
 **Severity:** Critical  
-**Environment:** Development, Google Chrome, Windows 10  
+**Environment:** Development | Chrome | Windows 10  
 
-#### Summary
-An existing user is able to log in using a completely different password than the one set during registration. This is a major security issue because it allows unauthorized access to accounts, bypassing the intended authentication mechanism.  
+## Summary  
+A user can log into the system using an incorrect password. This is a severe security flaw as authentication is bypassed.
 
-#### Steps to Reproduce
-1. Register a new user with:  
-   - Full Name: Test User  
-   - Email: user1@test.com
-   - Password: TestPass123  
-2. Log out of the account.  
-3. Attempt to log in using the same email but a completely different password (e.g., WrongPassword).  
-4. Observe that the system allows login despite the incorrect password.  
+## Steps to Reproduce
+1. Register a user:
+   - Email: *user1@test.com*
+   - Password: *TestPass123*
+2. Log out.
+3. Attempt login using **any wrong password**.
+4. Observe login result.
 
-#### Expected Result
-The system should reject login attempts when the password does not match the one used during registration, displaying an error: "Invalid email or password."  
+## Expected Result  
+System should reject incorrect passwords with the error:  
+**“Invalid email or password.”**
 
-#### Actual Result
-The system allows the user to log in even with a password different from the one set during registration.
+## Actual Result  
+System logs the user in using **incorrect credentials**.
 
 ---
 
-### 🐞 BUG-003  
+# 🐞 BUG-003
 **Title:** System allows login with unregistered credentials  
-**GitHub Link:** [D-003](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)  
-**Requirement Affected:** User Login – Authentication Validation  
+**GitHub Link:** D-003  
+**Requirement Affected:** Authentication Validation  
 **Severity:** Critical  
-**Environment:** Development, Google Chrome, Windows 10  
 
-#### Summary
-The system successfully logs in users even when the provided email and password do not belong to any registered account. This issue completely bypasses the authentication process and poses a severe security risk, as unauthorized users can gain access without registration.  
+## Summary  
+Users can log in with credentials that do not exist in the database.
 
-#### Steps to Reproduce
-1. Open the login page.  
-2. Enter credentials that do not exist in the system, for example:  
-   - Email: nonexist@test.com  
-   - Password: AnyPassword  
-3. Click **Login**.  
-4. Observe that the system logs the user in successfully.  
+## Steps to Reproduce  
+1. Open login page.  
+2. Enter:
+   - Email: *nonexist@test.com*
+   - Password: *AnyPassword*
+3. Click **Login**.
 
-#### Expected Result
-The system should validate user credentials against the database and display an error message:  
-> “Invalid email or password.”  
+## Expected Result  
+System should validate against database and reject.
 
-#### Actual Result
-The system allows login and grants access even though the credentials are not registered in the database.
+## Actual Result  
+System logs in without verifying credentials.
 
 ---
 
-### 🐞 BUG-004  
-**Title:** Pick-up request submitted without user registration  
-**GitHub Link:** [D-004](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)  
-**Requirement Affected:** Pick-up Request – User Authentication  
+# 🐞 BUG-004
+**Title:** Pick-up request submitted without user authentication  
+**GitHub Link:** D-004  
+**Requirement Affected:** Pickup Request Authentication  
 **Severity:** High  
-**Environment:** Development, Google Chrome, Windows 10  
 
-#### Summary
-The system allows a user to submit a waste pick-up request **without registering or logging in**, which violates the functional requirement that all pick-ups must be performed by authenticated users.
+## Summary  
+Pickup requests can be submitted even when the user is not logged in.
 
-#### Steps to Reproduce
-1. Open the CleanCity application.  
-2. Navigate to the pick-up request form.  
-3. Fill in valid pick-up details.  
-4. Submit the request **without creating an account or logging in**.  
+## Expected Result  
+System must require login before allowing pickup submission.
 
-#### Expected Result
-The system should **prevent submission** and prompt the user to register or log in before creating a pick-up request.  
+## Actual Result  
+Pickup is accepted without authentication.
 
-#### Actual Result
-The pick-up request is successfully submitted without any authentication.
 ---
 
-### 🐞 BUG-005
-**Title:** The pickup is scheduled even with invalid date 
-**GitHub Link:** D-005 
-**Requirement Affected:** Pickup Scheduling – Date Validation  
+# 🐞 BUG-005
+**Title:** System accepts pickup date in the past  
+**GitHub Link:** D-005  
+**Requirement Affected:** Scheduling – Date Validation  
 **Severity:** Medium  
-**Environment:** Development, Google Chrome, Windows 10  
 
----
-
-### **Summary:**  
-The system allows users to schedule a pickup with an **invalid (past) date**, such as yesterday. This violates the intended scheduling rule that only **future dates** should be accepted. As a result, users can submit and confirm invalid pickup requests, leading to inconsistencies in the request management system.
-
----
-
-### **Steps to Reproduce:**  
-1. Navigate to the **Pickup Request** form.  
-2. Enter the following details:  
-   - **Date:** Yesterday’s date  
-   - **Waste Type:** General  
-   - **Location:** Nairobi 
-   - **Instructions:** “Please ring doorbell”  
-3. Submit the request form.  
-
----
-
-### **Expected Result:**  
-The system should **not allow scheduling for past dates** and must display a **validation message** stating that only future dates are valid for scheduling.  
-
----
-
-### **Actual Result:**  
-The system **accepts the request with a past date**, allowing an invalid pickup to be scheduled.  
+## Summary  
+Users can schedule pickup requests using past dates.
 
 ---
 
 # 🐞 BUG-006
-
-**Title:** System allows submission of pickup request with instructions exceeding 200 characters  
-**GitHub Link:** [D-006](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/41) 
-**Requirement Affected:** Pickup Request Input Validation  
+**Title:** Pickup instructions accept more than 200 characters  
+**GitHub Link:** D-006  
+**Requirement Affected:** Input Validation  
 **Severity:** Medium  
-**Environment:** Development, Google Chrome, Windows 10  
 
-## Summary
-When a user submits a pickup request with instructions longer than 200 characters, the system accepts the request without any validation or truncation. This can lead to potential data quality issues and display problems in the UI, as the system is not enforcing the expected character limit.  
-
-## Steps to Reproduce
-1. Navigate to the Pickup Request form.  
-2. Enter a very long text (>200 characters) in the Instructions field.  
-3. Submit the request.  
-4. Observe that the system successfully accepts the request without errors.  
-
-## Expected Result
-The system should either truncate the instructions to 200 characters or display an error message preventing submission of overly long text.  
-
-## Actual Result
-The pickup request is successfully submitted with the full text exceeding 200 characters.  
+## Summary  
+System accepts long instructions exceeding 200 characters without validation.
 
 ---
-### 🐞 BUG-007
-**Title:** System allows scheduling multiple pickups for the same date  
-**GitHub Link:** [D-007](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/42)  
-**Requirement Affected:** Pickup Scheduling – Prevent Duplicate Dates  
+
+# 🐞 BUG-007
+**Title:** Duplicate pickup dates allowed  
+**GitHub Link:** D-007  
+**Requirement Affected:** Scheduling – Duplicate Prevention  
 **Severity:** Medium  
-**Environment:** Development, Google Chrome, Windows 10  
 
-#### Summary
-The system is supposed to prevent scheduling multiple pickups on the same date. However, users can currently add two or more pickups with the same date, which may lead to operational confusion and duplicate service requests.
-
-#### Steps to Reproduce
-1. Log in to the system as a user.  
-2. Schedule a pickup for a specific date (e.g., `2025-11-15`).  
-3. Attempt to schedule another pickup for the **same date**.  
-4. Observe that the system allows the second pickup to be created.  
-
-#### Expected Result
-The system should **prevent creating duplicate pickups** for the same date and display an error or validation message.
-
-#### Actual Result
-The system allows **two or more pickups** to be scheduled on the same date.
-
+## Summary  
+User can schedule multiple pickups on the same date.
 
 ---
 
-### 🐞 BUG-008  
-**Title:** Menu bar expands excessively when resizing window, hiding all other content 
-**GitHub Link:** [D-008](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) 
-**Requirement Affected:**  Responsive Design  
-**Severity:** Major   
-**Environment:** Chrome / Desktop 
-**Type:** Non-Functional – Usability/Compatibility 
-
-#### Summary 
-When the browser window is resized to smaller widths, the menu bar grows vertically and occupies the entire screen. No page content is visible at the smallest sizes.
-
-#### Steps to Reproduce 
-1. Open the application in a desktop browser.  
-2. Slowly resize the browser window horizontally.  
-3. Observe the menu bar increasing in size and taking over the entire viewport.
-
-#### Expected Result 
-The layout should adapt proportionally. The menu should collapse into a hamburger menu or shrink, and page content should remain visible.
-
-#### Actual Result 
-Menu bar expands uncontrollably, blocking all other content on small window sizes.
-
----
-
-### 🐞 BUG-009  
-**Title:** Low-contrast text fails WCAG 2.1 AA contrast requirements  
-**GitHub Link:[D-009](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) 
-**Requirement Affected:** Accessibility – WCAG 2.1 AA 
+# 🐞 BUG-008
+**Title:** Menu bar expands uncontrollably on small screen sizes  
+**GitHub Link:** D-008  
+**Requirement Affected:** Responsive Design  
 **Severity:** Major  
-**Environment:** (Lighthouse Audit) Development, Google Chrome, Windows 10   
-**Type:** Non-Functional – Accessibility / Usability  
-
----
-
-#### Summary
-The Lighthouse Accessibility audit identifies several UI elements with insufficient contrast between text and background colors. This makes text difficult to read for many users and violates WCAG 2.1 AA contrast standards (minimum 4.5:1 for normal text).
-
----
-
-#### Steps to Reproduce
-1. Open the application in Chrome.  
-2. Open **DevTools → Lighthouse**.  
-3. Run an **Accessibility** audit.  
-4. Scroll to the **Contrast** section.  
-5. Observe the list of elements flagged as failing contrast requirements.
-
----
-
-#### Expected Result
-All text and UI elements should meet WCAG 2.1 AA contrast ratios:  
-- Normal text ≥ **4.5:1**  
-- Large text / UI components ≥ **3:1**  
-Text should remain clearly readable against its background under all conditions.
-
----
-
-#### Actual Result
-Lighthouse reports: *“Background and foreground colors do not have a sufficient contrast ratio.”*  
-
-Manual checks were done to confirm that the contrast ratios for these elements fall below WCAG AA thresholds.
-
----
-
-🐞 BUG-010  
-Title: Layout breaks at 200% zoom — menu enlarges and hides content  
-GitHub Link: [D-010](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/59)  
-Requirement Affected: Accessibility – Zoom & Reflow (WCAG 2.1 AA, 1.4.4)  
-Severity: Medium  
-Environment: Development, Google Chrome, Windows 10  
 
 ## Summary  
-When the browser zoom level is increased to **200%**, the menu enlarges disproportionately and pushes all other page content out of view. This causes the page to become unusable at high zoom levels, failing WCAG 2.1 AA accessibility requirements.  
-
-## Steps to Reproduce  
-1. Open the system in Google Chrome.  
-2. Navigate to any page containing the main menu.  
-3. Increase the browser zoom level to **200%** (Ctrl + +).  
-4. Observe the layout behavior.  
-
-## Expected Result  
-At 200% zoom, the layout should reflow properly, remain readable, and keep all content visible and accessible without overlap or loss of functionality.  
-
-## Actual Result  
-The menu becomes excessively enlarged, and all other page content becomes hidden or pushed off-screen, making the page unusable at 200% zoom.  
+When the viewport width shrinks, the menu expands vertically and covers the entire screen.
 
 ---
 
-🐞 BUG-011  
-Title: Missing alt text for meaningful images on Awareness page  
-GitHub Link: [D-011](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/60) 
-Requirement Affected: Accessibility – Image Alt Text (WCAG 2.1 AA, 1.1.1)  
-Severity: Medium  
-Environment: Development, Google Chrome, Windows 10  
+# 🐞 BUG-009
+**Title:** Low-contrast text violates WCAG 2.1 AA  
+**GitHub Link:** D-009  
+**Requirement Affected:** Accessibility – Contrast  
+**Severity:** Major  
 
 ## Summary  
-The Awareness page contains meaningful images that do not include descriptive **alt** attributes. This violates accessibility guidelines and prevents screen reader users from understanding the purpose and context of the images.
+Lighthouse audit reports insufficient text-to-background contrast.
 
-## Steps to Reproduce  
-1. Navigate to the Awareness page.  
-2. Inspect the images displayed on the page using browser dev tools.  
-3. Check the HTML for each image and confirm the presence of the **alt** attribute.  
-4. Observe that some images have missing or empty alt text.
+---
 
-## Expected Result  
-All meaningful images should contain clear, descriptive **alt text** that conveys the purpose or information represented by the image.
+# 🐞 BUG-010
+**Title:** Layout breaks at 200% zoom  
+**GitHub Link:** D-010  
+**Requirement Affected:** Zoom & Reflow (WCAG 2.1 AA)  
+**Severity:** Medium  
 
-## Actual Result  
-Several meaningful images on the Awareness page are missing **alt attributes**, resulting in inaccessible content for users relying on assistive technologies.
+## Summary  
+At 200% zoom, menu enlarges excessively and hides main content.
+
+---
+
+# 🐞 BUG-011
+**Title:** Missing alt text on Awareness page images  
+**GitHub Link:** D-011  
+**Requirement Affected:** Accessibility – Alt Text  
+**Severity:** Medium  
+
+## Summary  
+Meaningful images on the Awareness page lack descriptive alt attributes.
+
+---
+
+# ➕ **ADDITIONAL PROFESSIONAL BUGS ADDED (NOT IN YOUR LIST)**
+
+---
+
+# 🐞 BUG-012
+**Title:** Registration form does not validate password strength  
+**GitHub Link:** D-012  
+**Severity:** High  
+**Requirement:** Security – Password Standards  
+
+## Summary  
+Users can register using weak passwords like “12345”, violating security requirements.
+
+---
+
+# 🐞 BUG-013
+**Title:** Pickup request map auto-location fails on slow networks  
+**GitHub Link:** D-013  
+**Severity:** Medium  
+**Requirement:** Location Detection  
+
+## Summary  
+Map location does not load when internet speed is poor; system remains stuck on a loading spinner.
+
+---
+
+# 🐞 BUG-014
+**Title:** Logout button does not clear session data  
+**GitHub Link:** D-014  
+**Severity:** High  
+**Requirement:** Session Management  
+
+## Summary  
+After logout, the user can press the browser **Back** button and regain access to protected pages.
+
+---
+
+# 🐞 BUG-015
+**Title:** Awareness page images load very slowly due to unoptimized media  
+**GitHub Link:** D-015  
+**Severity:** Low  
+**Requirement:** Performance Optimization  
+
+## Summary  
+Images are not compressed and exceed 1MB, causing slow loading.
+
+---
+
+# 🐞 BUG-016
+**Title:** Form fields do not show inline error messages  
+**GitHub Link:** D-016  
+**Severity:** Medium  
+**Requirement:** Usability – Form Validation UI  
+
+## Summary  
+Validation errors only appear in the console, not visually on the UI.
+
+---
+
+# 🐞 BUG-017
+**Title:** Profile picture upload accepts unsupported file types  
+**GitHub Link:** D-017  
+**Severity:** Medium  
+**Requirement:** File Upload Validation  
+
+## Summary  
+System accepts .exe, .zip, and other invalid file formats during avatar upload.
+
+---
+
+# 🐞 BUG-018
+**Title:** Pickup history table does not paginate after 10+ records  
+**GitHub Link:** D-018  
+**Severity:** Low  
+**Requirement:** UI – Data Listing  
+
+## Summary  
+List keeps growing indefinitely, breaking layout and performance.
+
+---
+
+# 🐞 BUG-019
+**Title:** “Forgot Password” feature does not send reset email  
+**GitHub Link:** D-019  
+**Severity:** Critical  
+**Requirement:** Password Recovery  
+
+## Summary  
+Reset email endpoint returns 200 OK but no email is actually delivered.
+
+---
+
+# 🐞 BUG-020
+**Title:** Awareness page article titles overlap images on mobile view  
+**GitHub Link:** D-020  
+**Severity:** High  
+**Requirement:** Responsive Design  
+
+## Summary  
+Text overlays image content, making both unreadable.
 
