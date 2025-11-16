@@ -1,4 +1,4 @@
-# CleanCity Application – QA Test Cases
+# CleanCity: Waste Pickup Scheduler - Test Cases
 
 ## 📋 Document Information
 **Document Version:** 1.1  
