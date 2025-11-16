@@ -21,6 +21,34 @@ Manual and automated test cases were executed
 | **Total** |  | **34** |
 
 ---
+Executive Summary
+Test Strategy and Approach
+Test Environment Details
+Test Execution Summary
+---
+## Defect Analysis and Categorization
+During the test execution phase (Phase 3) of the CleanCity project, defects were systematically identified, recorded and analysed to ensure the software met its functional and non-functional requirements. The testing team executed manual and automated test cases of the following fueatures of the application; authentication, dashboard functionality, waste pickup scheduling and accessibility.
+
+Defects were categorized based on:
+| **Severity** | **Description**                                                                                           |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| Critical     | Defects that impacts core functionality; must be fixed immediately.  |
+| Major        | Defects that affect important features or workflows, but the system is still usable; should be addressed soon.          |
+| Minor        | A medium defect appears when the system doesn’t meet certain criteria or exhibits some strange behaviours; functionality is not impacted |
+| Cosmetic     | Visual or UI issues; do not affect system operation. |
+
+
+---
+
+Risk Assessment
+Recommendations and Improvements
+Test Metrics and KPIs
+Jira/Github Kanban Reports: Include screenshots of Jira dashboards and reports
+
+
+
+
+
 
 ## Automated Test Cases Summary
 
