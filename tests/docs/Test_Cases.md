@@ -146,10 +146,13 @@ This section focuses on testing the system's non-functional requirements, which 
 |TC-0 |  | | R-008 |
 
 
-### Table .1: Test cases for Responsive Design
-| Test Case ID | Feature | Objective | Expected Result | Risk Link  |
-|--------------|----------|------------|----------------|----------------|
-|TC-0 |  | |  |
+### Table .1: Test cases for Navigation
+| Test Case ID |  Objective | Expected Result | Risk Link  |
+|--------------|------------|----------------|----------------|
+|TC-0 | Verify navigation menu is easy to understand | Navigation menu is clearly visible with descriptive labels and accessible on all main pages | R013 |
+|TC-0 | Verify navigation menu links work correctly  | Each menu item redirects to the correct page without errors | R013 |
+|TC-0 | Verift that the system show breadcrumbs for complex pages |Breadcrumbs appear and show the correct page hierarchy |  R013 |
+|TC-0 | Verify search bar visibility and returns relevant results | Search bar is visible and shows results relevant to the keyword are displayed | R013 |
 
 ---
 ### 🚀 Performance Requirements
