@@ -196,10 +196,10 @@
 #### Table 6.1.1 Test cases for **manual testing** 📝
 | Test Case ID | Objective                                                         | Expected Result                                                          | Risk Link | Notes              |
 | ------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------ | --------- | ------------------ |
-| TC070        | Verify that admins can view all pickup requests                   | Admins can see a list of all pickup requests with details                | R011      | Positive test case |
-| TC071        | Verify that admins can approve, reject, or modify pickup requests | Admins can successfully approve, reject, or edit requests                | R011      | Positive test case |
-| TC072        | Verify that admins can assign pickup dates and times              | Admins can assign or update pickup dates and times and changes are saved | R011      | Positive test case |
-| TC073        | Verify that admins can filter and search pickup requests          | Filtering and search return correct requests based on criteria           | R011      | Positive test case |
+| TC070        | Verify that admins can view all pickup requests                   | Admins can see a list of all pickup requests with details                | R004      | Positive test case |
+| TC071        | Verify that admins can approve, reject, or modify pickup requests | Admins can successfully approve, reject, or edit requests                | R004      | Positive test case |
+| TC072        | Verify that admins can assign pickup dates and times              | Admins can assign or update pickup dates and times and changes are saved | R004      | Positive test case |
+| TC073        | Verify that admins can filter and search pickup requests          | Filtering and search return correct requests based on criteria           | R004      | Positive test case |
 
 
 ---
