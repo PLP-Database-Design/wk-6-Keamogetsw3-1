@@ -122,7 +122,13 @@ The purpose of this report is to validate that the application meets its functio
 
 ---
 #### Table 4.2  👁️ Awareness Section Test case execusion report
-
+| Test Case ID | Objective                                                                   | Test Type  | Expected Result                                                                           | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | --------------------------------------------------------------------------- | ---------- | ----------------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC058        | Verify that rotating eco tips are displayed every 5 seconds  | Manual | Eco tips rotate automatically every 5 seconds                                             |               |        |           |          |        |      |
+| TC059        | Verify that users can access interactive quizzes about environmental topics | Manual  | Quiz opens and users can answer questions interactively                                   |               |        |           |          |        |      |
+| TC060        | Verify that quiz scores are tracked and explanations are provided | Manual  | After completing a quiz, the score is displayed and correct answer explanations are shown |               |        |           |          |        |      |
+| TC061        | Verify that environmental infographics with statistics are displayed | Manual  | Infographics appear with accurate statistics and proper formatting                        |               |        |           |          |        |      |
+| TC062        | Verify that action buttons link to other features | Manual | Clicking action buttons navigates to the correct related feature or page                  |               |        |           |          |        |      |
 
 ---
 
