@@ -75,10 +75,10 @@
 #### Table 1.4.1 Test cases for **manual testing** 📝
 | Test Case ID | Objective                                                                                                  | Expected Result                                                                | Risk ID |
 | ------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------- |
-| TC024        | Verify system creates a new user account with “User” role upon successful registration                     | System automatically assigns the “User” role to newly registered accounts      | R004    |
-| TC025        | Verify system supports two user roles: “User” and “Admin”. Each user can have only one valid role assigned | System supports two user roles: “User” and “Admin”                             | R004    |
-| TC026        | Verify only Admins can access Admin Dashboard                                                              | “User” role doesn't show Admin dashboard. “Admin” role can access successfully | R004    |
-| TC027        | Verify direct URL access to Admin Dashboard is blocked for non-admin users                                 | System restricts access and redirects to “Access Denied” or “Login” page       | R004    |
+| TC025        | Verify system creates a new user account with “User” role upon successful registration                     | System automatically assigns the “User” role to newly registered accounts      | R004    |
+| TC026        | Verify system supports two user roles: “User” and “Admin”. Each user can have only one valid role assigned | System supports two user roles: “User” and “Admin”                             | R004    |
+| TC027        | Verify only Admins can access Admin Dashboard                                                              | “User” role doesn't show Admin dashboard. “Admin” role can access successfully | R004    |
+| TC028        | Verify direct URL access to Admin Dashboard is blocked for non-admin users                                 | System restricts access and redirects to “Access Denied” or “Login” page       | R004    |
 
 ---
 
