@@ -3,7 +3,7 @@ This section provides a detailed summary of the test cases executed during Phase
 The purpose of this report is to validate that the application meets its functional requirements.
 
 ---
-## **Functional Testing**
+# **Functional Testing**
 
 ### **1 🔐 Authentication System Requirements**
 ---
@@ -210,83 +210,74 @@ The purpose of this report is to validate that the application meets its functio
 | TC090  | Verify access restriction after localStorage is cleared manually | Manual  | User logged out and redirected to home page| User logged out and redirected to sign in page             |   Pass ✅          | — | — | Keamogetswe | 2025-11-12 |
 
 ---
-#### Table 6.3: Content Moderation Test case execusion report
+###  **9 📞 Support & Maintenance**
 ---
+#### Table 9.1: Help System Test case execusion report
+| Test Case ID | Objective                                                       | Test Type | Expected Result                                                 | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | --------------------------------------------------------------- | --------- | --------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC090        | Verify that the system provides contextual help and tooltips    | Manual    | Users can see contextual help and tooltips where applicable     |               |        |           |          |        |      |
+| TC091        | Verify that the system includes a FAQ section                   | Manual    | Users can access the FAQ section and read answers               |               |        |           |          |        |      |
+| TC092        | Verify that the system provides contact information for support | Manual    | Users can view support contact information (email, phone, chat) |  
 
-
-
-#### Table 1.4: User Session Management (localStorage) Test Cases
-
-
-
-
-
-
-#### Table 1.7: Request Management Test Cases
 
 ---
+# 📊 Non-Functional Testing
+---
+## **10 📞 Support & Maintenance**
+#### Table 10.1: System Monitoring case execusion report
+| Test Case ID | Objective                                                     | Test Type | Expected Result                                                                                                      | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | ------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC093        | Verify that user actions are logged correctly for debugging   | Manual/automated    | All user actions (login, create, update, delete) are recorded with timestamp, user ID, and action type               |               |        |           | Medium   |        |      |
+| TC094        | Verify that system captures and logs errors correctly         | Manual/automated    | All system errors (invalid input, server errors, exceptions) are logged with timestamp, error type, and user context |               |        |           | High     |        |      |                                                  |               |        |           | High     |        |      |
 
 ---
+## **11. 📱 User Interface Requirements**
+===
 
-# 📞 Support & Maintenance
-
-*(Add your support test cases here if needed — structure provided)*
-
-| TC No. | Feature     | Objective          | Expected Result           | Actual Result | Status | Risk Link |
-|--------|-------------|--------------------|---------------------------|---------------|--------|-----------|
-| TBD    | Support     | Example objective  | Example expectation       | TBD           | TBD    | TBD       |
-
-## **📊 Non-Functional Testing**
-### Table 4: Executed Test Cases, their results and key observations
+#### Table 11.1: Responsive Design Test case execusion report
+| Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
+| ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
+| TC095  | Verify responsiveness when resizing the browser window dynamically | Manual| Layout adapts in real-time without breaking or losing functionality |Menu bar expands excessively when resizing window, hiding all other content | Fail ❌ | [D-008](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) | Major | Keamogetswe| 2025-11-14 |
+| TC096  | Verify the system displays correctly on desktop screens (1920×1080 and above) | Manual | All UI elements render properly and no horizontal scrolling occurs| All UI elements rendered properly and no horizontal scrolling occurs| Pass ✅ | — | —  | Keamogetswe| 2025-11-14 |
+| TC097  | Verify the system displays correctly on tablet screens (768px to 1024px) | Manual | ayout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur  | |  | — | —  | |  |
+| TC098  | Verify the system displays correctly on mobile phones (320px to 767px) | Manual | Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur | |  | — | —  | |  |
 ---
-#### Table 4.1: Responsive Design (📱 User Interface Requirements )
+
+#### Table 11.2: Accessibility (📱 User Interface Requirements ) - (Manual testing )
 | Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
 | ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
-| TC0  | Verify responsiveness when resizing the browser window dynamically | Non-Functional | Layout adapts in real-time without breaking or losing functionality |Menu bar expands excessively when resizing window, hiding all other content | Fail ❌ | [D-008](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) | Major | Keamogetswe| 2025-11-14 |
-| TC0  | Verify the system displays correctly on desktop screens (1920×1080 and above) | Non-Functional | All UI elements render properly and no horizontal scrolling occurs| All UI elements rendered properly and no horizontal scrolling occurs| Pass ✅ | — | —  | Keamogetswe| 2025-11-14 |
-| TC0  | Verify the system displays correctly on tablet screens (768px to 1024px) | Non-Functional | ayout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur  | |  | — | —  | |  |
-| TC0  | Verify the system displays correctly on mobile phones (320px to 767px) | Non-Functional | Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur | |  | — | —  | |  |
+| TC099  | Verify contrast ratio meets WCAG 2.1 AA (minimum 4.5:1 for text) | Manual | All text and UI elements meet required contrast ratios | Text readable; no low contrast detected | Pass ✅  | — | — | Sally Trizer  | 2025-11-12 |
+| TC100  | Verify zooming to 200% does not break layout | Manual  | Page remains usable and responsive at 200% zoom | When zoomed to 200%, the menu enlarges excessively, pushing or hiding other content. Only the menu is visible at this zoom level | Fail ❌ | [D-010](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/59)  | Medium  | Keamogetswe | 2025-11-14 |
+| TC110  | Verift that the system support keyboard navigation | Manual | All fields accessible and focusable using Tab and Enter | Tabbing works smoothly and Enter button functions correctly |  Pass ✅ | — | —  | Sally Trizer | 2025-11-12 |
+| TC111  | Verify all meaningful images have descriptive alt text | Manual  | Images have descriptive alt text | alt attribute missing for awareness page images | Fail ❌ | [D-011](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/59)  | Medium | Sally Trizer | 2025-11-12 |
+| TC112  | Verify screen reader announces Form Field Labels correctly | Manual | Screen reader announce each field correctly | |  | — | —  |  Sally Trizer |  |
+| TC113  | Verify contrast ratio meets WCAG 2.1 AA (minimum 4.5:1 for text) | Lighthouse - Dev Tools | All text and UI elements meet required contrast ratios | Low Contrast Text Fails WCAG 2.1 AA | Fail ❌ | [D-009](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) | Major | Keamogetswe | 2025-11-14 |
 
-
-#### Table 4.2: Accessibility (📱 User Interface Requirements ) - (Manual testing )
-| Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
-| ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
-| TC0  | Verify contrast ratio meets WCAG 2.1 AA (minimum 4.5:1 for text) | Non-Functional (Manually) | All text and UI elements meet required contrast ratios | Text readable; no low contrast detected | Pass ✅  | — | — | Sally Trizer  | 2025-11-12 |
-| TC0  | Verify zooming to 200% does not break layout | Non-Functional | Page remains usable and responsive at 200% zoom | When zoomed to 200%, the menu enlarges excessively, pushing or hiding other content. Only the menu is visible at this zoom level | Fail ❌ | [D-010](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/59)  | Medium  | Keamogetswe | 2025-11-14 |
-| TC0  | Verift that the system support keyboard navigation | Non-Functional | All fields accessible and focusable using Tab and Enter | Tabbing works smoothly and Enter button functions correctly |  Pass ✅ | — | —  | Sally Trizer | 2025-11-12 |
-| TC0  | Verify all meaningful images have descriptive alt text | Non-Functional | Images have descriptive alt text | alt attribute missing for awareness page images | Fail ❌ | [D-011](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/59)  | Medium | Sally Trizer | 2025-11-12 |
-| TC0  | Verify screen reader announces Form Field Labels correctly | Non-Functional | Screen reader announce each field correctly | |  | — | —  |  Sally Trizer |  |
-
-#### Table 4.2: Accessibility (📱 User Interface Requirements ) - (Lighthouse - Dev Tools )
-| Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
-| ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
-| TC0  | Verify contrast ratio meets WCAG 2.1 AA (minimum 4.5:1 for text) | Non-Functional | All text and UI elements meet required contrast ratios | Low Contrast Text Fails WCAG 2.1 AA | Fail ❌ | [D-009](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) | Major | Keamogetswe | 2025-11-14 |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
-
-#### Table 4.2: Accessibility (📱 User Interface Requirements ) - (SonarQube )
-| Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
-| ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
-| TC0  | Verify that form fields include labels or ARIA-labels | Non-Functional |  | |  | — | —  | |  |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
-
-----
-
-#### Table 4. Response Time Test cases for Navigation
-#### Table 4. Response Time Test Cases for Navigation
-
+---
+#### Table 11.3:  Navigation Test Cases execution report
 | Test Case ID | Objective                                                   | Test Type       | Expected Result                                                                 | Actual Result                                                                 | Status | Defect ID | Severity | Tester       | Date       |
 |--------------|-------------------------------------------------------------|------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------|-----------|----------|--------------|------------|
-| TC-| Verify navigation menu is easy to understand                 | Non-Functional   | Navigation menu is clearly visible with descriptive labels                      | Navigation menu displays correctly and is easy to understand                 | Pass ✅   | —         | —        | Keamogetswe | 2025-11-16 |
-| TC-  | Verify navigation menu links work correctly                  | Non-Functional   | Each navigation link should redirect to the correct page                         | All navigation redirects function as expected                                | Pass ✅    | —         | —        |Keamogetswe | 2025-11-16 |
-| TC- | Verify system shows correct breadcrumbs on complex pages     | Non-Functional   | Breadcrumbs should display full, accurate page hierarchy                         | Breadcrumb shows only **"Profile"** when editing; hierarchy missing          | Fail ❌   | | Minor   | Keamogetswe | 2025-11-16 |
-| TC-   | Verify search bar visibility and relevant results functionality | Non-Functional | Search results and filters should update based on input                          | Search & filter **do nothing**; article list remains unchanged               | Fail ❌  | | Medium    | Keamogetswe | 2025-11-16 |
+| TC114| Verify navigation menu is easy to understand                 | Non-Functional   | Navigation menu is clearly visible with descriptive labels                      | Navigation menu displays correctly and is easy to understand                 | Pass ✅   | —         | —        | Keamogetswe | 2025-11-16 |
+| TC115  | Verify navigation menu links work correctly                  | Non-Functional   | Each navigation link should redirect to the correct page                         | All navigation redirects function as expected                                | Pass ✅    | —         | —        |Keamogetswe | 2025-11-16 |
+| TC116 | Verify system shows correct breadcrumbs on complex pages     | Non-Functional   | Breadcrumbs should display full, accurate page hierarchy                         | Breadcrumb shows only **"Profile"** when editing; hierarchy missing          | Fail ❌   | | Minor   | Keamogetswe | 2025-11-16 |
+| TC117   | Verify search bar visibility and relevant results functionality | Non-Functional | Search results and filters should update based on input                          | Search & filter **do nothing**; article list remains unchanged               | Fail ❌  | | Medium    | Keamogetswe | 2025-11-16 |
 
+---
+## **12. 🔒 Data Management Requirements**
+===
 
+#### Table 12.1: Data Validation Test case execusion report
+| Test Case ID | Objective                                                          | Test Type | Expected Result                                                                                       | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | ------------------------------------------------------------------ | --------- | ----------------------------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC118        | Verify that the system validates all user inputs before processing | Automated | Invalid or incomplete inputs are rejected; appropriate error messages displayed                       |               |        |           | High     |        |      |
+| TC119        | Verify that the system prevents SQL injection attacks              | Automated | SQL injection attempts are blocked; system remains secure and stable                                  |               |        |           | Critical |        |      |
+| TC120        | Verify that the system prevents XSS attacks                        | Automated | Scripts or malicious content in input fields are sanitized; system does not execute malicious scripts |               |        |           | Critical |        |      |
+| TC121        | Verify that user-generated content is sanitized before storage     | Automated | All special characters and HTML tags are sanitized; stored content is safe to display                 |               |        |           | High     |        |      |
 
-
+---
+## **13. 🔒 Data Management Requirements**
+---
+#### Table 13.1: Data Validation Test case execusion report
 
 | Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
 | ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
