@@ -56,12 +56,18 @@
 
 ---
 
-### 1.3 Logout Test Cases
-| Test Case ID | Objective                                      | Expected Result                                               | Risk ID |
-|--------------|------------------------------------------------|---------------------------------------------------------------|---------|
-| TC-011       | Verify user can successfully log out           | User is logged out and redirected to the Home page           | R-001    |
-| TC-012       | Verify user cannot access dashboard after logout | Attempting to access dashboard redirects to login page     | R-001    |
-| TC-013      | Verify scheduling a pickup without login       | System should restrict access and redirect to login page      | R-001    |
+##### 1.3 👤 User Logout Test Cases
+#### Table 1.3.1 Test cases for **manual testing** 📝
+| Test Case ID | Objective                                        | Expected Result                                          | Risk ID | Notes              |
+| ------------ | ------------------------------------------------ | -------------------------------------------------------- | ------- | ------------------ |
+| TC021        | Verify user can successfully log out             | User is logged out and redirected to the Home page       | R001    | Positive test case |
+| TC022        | Verify user cannot access dashboard after logout | Attempting to access dashboard redirects to login page   | R001    | Negative test case |
+| TC023        | Verify scheduling a pickup without login         | System should restrict access and redirect to login page | R001    | Negative test case |
+
+#### 1.3.2 Test cases for **Selenium automated testing** 🤖
+| Test Case ID | Objective                                        | Expected Result                                          | Risk ID | Notes              |
+| ------------ | ------------------------------------------------ | -------------------------------------------------------- | ------- | ------------------ |
+| TC024        | Verify user can successfully login then log out  | User is logged out and redirected to the Home page       | R001    | Positive test case |
 
 ---
 ### 1.4 User Session Management (localStorage)
