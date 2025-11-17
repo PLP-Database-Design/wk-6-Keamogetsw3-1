@@ -3,11 +3,11 @@ This section provides a detailed summary of the test cases executed during Phase
 The purpose of this report is to validate that the application meets its functional requirements.
 ---
 ## **Functional Testing**
----
+
 ### **1 🔐 Authentication System Requirements**
 ---
 #### 1.1 👤 User Registration Test Cases
-
+-----
 #### Table 1.1: Registration Test Cases
 | Test Case ID | Test Description                           | Test Type  | Expected Result                        | Actual Result                  | Status | Defect ID | Severity | Tester        | Date       |
 | ------------ | ------------------------------------------ | ---------- | -------------------------------------- | ------------------------------ | ------ | --------- | -------- | ------------- | ---------- |
