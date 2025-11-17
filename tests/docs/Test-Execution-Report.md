@@ -71,6 +71,7 @@ The purpose of this report is to validate that the application meets its functio
 | TC033  | Invalid pickup request (empty Location)   | Manual| System shows error indicating Location is required |   System showed error indicating Location is required |  Pass ✅  | — |  —  | Keamogetswe  | 2025-11-14  |
 | TC034  | Invalid pickup request (Very long text >200 chars)   | Manual| System truncates input or shows error for long text  | Confirmation message displayed   |  Fail ❌| [D-0061](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/41) | Medium |  Keamogetswe  | 2025-11-14  |
 | TC035  | The system shall prevent scheduling multiple pickups for the same date | Manual| System prevents creating duplicate pickups for the same date |   Confirmation message displayed   | Fail ❌ | [D-007](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/42)| Medium|  Keamogetswe  | 2025-11-14 |
+| TC036  | Valid pickup request - Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”)   | Automated | Pickup request is successfully created | Confirmation message displayed   | Pass ✅   | —  | —  | Keamogetswe| 2025-11-16 |
 
 
 
