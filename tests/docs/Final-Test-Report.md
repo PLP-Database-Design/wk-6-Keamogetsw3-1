@@ -25,15 +25,28 @@ CleanCity is a web-based platform designed to streamline and modernize waste man
 
 ## 3. Scope of Testing
 
-The scope of testing covered the key functionalities of the CleanCity website, including core features such as registration, login, and waste collection requests. It also included validating admin dashboards and data management processes, performing functional, non-functional, UI, usability, security, and compatibility testing, testing across multiple devices and browsers, validating APIs, data accuracy, error handling, and system responses, as well as assessing performance under normal, peak, and extreme conditions to ensure full reliability and requirement compliance.  
+**Included:**
+- Test all core CleanCity features: registration, login, and waste collection requests.
+- Validate admin dashboards and data management processes.
+- Perform functional, non-functional, UI, usability, security, and compatibility testing.
+- Test across multiple devices and browsers.
+- Validate APIs, data accuracy, error handling, and system responses.
+- Assess performance under normal, peak, and extreme conditions to ensure full reliability and requirement compliance.
 
-The testing did not cover load testing beyond certain thresholds.
+**Excluded:**
+- Load testing beyond a certain threshold.
 
 ---
 
 ## 4. Test Environment
 
-The testing environment included the frontend CleanCity web application developed using HTML, CSS, and JavaScript, and the backend based on Node.js/Express. The database used was MySQL or MongoDB depending on the project configuration. Browsers tested included Chrome, Firefox, and Edge, while devices included Windows desktops and Android smartphones. Test data consisted of a mix of dummy data and realistic simulated user inputs. Tools used included GitHub for defect tracking and test case management, along with browser developer tools for debugging.  
+- **Frontend:** CleanCity Web Application (HTML, CSS, JavaScript)
+- **Backend:** Node.js / Express *(adjust based on actual backend used)*
+- **Database:** MySQL / MongoDB *(adjust according to project)*
+- **Browsers Tested:** Chrome, Firefox, Edge
+- **Devices Tested:** Windows desktop and Android smartphone
+- **Test Data:** Mix of dummy data and realistic simulated user inputs
+- **Tools Used:** GitHub for defect tracking and test case management, Browser DevTools for debugging
 
 ---
 
