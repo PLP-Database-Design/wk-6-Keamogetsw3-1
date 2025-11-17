@@ -73,15 +73,29 @@
 
 ##### 1.4 👤 Role-Based Access Test Cases
 #### Table 1.4.1 Test cases for **manual testing** 📝
-| Test Case ID | Objective                                                                                                  | Expected Result                                                                | Risk ID |
-| ------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------- |
-| TC025        | Verify system creates a new user account with “User” role upon successful registration                     | System automatically assigns the “User” role to newly registered accounts      | R004    |
-| TC026        | Verify system supports two user roles: “User” and “Admin”. Each user can have only one valid role assigned | System supports two user roles: “User” and “Admin”                             | R004    |
-| TC027        | Verify only Admins can access Admin Dashboard                                                              | “User” role doesn't show Admin dashboard. “Admin” role can access successfully | R004    |
-| TC028        | Verify direct URL access to Admin Dashboard is blocked for non-admin users                                 | System restricts access and redirects to “Access Denied” or “Login” page       | R004    |
+| Test Case ID | Objective                                                                                                  | Expected Result                                                                | Risk ID | Notes              |
+| ------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------- | ------------------ |
+| TC025        | Verify system creates a new user account with “User” role upon successful registration                     | System automatically assigns the “User” role to newly registered accounts      | R004    | Positive test case |
+| TC026        | Verify system supports two user roles: “User” and “Admin”. Each user can have only one valid role assigned | System supports two user roles: “User” and “Admin”                             | R004    | Positive test case |
+| TC027        | Verify only Admins can access Admin Dashboard                                                              | “User” role doesn't show Admin dashboard. “Admin” role can access successfully | R004    | Negative test case |
+| TC028        | Verify direct URL access to Admin Dashboard is blocked for non-admin users                                 | System restricts access and redirects to “Access Denied” or “Login” page       | R004    | Negative test case |
+
 
 ---
 ### **2. 🗑️ Waste Management Requirements**
+---
+#### 2.1 🚚 Pickup Scheduling
+#### Table 2.1.1 Test cases for **manual testing** 📝
+| Test Case ID | Objective                                                                                            | Expected Result                                                                       | Risk ID | Notes              |
+| ------------ | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ------- | ------------------ |
+| TC029        | Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”) | Confirmation message showing that form is submitted and Pickup scheduled successfully | R002    | Positive test case |
+| TC030        | Invalid pickup request (no data)                                                                     | System shows validation errors for empty fields                                       | R002    | Negative test case |
+| TC031        | Invalid pickup request (Yesterday’s date)                                                            | System does not allow scheduling for past date                                        | R002    | Negative test case |
+| TC032        | Invalid pickup request (empty Waste Type)                                                            | System shows error indicating Waste Type is required                                  | R002    | Negative test case |
+| TC033        | Invalid pickup request (empty Location)                                                              | System shows error indicating Location is required                                    | R002    | Negative test case |
+| TC034        | Invalid pickup request (Very long text >200 chars)                                                   | System truncates input or shows error for long text                                   | R002    | Negative test case |
+| TC035        | The system shall prevent scheduling multiple pickups for the same date                               | System prevents creating duplicate pickups for the same date                          | R002    | Negative test case |
+
 ---
 
 
@@ -109,15 +123,8 @@
 
 ---
 ### 2.1 Pickup Scheduling
-| Test Case ID | Objective                                              | Expected Result                                                 | Risk ID |
-|--------------|--------------------------------------------------------|-----------------------------------------------------------------|---------|
-| TC-023  | Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”) | Confirmation message showing that form is submitted and Pickup scheduled successfully | R-002 |
-| TC-024  | Invalid pickup request (no data)                     | System shows validation errors for empty fields       | R-002   |
-| TC-025  | Invalid pickup request (Yesterday’s date)            | System does not allow scheduling for past date        | R-002   |
-| TC-026  | Invalid pickup request (empty Waste Type)            | System shows error indicating Waste Type is required | R-002   |
-| TC-027  | Invalid pickup request (empty Location)              | System shows error indicating Location is required   | R-002   |
-| TC-028  | Invalid pickup request (Very long text >200 chars)   | System truncates input or shows error for long text  | R-002   |
-| TC-029  | The system shall prevent scheduling multiple pickups for the same date | System prevents creating duplicate pickups for the same date | R-002   |
+
+
 
 ### 2.2 Request Management Test Cases
 | Test Case ID    | Objective                                                                                                     | Expected Result                                                                                       | Risk ID   |
