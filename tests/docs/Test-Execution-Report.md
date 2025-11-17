@@ -61,6 +61,17 @@ The purpose of this report is to validate that the application meets its functio
 ### **2. 🗑️ Waste Management Requirements**
 ---
 
+#### Table 2.1: 🚚 Pickup Scheduling Test Cases
+| Test Case ID | Test Description                                      | Test Type  | Expected Result                                         | Actual Result | Status | Defect ID | Severity | Tester | Date       |
+|--------------|------------------------------------------------------|-----------|--------------------------------------------------------|---------------|--------|-----------|---------|--------|-----------|
+| TC029  | Valid pickup request - Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”)   | Manual | Pickup request is successfully created | Confirmation message displayed   | Pass ✅   | —  | —  | Sally Trizer  | 2025-11-12 |
+| TC030  | Invalid pickup request (no data)                     | Manual| System shows validation errors for empty fields    | System shows validation errors for empty fields  | Pass ✅ |  —  |  —  |   Keamogetswe   | 2025-11-13 |
+| TC031  | Invalid pickup request (Yesterday’s date)            | Manual| System does not allow scheduling for past date   | Confirmation message displayed  | Fail ❌ | [D-005](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/)       |  Medium  |    Keamogetswe      |    2025-11-13       |
+| TC032  | Invalid pickup request (empty Waste Type) | Manual | System shows error indicating Waste Type is required |  System showed error indicating Waste Type is required | Pass ✅  | — | — | Keamogetswe  |  2025-11-14  |
+| TC033  | Invalid pickup request (empty Location)   | Manual| System shows error indicating Location is required |   System showed error indicating Location is required |  Pass ✅  | — |  —  | Keamogetswe  | 2025-11-14  |
+| TC034  | Invalid pickup request (Very long text >200 chars)   | Manual| System truncates input or shows error for long text  | Confirmation message displayed   |  Fail ❌| [D-0061](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/41) | Medium |  Keamogetswe  | 2025-11-14  |
+| TC035  | The system shall prevent scheduling multiple pickups for the same date | Manual| System prevents creating duplicate pickups for the same date |   Confirmation message displayed   | Fail ❌ | [D-007](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/42)| Medium|  Keamogetswe  | 2025-11-14 |
+
 
 
 
@@ -77,16 +88,7 @@ The purpose of this report is to validate that the application meets its functio
 
 
 
-#### Table 1.6: Pickup Scheduling Test Cases
-| Test Case ID | Test Description                                      | Test Type  | Expected Result                                         | Actual Result | Status | Defect ID | Severity | Tester | Date       |
-|--------------|------------------------------------------------------|-----------|--------------------------------------------------------|---------------|--------|-----------|---------|--------|-----------|
-| TC023  | Valid pickup request - Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”)   | Functional | Pickup request is successfully created | Confirmation message displayed   | Pass ✅   | —  | —  | Sally Trizer  | 2025-11-12 |
-| TC024  | Invalid pickup request (no data)                     | Functional | System shows validation errors for empty fields    | System shows validation errors for empty fields  | Pass ✅ |  —  |  —  |   Keamogetswe   | 2025-11-13 |
-| TC025  | Invalid pickup request (Yesterday’s date)            | Functional | System does not allow scheduling for past date   | Confirmation message displayed  | Fail ❌ | [D-005](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/)       |  Medium  |    Keamogetswe      |    2025-11-13       |
-| TC026  | Invalid pickup request (empty Waste Type) | Functional | System shows error indicating Waste Type is required |  System showed error indicating Waste Type is required | Pass ✅  | — | — | Keamogetswe  |  2025-11-14  |
-| TC027  | Invalid pickup request (empty Location)   | Functional | System shows error indicating Location is required |   System showed error indicating Location is required |  Pass ✅  | — |  —  | Keamogetswe  | 2025-11-14  |
-| TC028  | Invalid pickup request (Very long text >200 chars)   | Functional | System truncates input or shows error for long text  | Confirmation message displayed   |  Fail ❌| [D-0061](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/41) | Medium |  Keamogetswe  | 2025-11-14  |
-| TC029  | The system shall prevent scheduling multiple pickups for the same date | Functional | System prevents creating duplicate pickups for the same date |   Confirmation message displayed   | Fail ❌ | [D-007](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/42)| Medium|  Keamogetswe  | 2025-11-14   |
+
 
 #### Table 1.7: Request Management Test Cases
 | Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
