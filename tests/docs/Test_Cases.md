@@ -177,8 +177,8 @@
 #### Table 5.1.1 Test cases for **manual testing** 📝
 | Test Case ID | Objective                                                          | Expected Result                                                                   | Risk Link | Notes              |
 | ------------ | ------------------------------------------------------------------ | --------------------------------------------------------------------------------- | --------- | ------------------ |
-| TC066        | Verify that users can view and edit their profile information      | Users can view their profile details and successfully edit and save changes       | R010      | Positive test case |
-| TC067        | Verify that users can upload a profile picture                     | Users can upload a profile picture and it is displayed correctly on their profile | R010      | Positive test case |
+| TC066        | Verify that users can view and edit their profile information      | Users can view their profile details and successfully edit and save changes       | R005      | Positive test case |
+| TC067        | Verify that users can upload a profile picture                     | Users can upload a profile picture and it is displayed correctly on their profile | R005      | Positive test case |
 
 
 ---
@@ -189,12 +189,23 @@
 | TC068        | Verify that users can follow other community members | Users can follow/unfollow other community members successfully                 | R005      | Positive test case |
 | TC069        | Verify that news feed displays community activities  | News feed shows latest activities (posts, likes, comments) from followed users | R005      | Positive test case |
 
+---
+### **6. ⚙️ Administrative Functions Requirements**
+---
+#### **6.1 Request Management Test Cases**
 
 ---
+#### **6.2 User Management  Test Cases**
+
 ---
-| Test Case ID | Feature | Objective | Expected Result | Risk Link  | Notes |
-|--------------|----------|------------|----------------|----------------| ----------------|
-| |  | |  | |
+#### **6.3 Content Moderation Test Cases**
+
+---
+
+
+| Test Case ID | Objective | Expected Result | Risk Link  | Notes |
+|--------------|-------------|----------------|----------------| ----------------|
+|   | |  | |
 
 ### 1.4 User Session Management (localStorage)
 | Test Case ID | Objective                                              | Expected Result                                                 | Risk ID |
