@@ -264,7 +264,7 @@ The purpose of this report is to validate that the application meets its functio
 
 ---
 ## **12. 🔒 Data Management Requirements**
-===
+---
 
 #### Table 12.1: Data Validation Test case execusion report
 | Test Case ID | Objective                                                          | Test Type | Expected Result                                                                                       | Actual Result | Status | Defect ID | Severity | Tester | Date |
@@ -275,37 +275,57 @@ The purpose of this report is to validate that the application meets its functio
 | TC121        | Verify that user-generated content is sanitized before storage     | Automated | All special characters and HTML tags are sanitized; stored content is safe to display                 |               |        |           | High     |        |      |
 
 ---
-## **13. 🔒 Data Management Requirements**
+## **13. 🚀 Performance Requirements**
 ---
-#### Table 13.1: Data Validation Test case execusion report
+#### Table 13.1: Response Time Test case execusion report
+| Test Case ID | Objective                                                                           | Test Type | Expected Result                                                                      | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | ----------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC122        | Verify that the system loads pages within 3 seconds on standard internet connection | Automated | All pages load within 3 seconds under normal network conditions                      |               |        |           | High     |        |      |
+| TC123        | Verify that the system responds to user interactions within 1 second                | Automated | All user interactions (clicks, form submissions, navigation) respond within 1 second |               |        |           | High     |        |      |
 
-| Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
-| ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
-| TC0  |  | Manual |  | |  | — | —  | |  |
-| TC0  |  | Manual|  | |  | — | —  | |  |
-
-
-#### Table 4. Response Time (🚀 Performance Requirements)
-| Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
-| ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
-
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
-
-
-
-
-# 🌐 Cross-Browser Compatibility Testing
-
-# Browser Compatibility Test Report
+---
+#### Table 13.2: 🌐 Cross-Browser Compatibility Testing
 
 | Test Case ID | Objective | Test Type | Expected Result | Actual Result | Status | Defect ID | Severity | Tester | Date |
 |--------------|-----------|-----------|-----------------|---------------|--------|-----------|----------|--------|------|
-| TC- | Verify system works on Google Chrome (latest 2 versions) | Non-Functional | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer  | 2025-11-11 |
-| TC- | Verify system works on Mozilla Firefox (latest 2 versions) | Non-Functional | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | Sally Trizer | 2025-11-12  |
-| TC- | Verify system works on Microsoft Edge (latest 2 versions) | Non-Functional | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer | 2025-11-12 |
+| TC124 | Verify system works on Google Chrome (latest 2 versions) | Manual | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer  | 2025-11-11 |
+| TC125 | Verify system works on Mozilla Firefox (latest 2 versions) | Manual | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | Sally Trizer | 2025-11-12  |
+| TC126 | Verify system works on Microsoft Edge (latest 2 versions) | Manual | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer | 2025-11-12 |
 
+---
+## **14. 📋 Error Handling Requirements**
+---
+#### Table 14.1: User-Friendly Errors Testing
+| Test Case ID | Objective                                           | Test Type | Expected Result                                                                                                 | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | --------------------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC127      | Verify system handles network errors on Fast 3G     | Automated | Network errors under Fast 3G connection are handled gracefully; user sees a clear message and can retry actions |               |        |           | High     |        |      |
+| TC128      | Verify system handles network errors on Slow 3G     | Automated | Network errors under Slow 3G connection are handled gracefully; user sees a clear message and can retry actions |               |        |           | High     |        |      |
+| TC129      | Verify system handles Offline / no network scenario | Automated | When offline, system shows a user-friendly offline message and prevents actions that require network            |               |        |           | High     |        |      |
+| TC130        | Verify that the system displays clear, actionable error messages     | Automated | All error messages are easy to understand and provide actionable guidance to the user                                 |               |        |           | High     |        |      |
+| TC131        | Verify that the system provides guidance for resolving common issues | Automated | For common issues (e.g., invalid input, login failure), the system shows guidance or help tips to resolve the problem |               |        |           | High     |        |      |
 
+---
+#### Table 14.2: Form Validation Testing
+| Test Case ID | Objective                                                         | Test Type | Expected Result                                                                                                        | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | ----------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC132        | Verify that the system validates forms in real-time               | Automated | Form fields are validated instantly as the user types or selects options; invalid input triggers immediate feedback    |               |        |           | High     |        |      |
+| TC133        | Verify that the system prevents form submission with invalid data | Automated | Form cannot be submitted when required fields are empty or invalid; user is notified of errors                         |               |        |           | High     |        |      |
+| TC134        | Verify that the system highlights validation errors clearly       | Automated | Invalid fields are visually highlighted (e.g., red border, error message) so the user can identify and fix them easily |               |        |           | Medium   |        |      |
 
+----
+# Boundary Testing and Edge Case Test execution report
+----
+#### Table 15: Boundary Testing and Edge Case Test execution report
+| Test Case ID | Objective                                                              | Test Type | Expected Result                                                        | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | ---------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC135        | Verify date selection allows minimum date (tomorrow)                   | Automated | Dates before tomorrow are rejected; tomorrow and later are allowed     |               |        |           | High     |        |      |
+| TC136        | Verify date selection rejects today and past dates                     | Automated | Dates today and earlier are rejected with validation message           |               |        |           | High     |        |      |
+| TC137        | Verify date selection rejects dates beyond 30 days                     | Automated | Dates >30 days from today are rejected with validation message         |               |        |           | High     |        |      |
+| TC138        | Verify name field accepts 2-50 characters                              | Automated | Names with <2 or >50 characters are rejected; valid length is accepted |               |        |           | Medium   |        |      |
+| TC139        | Verify email field accepts valid format                                | Automated | Invalid email formats are rejected; valid emails accepted              |               |        |           | High     |        |      |
+| TC140        | Verify password field enforces minimum 8 characters                    | Automated | Passwords <8 characters are rejected                                   |               |        |           | High     |        |      |
+| TC141        | Verify instructions field accepts 0-200 characters                     | Automated | Instructions exceeding 200 characters are rejected                     |               |        |           | Medium   |        |      |
+| TC144        | Verify special characters in name/email/instructions                   | Automated | System accepts valid special characters in inputs without errors       |               |        |           | Medium   |        |      |
+| TC145        | Verify Unicode and international characters in name/email/instructions | Automated | System accepts Unicode and international characters correctly          |               |        |           | Medium   |        |      |
+| TC146        | Verify very long inputs are rejected                                   | Automated | Inputs exceeding maximum length are rejected with validation           |               |        |           | High     |        |      |
+| TC147        | Verify empty or whitespace-only inputs are rejected                    | Automated | Inputs that are empty or whitespace-only are rejected                  |               |        |           | High     |        |      |
