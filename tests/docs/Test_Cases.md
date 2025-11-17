@@ -103,6 +103,23 @@
 | TC036        | Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”) | Confirmation message showing that form is submitted and Pickup scheduled successfully | R002    | Positive test case |
 ---
 
+#### **2.2 📋 Request Management**
+#### Table 2.2.1 Test cases for **manual testing** 📝
+| Test Case ID | Objective                                                                                                     | Expected Result                                                                                       | Risk ID | Notes              |
+| ------------ | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------- | ------------------ |
+| TC037        | Verify that the system displays the user’s pickup request history.                                            | User can view a list of all past and current pickup requests with details (date, waste type, status). | R002    | Positive test case |
+| TC038        | Verify that completed and cancelled requests appear correctly in the history.                                 | The system includes all request types (Completed, Cancelled, etc.) in the history view.               | R002    | Positive test case |
+| TC039        | Verify that the user can cancel a pending pickup request.                                                     | The system successfully cancels the request and updates the status to “Cancelled.”                    | R002    | Positive test case |
+| TC040        | Verify that the system does not allow cancelling completed or already cancelled requests.                     | User receives an appropriate error or message indicating cancellation is not possible.                | R002    | Negative test case |
+| TC041        | Verify that users can modify pickup details (e.g., date, waste type) at least 24 hours before scheduled time. | The system allows modification and updates the request details successfully.                          | R002    | Positive test case |
+| TC042        | Verify that users cannot modify pickup details within 24 hours of the scheduled time.                         | The system prevents modification and displays an appropriate warning message.                         | R002    | Negative test case |
+| TC043        | Verify that the system displays correct request status for each pickup request.                               | Status is displayed as Pending, Confirmed, Completed, or Cancelled, based on the request’s state.     | R002    | Positive test case |
+| TC044        | Verify that request status updates automatically after completion or cancellation.                            | The status changes dynamically according to the action taken (e.g., from Confirmed → Completed).      | R002    | Positive test case |
+
+
+
+
+
 
 ### 1.4 User Session Management (localStorage)
 | Test Case ID | Objective                                              | Expected Result                                                 | Risk ID |
@@ -132,16 +149,7 @@
 
 
 ### 2.2 Request Management Test Cases
-| Test Case ID    | Objective                                                                                                     | Expected Result                                                                                       | Risk ID   |
-| --------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------- |
-| TC-030 | Verify that the system displays the user’s pickup request history.                                            | User can view a list of all past and current pickup requests with details (date, waste type, status). | R-002 |
-| TC-031 | Verify that completed and cancelled requests appear correctly in the history.                                 | The system includes all request types (Completed, Cancelled, etc.) in the history view.               | R-002 |
-| TC-032 | Verify that the user can cancel a pending pickup request.                                                     | The system successfully cancels the request and updates the status to “Cancelled.”                    | R-002 |
-| TC-033 | Verify that the system does not allow cancelling completed or already cancelled requests.                     | User receives an appropriate error or message indicating cancellation is not possible.                | R-002 |
-| TC-034 | Verify that users can modify pickup details (e.g., date, waste type) at least 24 hours before scheduled time. | The system allows modification and updates the request details successfully.                          | R-002 |
-| TC-035 | Verify that users cannot modify pickup details within 24 hours of the scheduled time.                         | The system prevents modification and displays an appropriate warning message.                         | R-002 |
-| TC-036 | Verify that the system displays correct request status for each pickup request.                               | Status is displayed as Pending, Confirmed, Completed, or Cancelled, based on the request’s state.     | R-002 |
-| TC-037 | Verify that request status updates automatically after completion or cancellation.                            | The status changes dynamically according to the action taken (e.g., from Confirmed → Completed).      | R-002 |
+
 
 ### 🔒  Data Management Requirements
 #### Data Persistence
