@@ -174,6 +174,7 @@
 ### **5. 👥 Community Features Requirements**
 ---
 #### **5.1 👤 User Profiles Test Cases**
+#### Table 5.1.1 Test cases for **manual testing** 📝
 | Test Case ID | Objective                                                          | Expected Result                                                                   | Risk Link | Notes              |
 | ------------ | ------------------------------------------------------------------ | --------------------------------------------------------------------------------- | --------- | ------------------ |
 | TC066        | Verify that users can view and edit their profile information      | Users can view their profile details and successfully edit and save changes       | R010      | Positive test case |
@@ -182,6 +183,7 @@
 
 ---
 #### **5.2 👥 Social Features Test Cases**
+#### Table 5.2.1 Test cases for **manual testing** 📝
 | Test Case ID | Objective                                            | Expected Result                                                                | Risk Link | Notes              |
 | ------------ | ---------------------------------------------------- | ------------------------------------------------------------------------------ | --------- | ------------------ |
 | TC068        | Verify that users can follow other community members | Users can follow/unfollow other community members successfully                 | R005      | Positive test case |
