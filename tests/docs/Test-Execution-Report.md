@@ -134,19 +134,40 @@ The purpose of this report is to validate that the application meets its functio
 #### Table 4.3  🤝 Community Feed Test case execusion report
 | Test Case ID | Objective                                                        | Test Type | Expected Result                                                          | Actual Result                                                            | Status | Defect ID | Severity | Tester      | Date       |
 | ------------ | ---------------------------------------------------------------- | --------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------ | --------- | -------- | ----------- | ---------- |
-| TC064        | Verify that users can create community posts                     | Manual    | Users can create and submit a post, and it appears in the community feed | Users can create and submit a post and it appears in the community feed | Pass ✅ | —  | —   | Keamogetswe | 2025-11-15 |
-| TC065        | Verify that users can like and comment on community posts        | Manual    | Users can like or comment, and interactions are reflected immediately    | Users can like or comment and interactions are reflected immediately    | Pass ✅ | —         | —  | Keamogetswe | 2025-11-15 |
-| TC066        | Verify that community posts are displayed in chronological order | Manual    | Posts are ordered from newest to oldest in the feed | Posts are ordered from newest to oldest in the feed  | Pass ✅ | —   | —   | Keamogetswe | 2025-11-15 |
+| TC063        | Verify that users can create community posts                     | Manual    | Users can create and submit a post, and it appears in the community feed | Users can create and submit a post and it appears in the community feed | Pass ✅ | —  | —   | Keamogetswe | 2025-11-15 |
+| TC064        | Verify that users can like and comment on community posts        | Manual    | Users can like or comment, and interactions are reflected immediately    | Users can like or comment and interactions are reflected immediately    | Pass ✅ | —         | —  | Keamogetswe | 2025-11-15 |
+| TC065        | Verify that community posts are displayed in chronological order | Manual    | Posts are ordered from newest to oldest in the feed | Posts are ordered from newest to oldest in the feed  | Pass ✅ | —   | —   | Keamogetswe | 2025-11-15 |
 
 ---
 ### **5. 👥 Community Features Requirements**
 ---
+#### Table 5.1  🤝 Community Feed Test case execusion report
+| Test Case ID | Objective                                                     | Test Type | Expected Result                                                                   | Actual Result                                                               | Status | Defect ID | Severity | Tester      | Date       |
+| ------------ | ------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------ | --------- | -------- | ----------- | ---------- |
+| TC066        | Verify that users can view and edit their profile information | Manual    | Users can view their profile details and successfully edit and save changes       | Users can view their profile details and successfully edit and save changes | Pass ✅ | —         | —        | Keamogetswe | 2025-11-09 |
+| TC067        | Verify that users can upload a profile picture                | Manual    | Users can upload a profile picture and it is displayed correctly on their profile | Uploading image returns a 500 server error                                  | Fail ❌ | D003      | Major    | Keamogetswe | 2025-11-16 |
+
+
+---
+#### Table 5.2  🤝 Community Feed Test case execusion report
 | Test Case ID | Objective                                            | Test Type | Expected Result                                                                | Actual Result                                                | Status | Defect ID | Severity | Tester      | Date       |
 | ------------ | ---------------------------------------------------- | --------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------ | ------ | --------- | -------- | ----------- | ---------- |
-| TC068        | Verify that users can follow other community members | Manual    | Users can follow/unfollow other community members successfully                 | Unable to follow/unfollow other community members            | Fail ❌ | D001      | Major    | Keamogetswe | 2025-11-17 |
-| TC069        | Verify that news feed displays community activities  | Manual    | News feed shows latest activities (posts, likes, comments) from followed users | News feed did not update or show latest community activities | Fail ❌ | D002      | Major    | Keamogetswe | 2025-11-17 |
+| TC068        | Verify that users can follow other community members | Manual    | Users can follow/unfollow other community members successfully                 | Unable to follow/unfollow other community members            | Fail ❌ | D001      | Minor    | Keamogetswe | 2025-11-17 |
+| TC069        | Verify that news feed displays community activities  | Manual    | News feed shows latest activities (posts, likes, comments) from followed users | News feed did not update or show latest community activities | Fail ❌ | D002      | Minor    | Keamogetswe | 2025-11-17 |
 
+---
+### **6. ⚙️ Administrative Functions Requirements**
+---
 
+#### Table 6.1 Request Management Test case execusion report
+
+---
+#### Table 6.2 User Management Test case execusion report
+
+---
+#### Table 6.3 Content ModerationTest case execusion report
+
+---
 
 #### Table 1.4: User Session Management (localStorage) Test Cases
 | Test Case ID | Test Description                          | Test Type   | Expected Result                       | Actual Result                | Status  | Defect ID | Severity | Tester          | Date       |
