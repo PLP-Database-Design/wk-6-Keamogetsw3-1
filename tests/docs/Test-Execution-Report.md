@@ -131,9 +131,17 @@ The purpose of this report is to validate that the application meets its functio
 | TC062        | Verify that action buttons link to other features | Manual | Clicking action buttons navigates to the correct related feature or page | Clicking action buttons navigates to the correct related feature or page  | Pass ✅  | — | — | Keamogetswe | 2025-11-16 |
 
 ---
-#### Table 4.2  🤝 Community Feed Test case execusion report
+#### Table 4.3  🤝 Community Feed Test case execusion report
+| Test Case ID | Objective                                                        | Test Type | Expected Result                                                          | Actual Result                                                            | Status | Defect ID | Severity | Tester      | Date       |
+| ------------ | ---------------------------------------------------------------- | --------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------ | --------- | -------- | ----------- | ---------- |
+| TC064        | Verify that users can create community posts                     | Manual    | Users can create and submit a post, and it appears in the community feed | Users can create and submit a post and it appears in the community feed | Pass ✅ | —  | —   | Keamogetswe | 2025-11-15 |
+| TC065        | Verify that users can like and comment on community posts        | Manual    | Users can like or comment, and interactions are reflected immediately    | Users can like or comment and interactions are reflected immediately    | Pass ✅ | —         | —  | Keamogetswe | 2025-11-15 |
+| TC066        | Verify that community posts are displayed in chronological order | Manual    | Posts are ordered from newest to oldest in the feed | Posts are ordered from newest to oldest in the feed  | Pass ✅ | —   | —   | Keamogetswe | 2025-11-15 |
 
 ---
+### **5. 👥 Community Features Requirements**
+---
+
 
 
 
