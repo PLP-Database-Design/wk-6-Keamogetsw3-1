@@ -7,9 +7,8 @@ The purpose of this report is to validate that the application meets its functio
 
 ### **1 🔐 Authentication System Requirements**
 ---
-#### 1.1 👤 User Registration Test Cases
------
-#### Table 1.1: Registration Test Cases
+#### Table 1.1 👤 User Registration Test Cases
+
 | Test Case ID | Test Description                           | Test Type  | Expected Result                        | Actual Result                  | Status | Defect ID | Severity | Tester        | Date       |
 | ------------ | ------------------------------------------ | ---------- | -------------------------------------- | ------------------------------ | ------ | --------- | -------- | ------------- | ---------- |
 | TC001        | Verify registration with valid credentials | Manual | User should be registered successfully | User successfully registered   | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
