@@ -24,15 +24,15 @@
 ## 1. Executive Summary
 CleanCity is a web-based platform designed to streamline waste pickup scheduling for residents and this report will present the results of a comprehensive testing done by members of the KNS as part of the final project for the PowerLearn Project Software Testing & Quality Assurance course. Testing took place from 30 October 2025 to 18 November 2025, where manual and automated testing was used test the functionality, performance, usability, accessibility and security across the web application.
 
-### Key Finding:
+### 1.1 Key Finding:
 - Core Functional Issues:
   - Authentication: System allows login with unregistered or invalid credentials.
 
-### Recommandation:
+### 1.2 Recommandation:
 - We have identified major issues that affect the core functionalities of the app, therefore, we as KNA QA team we **Recommend** that the app should not be **RELEASED** until issues have been solved. 
 
-## Objectives
-As the KNS software testing team, our primary objective is to ensure that the CleanCity system meets all functional and non-functional requirements, functions reliably, and is secure. Specifically, we aim to:
+## 2. Objectives
+As the KNS software testing team, our primary objective is to ensure that the CleanCity system meets all functional and non-functional requirements, functions reliably and is secure. Specifically, we aim to:
 
 - Verify that all functional and non-functional requirements are met.
 - Identify and document software defects with reproducible evidence.
