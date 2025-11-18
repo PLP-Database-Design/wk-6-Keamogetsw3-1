@@ -62,13 +62,15 @@ The profile page displays the **username derived from the email** instead of the
 An existing user is able to log in using a completely different password than the one set during registration. This is a major security issue because it allows unauthorized access to accounts.
 
 #### Steps to Reproduce
-1. Register a new user:  
+1. Open the CleanCity application in Google Chrome.
+2. Click on Register to register a new profile
+3.  Register a new user:  
    - Full Name: Test User  
    - Email: user1@test.com  
    - Password: TestPass123  
-2. Log out.  
-3. Attempt to log in using the same email but a different password (e.g., WrongPassword).  
-4. Observe the system allows login despite the incorrect password.
+4. Log out.  
+5. Attempt to log in using the same email but a different password (e.g., WrongPassword).  
+6. Observe the system allows login despite the incorrect password.
 
 #### Expected Result
 The system should reject login attempts when the password does not match the one used during registration, displaying an error: "Invalid email or password."
@@ -86,15 +88,16 @@ The system allows login even with a different password.
 - **Environment:** Development, Google Chrome, Windows 10  
 
 #### Summary
-The system logs in users even when the email and password do not belong to any registered account, bypassing authentication and posing a severe security risk.
+The system logs in users even when the email and password do not belong to an unregistered account, bypassing authentication and posing a severe security risk.
 
 #### Steps to Reproduce
-1. Open the login page.  
-2. Enter unregistered credentials:  
+1. Open the CleanCity application in Google Chrome.
+2. Open the login page.  
+3. Enter unregistered credentials:  
    - Email: nonexist@test.com  
    - Password: AnyPassword  
-3. Click **Login**.  
-4. Observe the system logs in successfully.
+4. Click **Login**.  
+5. Observe the system logs in successfully.
 
 #### Expected Result
 The system should validate credentials and display:  
