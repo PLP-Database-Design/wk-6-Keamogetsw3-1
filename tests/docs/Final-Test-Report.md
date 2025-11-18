@@ -1,13 +1,17 @@
 # CleanCity: Waste Pickup Scheduler - Test Report
 ![Alt text](cleancity.png)
 
+---
+
 ## 📋 **Document Information**
+
 **Course:** Software Testing & Quality Assurance  
 **Project Type:** Group Assessment  
 **Team Name:** KNS  
 **Submission Date:** 2025-11-05
-**Prepared by:** Sally Trizer  
----
+**Prepared by:** Sally Trizer 
+
+
 ## Team Information
 
 | Role | Name | Responsibilities |
@@ -25,7 +29,7 @@ As the KNS software testing team, our objectives are to ensure the CleanCity sys
 
 ## 2. Overview of the CleanCity System
 
-CleanCity is a web-based platform designed to streamline and modernize waste management operations for residents, waste collectors, and administrators. The system allows users to report waste issues, request collection services, track the status of their submissions, and communicate directly with the management team. Administrators can monitor reports, assign tasks, update progress, and analyze waste trends. The platform aims to improve city cleanliness, enhance reporting accuracy, reduce response time, and promote transparency and accountability in urban waste management.
+CleanCity is a web-based platform designed to streamline and modernize waste management operations for residents, waste collectors, and administrators. The system allows users to report waste issues, request collection services, track the status of their submissions, and communicate directly with the management team. Administrators can monitor reports, assign tasks, update progress, and analyze waste trends. The platform aims to improve city cleanliness, enhance reporting accuracy, reduce response time, and promote transparency and accountability in urban waste management. 
 
 ---
 
