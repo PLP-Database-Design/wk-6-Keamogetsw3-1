@@ -164,7 +164,7 @@ The system accepts past dates and schedules the pickup.
 - **Title:** System allows submission of pickup request with instructions exceeding 200 characters  
 - **GitHub Link:** [#41](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/41)  
 - **Requirement Affected:** Pickup Request Input Validation  
-- **Severity:** Medium  
+- **Severity:** Minor 
 - **Environment:** Development, Google Chrome, Windows 10  
 
 #### Summary
@@ -189,7 +189,7 @@ Request is accepted without error.
 - **Title:** System allows scheduling multiple pickups for the same date  
 - **GitHub Link:** [#42](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/42)  
 - **Requirement Affected:** Pickup Scheduling – Prevent Duplicate Dates  
-- **Severity:** Medium  
+- **Severity:** Major  
 - **Environment:** Development, Google Chrome, Windows 10  
 
 #### Summary
