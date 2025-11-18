@@ -236,9 +236,17 @@ Most critical defects relate to login and authentication issues, while medium de
 | D-004 | Pick-up request submitted without user registration  | Critical | R001    | Open   | Issue #33   | TC-020       |
 
 
-### 7.2 some of the issues  raised
+## 8. Logging, tracking and management of Test Cases and Issues 
+Defects were logged in a `tests/Bug-Report-Summary.md` and github used track them
+
 <img width="1308" height="540" alt="image" src="https://github.com/user-attachments/assets/7593d44d-efcd-4e3b-b043-be54b286be19" />
 
+----
+
+Github Project was used to manage the entire project
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/59a5f640-37ee-45bd-95ec-fc24fc08cb52" />
+
+---
 
 ## 9. Overall Summary
 
