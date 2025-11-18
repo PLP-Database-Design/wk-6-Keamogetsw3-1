@@ -168,28 +168,67 @@ The following areas were not included in the testing scope:
 
 ## 6 Test Execution Summary
 
-### 6.1 (a) Planned Test Cases
+# Test Execution Summary
 
-| Testing Type             | Modules / Areas Covered                               | Manual | Automated | Total |
-|--------------------------|------------------------------------------------------|--------|-----------|-------|
-| Functional Testing       | Authentication System                                 |        |           |       |
-|                          | Waste Management                                      |        |           |       |
-|                          | Dashboard & Analytics                                 |        |           |       |
-|                          | Content Management                                    |        |           |       |
-|                          | Community Features                                    |        |           |       |
-|                          | Administrative Functions                               |        |           |       |
-|                          | Notification System                                    |        |           |       |
-|                          | User Interface                                        |        |           |       |
-|                          | Data Management                                       |        |           |       |
-|                          | Performance                                          |        |           |       |
-|                          | Error Handling                                       |        |           |       |
-| Non-Functional Testing   | Performance                                          |        |           |       |
-|                          | Usability                                            |        |           |       |
-|                          | Security                                             |        |           |       |
-|                          | Compatibility                                        |        |           |       |
-|                          | Accessibility                                        |        |           |       |
-| Boundary / Edge Cases    |                                                      |        |           |       |
-| **Total Test Cases**     |                                                      |        |           |       |
+## Summary of Planned Test Cases (120+ Estimated)
+
+| Category             | Manual | Automated | Total |
+|----------------------|--------|-----------|-------|
+| Registration         | 5      | 5         | 10    |
+| Login                | 5      | 5         | 10    |
+| Logout               | 3      | 1         | 4     |
+| Role-Based Access    | 4      | –         | 4     |
+| Pickup Scheduling    | 7      | 1         | 8     |
+| Request Management   | 8      | –         | 8     |
+| Tracking             | 3      | –         | 3     |
+| Dashboard            | 3      | –         | 3     |
+| Blog System          | 7      | –         | 7     |
+| Awareness            | 5      | –         | 5     |
+| Community Feed       | 3      | –         | 3     |
+| Community Features   | 4      | –         | 4     |
+| Admin Functions      | 4      | –         | 4     |
+| Session Management   | 5      | –         | 5     |
+| Non-Functional       | 20+    | –         | 20+   |
+| Boundary / Edge      | 10+    | –         | 10+   |
+
+---
+
+## Summary of Executed Test Cases (Pass / Fail)
+
+### Functional Test Execution
+
+| Category               | Total | Pass ✅ | Fail ❌ | Defects Linked          |
+|------------------------|-------|--------|---------|--------------------------|
+| User Registration      | 10    | 10     | 0       | —                        |
+| User Login             | 10    | 6      | 4       | D-002, D-003             |
+| User Logout            | 4     | 2      | 2       | D-004                    |
+| Role-Based Access      | 4     | 4      | 0       | —                        |
+| Pickup Scheduling      | 8     | 3      | 5       | D-005, D-006, D-007      |
+| Request Management     | 8     | 0      | 8       | D000                     |
+| Request Tracking       | 3     | 1      | 2       | —                        |
+| Dashboard & Analytics  | 3     | 0      | 3       | D000                     |
+| Blog System            | 7     | 4      | 3       | D000                     |
+| Awareness Section      | 5     | 5      | 0       | —                        |
+| Community Feed         | 3     | 3      | 0       | —                        |
+| Community Features     | 3     | 1      | 2       | D001, D002               |
+| Administrative Functions | 12   | 0      | 0       | Pending                  |
+| Notification System    | 4     | 0      | 0       | Pending                  |
+| Data Management        | 5     | 5      | 0       | —                        |
+| Support & Maintenance  | 3     | 0      | 0       | Pending                  |
+
+---
+
+### Non-Functional, UI, and Compatibility Test Execution
+
+| Category             | Total | Pass ✅ | Fail ❌ | Defects Linked                   |
+|----------------------|-------|--------|---------|----------------------------------|
+| UI / Responsiveness  | 4     | 1      | 1       | D-008, D-010, D-011, D-009       |
+| Navigation           | 4     | 2      | 2       | —                                |
+| Performance          | 4     | 0      | 0       | Pending                          |
+| Cross-Browser        | 8     | 8      | 0       | —                                |
+| Error Handling       | 10    | 0      | 0       | Pending                          |
+| Form Validation      | 3     | 0      | 0       | Pending                          |
+| Boundary / Edge Cases | 2+   | 0      | 0       | Pending                          |
 
 ### 6.1 (b) Ssample test cases 
 <img width="1312" height="588" alt="image" src="https://github.com/user-attachments/assets/0dd3f2eb-5fd1-429f-984c-723c36d60b66" />
