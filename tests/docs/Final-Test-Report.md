@@ -1,13 +1,15 @@
 # CleanCity: Waste Pickup Scheduler - Test Report
 ![Alt text](cleancity.png)
 
-**Version:** 1.0  
-**Test Date:** 15 th nov 2025  
-**Test Manager:** Keamogetswe  
-**Tester(s):** Keamogetswe, Sally  
-**Risk Analyst:** Sally Trizer  
-
 ---
+## Team Information
+
+| Role | Name | Responsibilities |
+|------|------|------------------|
+| Test Manager | Keamogetswe M| Planning, scheduling, coordination, metric tracking |
+| Test Executor | Sally Trizer Keamogetswe M | Execution, evidence capture, defect logging |
+| Risk Analyst | Sally Trizer | Risk identification, prioritization, test design linkage |
+
 
 ## 1. Objectives
 
