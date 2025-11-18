@@ -168,7 +168,31 @@ The following areas were not included in the testing scope:
 
 ## 6 Test Execution Summary
 
-### Planned Test Cases
+### 6.1 (a) Planned Test Cases
+
+| Testing Type             | Modules / Areas Covered                               | Manual | Automated | Total |
+|--------------------------|------------------------------------------------------|--------|-----------|-------|
+| Functional Testing       | Authentication System                                 |        |           |       |
+|                          | Waste Management                                      |        |           |       |
+|                          | Dashboard & Analytics                                 |        |           |       |
+|                          | Content Management                                    |        |           |       |
+|                          | Community Features                                    |        |           |       |
+|                          | Administrative Functions                               |        |           |       |
+|                          | Notification System                                    |        |           |       |
+|                          | User Interface                                        |        |           |       |
+|                          | Data Management                                       |        |           |       |
+|                          | Performance                                          |        |           |       |
+|                          | Error Handling                                       |        |           |       |
+| Non-Functional Testing   | Performance                                          |        |           |       |
+|                          | Usability                                            |        |           |       |
+|                          | Security                                             |        |           |       |
+|                          | Compatibility                                        |        |           |       |
+|                          | Accessibility                                        |        |           |       |
+| Boundary / Edge Cases    |                                                      |        |           |       |
+
+### 6.1 (b) Ssample test cases 
+<img width="1312" height="588" alt="image" src="https://github.com/user-attachments/assets/0dd3f2eb-5fd1-429f-984c-723c36d60b66" />
+
 
 | Category | Manual | Automated | Total |
 |----------|--------|-----------|-------|
