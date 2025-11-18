@@ -195,12 +195,11 @@ The following areas were not included in the testing scope:
 <img width="1312" height="588" alt="image" src="https://github.com/user-attachments/assets/0dd3f2eb-5fd1-429f-984c-723c36d60b66" />
 
 ---
-| Category | Manual | Automated | Total |
 
 
 ### 6.2 (a) Executed Test Cases – Summary Analysis
 
-| Testing Type           | Total Executed | Passed | Failed | Blocked | Remarks |
+| Testing Type           | Total Executed | Passed | Failed | Pass Rate | Remarks |
 |------------------------|----------------|--------|--------|---------|---------|
 | Functional Testing     |                |        |        |         |         |
 | Non-Functional Testing |                |        |        |         |         |
