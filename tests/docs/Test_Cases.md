@@ -93,7 +93,7 @@
 | TC031        | Invalid pickup request (Yesterday’s date)                                                            | System does not allow scheduling for past date                                        | R002    | Negative test case |
 | TC032        | Invalid pickup request (empty Waste Type)                                                            | System shows error indicating Waste Type is required                                  | R002    | Negative test case |
 | TC033        | Invalid pickup request (empty Location)                                                              | System shows error indicating Location is required                                    | R002    | Negative test case |
-| TC034        | Invalid pickup request (Very long text >200 chars)                                                   | System truncates input or shows error for long text                                   | R002    | Negative test case |
+| TC034        | Invalid pickup request (Very long text >200 chars)                                                   | System truncates input or shows error for long text                                   | R006    | Negative test case |
 | TC035        | The system shall prevent scheduling multiple pickups for the same date                               | System prevents creating duplicate pickups for the same date                          | R002    | Negative test case |
 
 
@@ -122,7 +122,7 @@
 | Test Case ID | Objective                                                                     | Expected Result                                                                              | Risk ID | Notes              |
 | ------------ | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------- | ------------------ |
 | TC045        | Verify that the system provides real-time status updates for pickup requests. | Status of each pickup request updates dynamically without requiring page refresh.            | R002    | Positive test case |
-| TC046        | Verify that users receive notifications for pickup request status changes.    | User receives notifications (email, SMS, or in-app) whenever the status of a pickup changes. | R002    | Positive test case |
+| TC046        | Verify that users receive notifications for pickup request status changes.    | User receives notifications (email, SMS, or in-app) whenever the status of a pickup changes. | R010    | Positive test case |
 | TC047        | Verify that users can add feedback after a pickup is completed.               | Users can submit feedback, and the system stores it associated with the completed pickup.    | R002    | Positive test case |
 
 ---
