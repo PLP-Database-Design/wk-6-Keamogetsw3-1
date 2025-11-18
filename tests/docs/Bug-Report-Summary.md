@@ -33,13 +33,15 @@ This document provides a summary of all defects identified during manual and aut
 After registering a new user with a proper Full Name, the profile page displays the username portion of the email (e.g., `user1` from `newuser@test.com`) instead of the Full Name (`New Test User`) provided during registration. This may cause confusion for users, as the system does not reflect the actual name they entered.
 
 #### Steps to Reproduce
-1. Register a new user with:  
+1. Open the CleanCity application in Google Chrome.
+2. Click on Register to register a new profile
+3.  Register a new user with:  
    - **Full Name:** `New Test User`  
    - **Email:** `newuser@test.com`  
    - **Password:** `NewPass123`  
-2. Log in with the newly registered account.  
-3. Navigate to the **User Profile** page.  
-4. Observe that the profile shows the email username instead of the Full Name.
+3. Log in with the newly registered account.  
+4. Navigate to the **User Profile** page.  
+5. Observe that the profile shows the email username instead of the Full Name.
 
 #### Expected Result
 The profile page should display the **Full Name** entered during registration.
