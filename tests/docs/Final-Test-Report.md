@@ -101,7 +101,7 @@ The following areas were not included in the testing scope:
 - **Support and Maintenance**
   - User activity logging and error reporting.
     
-## 4 Testing proccess
+## 4 Test Strategy and Approach
 
 ### 4.1 Test Planning
 - Review project requirements, user stories, and system workflows.
@@ -122,7 +122,7 @@ The following areas were not included in the testing scope:
 ### 4.3 Test Environment Setup
 - Configure the frontend (web application interface).
 - Configure backend services and APIs.
-- Set up the database and load necessary test data.
+- Load necessary test data.
 - Prepare test tools such as GitHub Issues and Browser DevTools.
 - Verify that the test environment is stable and accessible.
 - Conduct a smoke test to confirm readiness.
@@ -137,7 +137,7 @@ The following areas were not included in the testing scope:
 
 ### 4.5 Defect Management
 - Identify and document defects with clear descriptions and reproduction steps.
-- Assign severity levels (Critical, Major, Medium, Minor, Cosmetic).
+- Assign severity levels (Critical, Major, Minor, Cosmetic).
 - Link defects to specific test cases and risk IDs.
 - Retest resolved defects to confirm fixes.
 - Conduct regression testing after each development update.
@@ -153,13 +153,16 @@ The following areas were not included in the testing scope:
 
 ## 5. Test Environment
 
-- **Frontend:** CleanCity Web Application (HTML, CSS, JavaScript)
-- **Backend:** Node.js / Express *(adjust based on actual backend used)*
-- **Database:** MySQL / MongoDB *(adjust according to project)*
+- **Frontend:** CleanCity Web Application (*React App*)
 - **Browsers Tested:** Chrome, Firefox, Edge
 - **Devices Tested:** Windows desktop and Android smartphone
-- **Test Data:** Mix of dummy data and realistic simulated user inputs
-- **Tools Used:** GitHub for defect tracking and test case management, Browser DevTools for debugging
+- **Test Data:** Relevant test data were created to cover a wide range of test scenarios, including valid, invalid and boundary inputs.
+- **Tools Used:**  
+    - **GitHub:** For defect tracking and issue management.  
+    - **GitHub Projects:** For organising and managing test cases and test progress.  
+    - **Browser Developer Tools:** For performance testing, network simulation, and debugging.  
+    - **Selenium:** For executing automated test scripts across supported browsers.  
+    - **NVDA (NonVisual Desktop Access):** For accessibility testing and ensuring compatibility with screen readers.
 
 ---
 
@@ -310,13 +313,13 @@ The following stakeholders have reviewed the CleanCity Software Testing Report a
 
 ### Test Manager
 **Name:** Keamogetswe  
-**Signature:** __________________________  
+**Signature:** _______________KM___________  
 **Date:** ____18th november___________________________
 
 ### Tester
 **Name:** Sally Trizer  and keamogetswe 
 **Signature:** ___sato_______________________  
-**Date:** ____18th november___________________________
+**Date:** ____18th november________KM___________________
 
 ### Risk Analyst
 **Name:** Sally Trizer  
