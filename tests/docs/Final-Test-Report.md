@@ -47,7 +47,6 @@ CleanCity is a web-based platform designed to streamline and modernize waste man
 
 
 ## 3. Scope of Testing
-
 The scope of testing for the CleanCity Waste Pickup Scheduler focused on ensuring that the system meets all functional and non-functional requirements.
 
 ### 3.1 Functional Testing
@@ -55,34 +54,24 @@ Functional testing covered the following areas:
 
 - **Authentication System**
   - User registration, login, logout and role-based access controls.
-
 - **Waste Management**
   - Scheduling and managing waste pickups, tracking request status and notifications.
-
 - **Dashboard & Analytics**
   - Displaying user-specific dashboards, generating analytics and reports, and tracking  achievements.
-
 - **Content Management**
   - Managing blog posts, community feeds and interactive eco-tips.
-
 - **Community Features**
   - Managing user profiles, social interactions and community interaction.
-
 - **Administrative Functions**
   - Viewing and managing user accounts, approving or modifying requests, and moderating content.
-
 - **Notification System**
   - Displaying and managing system notifications and alerts.
-
 - **User Interface**
   - Ensuring responsive design, accessibility compliance, intuitive navigation and proper form validation.
-
 - **Data Management**
   - Storing and retrieving user data.
-
 - **Performance**
   - Monitoring response times and ensuring browser compatibility.
-
 - **Error Handling**
   - Displaying user-friendly error messages and preventing invalid form submissions.
 
@@ -90,19 +79,14 @@ Functional testing covered the following areas:
 
 ### 3.2 Non-Functional Testing
 Non-functional testing focused on the following:
-
 - **Performance**
   - Assessing page load times, responsiveness and behaviour under different network conditions.
-
 - **Usability**
   - Evaluating overall user experience, accessibility and navigation.
-
 - **Security**
   - Validating authentication, role-based access and input validation to protect against vulnerabilities.
-
 - **Compatibility**
   - Ensuring the system works correctly across multiple devices, screen sizes and supported browsers.
-
 - **Accessibility**
   - Confirming compliance with accessibility standards, keyboard navigation and screen reader support.
 
@@ -110,16 +94,13 @@ Non-functional testing focused on the following:
 
 ### 3.3 Areas Not Covered
 The following areas were not included in the testing scope:
-
 - **Data Management**
   - Sanitisation of user-generated content.
-
 - **Performance / Compatibility**
   - Testing on Safari browser.
-
 - **Support and Maintenance**
   - User activity logging and error reporting.
-
+    
 ## 4 Testing proccess
 
 ### 4.1 Test Planning
