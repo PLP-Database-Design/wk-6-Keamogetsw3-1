@@ -45,7 +45,7 @@ The purpose of this report is to validate that the application meets its functio
 |--------------|-------------------------------------------|------------|---------------------------------------|------------------------------|---------|-----------|---------|----------------|-----------|
 | TC021      | Verify logout       | Manual| User should be logged out successfully | User successfully logged out  | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-12 |
 | TC022      | Verify user cannot access dashboard after logout  | Manual | Attempting to access dashboard redirects to login page  | User redirected to login page | Pass ✅ | — | —  | Keamogetswe | 2025-11-12 |
-| TC023      | Verify scheduling a pickup without login  | Manual| System should restrict access and redirect to login page | Pick-up succefully submitted   | Fail ❌ |[D-004](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)        | Major       | Keamogetswe | 2025-11-12 |
+| TC023      | Verify scheduling a pickup without login  | Manual| System should restrict access and redirect to login page | Pick-up succefully submitted   | Fail ❌ |[D-004](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)        | Critical      | Keamogetswe | 2025-11-12 |
 | TC024      | Verify user can successfully login then log out | Automated | User should be logged out successfully | |  |  |  |  |  |
 
 ---
