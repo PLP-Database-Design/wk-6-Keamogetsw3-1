@@ -10,36 +10,38 @@
 ## 🔍 Overview
 
 This document provides a summary of all defects identified during manual and automated testing of the CleanCity application.  
-
+---
 ## ✅ Expected Behaviors
 
-# 🐞 CLEAN CITY — COMPLETE BUG REPORT LIST (16 BUGS)
-
+1. Allow users to register and login to schedule waste pickup requests with valid dates, waste types and instructions.
+2. Allow admins to login 
 ---
-
-## 🐞 BUG-001  
+## 🐛 Reported Bugs
+---
+### 🐞 BUG-001
 **Title:** Profile shows email username instead of Full Name after registration  
-**GitHub Link:** D-001  
+**GitHub Link:**   
 **Requirement Affected:** User Registration – Profile Display  
-**Severity:** Cosmetic  
+**Severity:** Comestic  
 **Environment:** Development, Google Chrome, Windows 10  
 
-### Summary  
-The profile page displays the email username instead of the Full Name entered during registration, causing confusion and reducing profile accuracy.
+#### Summary
+After registering a new user with a proper Full Name, the profile page displays the username portion of the email (e.g., `user1` from `newuser@test.com`) instead of the Full Name (`New Test User`) provided during registration. This may cause confusion for users, as the system does not reflect the actual name they entered.
 
-### Steps to Reproduce  
-1. Register a new user with:  
-   - Full Name: New Test User  
-   - Email: newuser@test.com  
-   - Password: NewPass123  
-2. Log in.  
-3. Open the User Profile page.  
+#### Steps to Reproduce
+1. Register a new user with:
+   - **Full Name:** `New Test User`
+   - **Email:** `newuser@test.com`
+   - **Password:** `NewPass123`
+2. Log in with the newly registered account.  
+3. Navigate to the **User Profile** page.  
+4. Observe that the profile shows the email username instead of the Full Name.
 
-### Expected Result  
-The profile page should display the Full Name entered during registration.
+#### Expected Result
+The profile page should display the **Full Name** entered during registration.
 
-### Actual Result  
-The system displays the username portion of the email instead of the Full Name.
+#### Actual Result
+The profile page displays the **username derived from the email** instead of the Full Name.
 
 ---
 
