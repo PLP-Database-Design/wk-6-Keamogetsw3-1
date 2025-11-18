@@ -564,6 +564,80 @@ Feedback should be stored and associated with the completed pickup request.
 Users can add feedback, but it is not associated with the completed pickup.
 
 
+# CleanCity Bug Reports – Dashboard & Analytics Module
+
+### 🐞 BUG-023
+- **Title:** Dashboard does not display personalized information for logged-in users  
+- **GitHub Link:** [D023](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/72)  
+- **Requirement Affected:** Dashboard & Analytics Requirements  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The user dashboard fails to display personalized information such as recent pickup requests, upcoming scheduled pickups, achievement badges, and quick action buttons. This prevents users from accessing relevant information and negatively impacts the user experience.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in with a registered user account.  
+3. Navigate to **Dashboard**.  
+4. Observe that no personalized information is displayed.  
+
+#### Expected Result
+The dashboard should show personalized content including recent pickups, upcoming pickups, achievement badges, and quick action buttons.  
+
+#### Actual Result
+Dashboard does not show any personalized information.
+
+---
+
+### 🐞 BUG-024
+- **Title:** Environmental impact metrics not displayed on dashboard  
+- **GitHub Link:** [D024](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/73)  
+- **Requirement Affected:** Dashboard & Analytics Requirements  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The dashboard fails to calculate and display the user's environmental impact metrics, including total waste diverted, CO2 emissions saved, and trees equivalent saved. This prevents users from seeing meaningful analytics.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in with a registered user account.  
+3. Navigate to **Dashboard**.  
+4. Observe that no environmental impact metrics are displayed.  
+
+#### Expected Result
+The dashboard should calculate and display total waste diverted, CO2 emissions saved, and trees equivalent saved.  
+
+#### Actual Result
+None of the impact metrics is shown.
+
+---
+
+### 🐞 BUG-025
+- **Title:** Badges for achievements display incorrectly on dashboard  
+- **GitHub Link:** [D025](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/74)  
+- **Requirement Affected:** Dashboard & Analytics Requirements  
+- **Severity:** Cosmetic  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+While badges are displayed on the dashboard, there may be minor presentation or association issues affecting how achievements appear to the user. This does not prevent users from seeing their achievements but may affect clarity or styling.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in with a registered user account.  
+3. Navigate to **Dashboard**.  
+4. Observe the display of achievement badges.  
+
+#### Expected Result
+Badges should be clearly displayed, associated correctly with achievements, and visually consistent.  
+
+#### Actual Result
+Badges are displayed on the dashboard, but minor issues may exist in presentation or association.
+
+
+
 ### 🐞 BUG-012
 - **Title:** Waste type filter returns incorrect results  
 - **GitHub Link:** D-012  
