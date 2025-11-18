@@ -317,11 +317,12 @@ The purpose of this report is to validate that the application meets its functio
 
 ---
 #### Table 14.2: Form Validation Testing
-| Test Case ID | Objective                                                         | Test Type | Expected Result                                                                                                        | Actual Result | Status | Defect ID | Severity | Tester | Date |
-| ------------ | ----------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
-| TC132        | Verify that the system validates forms in real-time               | Automated | Form fields are validated instantly as the user types or selects options; invalid input triggers immediate feedback    |               |        |           | High     |        |      |
-| TC133        | Verify that the system prevents form submission with invalid data | Automated | Form cannot be submitted when required fields are empty or invalid; user is notified of errors                         |               |        |           | High     |        |      |
-| TC134        | Verify that the system highlights validation errors clearly       | Automated | Invalid fields are visually highlighted (e.g., red border, error message) so the user can identify and fix them easily |               |        |           | Medium   |        |      |
+| Test Case ID | Objective                                                         | Test Type | Expected Result                                                                                                        | Actual Result                                                               | Status | Defect ID | Severity | Tester      | Date       |
+| ------------ | ----------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------ | --------- | -------- | ----------- | ---------- |
+| TC132        | Verify that the system validates forms in real-time               | Automated | Form fields are validated instantly as the user types or selects options; invalid input triggers immediate feedback    | Form fields validated instantly; invalid input triggered immediate feedback | Pass ✅ | —         | —        | Keamogetswe | 2025-11-14 |
+| TC133        | Verify that the system prevents form submission with invalid data | Automated | Form cannot be submitted when required fields are empty or invalid; user is notified of errors                         | Form submission blocked for invalid/empty fields; error messages displayed  | Pass ✅ | —         | —        | Keamogetswe | 2025-11-14 |
+| TC134        | Verify that the system highlights validation errors clearly       | Automated | Invalid fields are visually highlighted (e.g., red border, error message) so the user can identify and fix them easily | Invalid fields highlighted with red border and error messages displayed     | Pass ✅ | —         | —        | Keamogetswe | 2025-11-14 |
+
 
 ----
 # Boundary Testing and Edge Case Test execution report
