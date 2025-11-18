@@ -208,8 +208,9 @@ The following areas were not included in the testing scope:
 
 
 ---
-## 6.2 (b) sample test cases 
-<img width="1312" height="588" alt="image" src="https://github.com/user-attachments/assets/0dd3f2eb-5fd1-429f-984c-723c36d60b66" />
+## 6.2 (b) Sample test cases execution report
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bd1a5fdb-4ab9-429f-b575-907df7ba44ea" />
+
 
 
 ## 7. Defect Summary
