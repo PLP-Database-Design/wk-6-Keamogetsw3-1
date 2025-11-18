@@ -37,8 +37,57 @@ CleanCity is a web-based platform designed to streamline and modernize waste man
 - Load testing beyond a certain threshold.
 
 ---
+## 4 Testing proccess
 
-## 4. Test Environment
+### 4.1 Test Planning
+- Review project requirements, user stories, and system workflows.
+- Identify testing scope, objectives, and constraints.
+- Define test strategy (functional, non-functional, UI, accessibility, performance, compatibility).
+- Determine required resources: testers, tools, environments, and test data.
+- Estimate timelines and create the test schedule.
+- Identify risks and plan mitigation strategies.
+- Prepare the Test Plan document for approval.
+
+### 4.2 Test Design
+- Create detailed test scenarios for all modules.
+- Develop manual test cases with preconditions, steps, and expected results.
+- Map test cases to requirements (RTM) for traceability.
+- Identify test data needed for both valid and invalid inputs.
+- Review and refine test cases to ensure coverage and accuracy.
+
+### 4.3 Test Environment Setup
+- Configure the frontend (web application interface).
+- Configure backend services and APIs.
+- Set up the database and load necessary test data.
+- Prepare test tools such as GitHub Issues and Browser DevTools.
+- Verify that the test environment is stable and accessible.
+- Conduct a smoke test to confirm readiness.
+
+### 4.4 Test Execution
+- Execute test cases step-by-step and record actual results.
+- Validate functional behavior: registration, login, and pickup scheduling.
+- Perform non-functional tests: usability, accessibility, performance, and security checks.
+- Execute cross-browser and mobile responsiveness tests.
+- Log all defects discovered into GitHub with severity and risk levels.
+- Track defect progress and communicate with the development team.
+
+### 4.5 Defect Management
+- Identify and document defects with clear descriptions and reproduction steps.
+- Assign severity levels (Critical, Major, Medium, Minor, Cosmetic).
+- Link defects to specific test cases and risk IDs.
+- Retest resolved defects to confirm fixes.
+- Conduct regression testing after each development update.
+- Update defect status (Open, In Progress, Resolved, Closed) in GitHub.
+
+### 4.6 Test Reporting
+- Summarize test execution results, coverage, and defect trends.
+- Provide defect summary reports showing severity, category, and progress.
+- Highlight risks, blockers, and unresolved issues.
+- Provide recommendations for system stability and user experience improvements.
+- Prepare the final Test Summary Report for project stakeholders.
+
+
+## 5. Test Environment
 
 - **Frontend:** CleanCity Web Application (HTML, CSS, JavaScript)
 - **Backend:** Node.js / Express *(adjust based on actual backend used)*
@@ -50,7 +99,7 @@ CleanCity is a web-based platform designed to streamline and modernize waste man
 
 ---
 
-## 5. Test Execution Summary
+## 6 Test Execution Summary
 
 ### Planned Test Cases
 
@@ -102,11 +151,11 @@ CleanCity is a web-based platform designed to streamline and modernize waste man
 | Boundary / Edge Cases | 2+ | 0 | 0 | Pending |
 
 ---
-## 5 b. sample test cases 
+## 6 b. sample test cases 
 <img width="1312" height="588" alt="image" src="https://github.com/user-attachments/assets/0dd3f2eb-5fd1-429f-984c-723c36d60b66" />
 
 
-## 6. Defect Summary
+## 7. Defect Summary
 
 ### Functional Test Defects
 
@@ -143,7 +192,7 @@ CleanCity is a web-based platform designed to streamline and modernize waste man
 
 ---
 
-## 7. Defect Summary by Category
+## 7b. Defect Summary by Category
 
 Functional testing identified 7 defects, including 2 critical, 1 major, 3 medium, and 1 cosmetic. Non-functional testing revealed 2 defects, 1 major and 1 medium. Accessibility testing included 2 major defects, while cross-browser compatibility testing identified 2 defects (1 major, 1 minor). In total, 13 defects were reported. Most critical defects relate to login and authentication issues, while medium defects primarily involve scheduling and input validations. Non-functional and accessibility defects require UI and compliance fixes. Continuous monitoring is recommended for pending and in-progress defects to ensure timely resolution.
 
