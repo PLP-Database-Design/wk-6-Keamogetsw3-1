@@ -17,7 +17,7 @@ This document provides a summary of all defects identified during manual and aut
 2. Allow admins to login 
 ---
 ## 🐛 Reported Bugs
----
+
 ### 🐞 BUG-001
 **Title:** Profile shows email username instead of Full Name after registration  
 **GitHub Link:** [D001](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/28)
