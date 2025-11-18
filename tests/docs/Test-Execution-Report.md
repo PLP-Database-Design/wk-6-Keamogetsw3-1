@@ -288,19 +288,20 @@ The purpose of this report is to validate that the application meets its functio
 ## **13. 🚀 Performance Requirements**
 ---
 #### Table 13.1: Response Time Test case execusion report
-| Test Case ID | Objective                                                                           | Test Type | Expected Result                                                                      | Actual Result | Status | Defect ID | Severity | Tester | Date |
-| ------------ | ----------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ | ------------- | ------ | --------- | -------- | ------ | ---- |
-| TC122        | Verify that the system loads pages within 3 seconds on standard internet connection | Automated | All pages load within 3 seconds under normal network conditions                      |               |        |           | High     |        |      |
-| TC123        | Verify that the system responds to user interactions within 1 second                | Automated | All user interactions (clicks, form submissions, navigation) respond within 1 second |               |        |           | High     |        |      |
+| Test Case ID | Objective                                                  | Test Type | Expected Result               | Actual Result                                                   | Status | Defect ID | Severity | Tester      | Date       |
+| ------------ | ---------------------------------------------------------- | --------- | ----------------------------- | --------------------------------------------------------------- | ------ | --------- | -------- | ----------- | ---------- |
+| TC122        | Verify that the system loads pages within 3s               | Manual    | All pages load within 3s      | FCP: 1.9s, LCP: 3.0s, Speed Index: 5.8s → page loaded within 3s | Pass ✅ | —         | —        | Keamogetswe | 2025-11-14 |
+| TC123        | Verify that system responds to user interactions within 1s | Manual    | All interactions respond ≤ 1s | Total Blocking Time: 1,720 ms → exceeds 1s  | Fail ❌ | [D057](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/103)  | Major| Keamogetswe | 2025-11-14 |
+
 
 
 13.2 CROSS BROWSER TESTING
 ---
 | Test Case ID | Objective | Test Type | Expected Result | Actual Result | Status | Defect ID | Severity | Tester | Date |
 |--------------|-----------|-----------|-----------------|---------------|--------|-----------|----------|--------|------|
-| TC124 | Verify system works on Google Chrome (latest 2 versions) | Non-Functional | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer  | 2025-11-11 |
-| TC125 | Verify system works on Mozilla Firefox (latest 2 versions) | Non-Functional | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | Sally Trizer | 2025-11-12  |
-| TC16 | Verify system works on Microsoft Edge (latest 2 versions) | Non-Functional | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer | 2025-11-12 |
+| TC124 | Verify system works on Google Chrome (latest 2 versions) | Manual | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer  | 2025-11-11 |
+| TC125 | Verify system works on Mozilla Firefox (latest 2 versions) | Manual| Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | Sally Trizer | 2025-11-12  |
+| TC16 | Verify system works on Microsoft Edge (latest 2 versions) |  Manual| Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer | 2025-11-12 |
 
 
 ---
@@ -309,11 +310,11 @@ The purpose of this report is to validate that the application meets its functio
 #### Table 14.1: User-Friendly Errors Testing
 | Test Case ID | Objective                                           | Test Type | Expected Result                                                                                                 | Actual Result | Status | Defect ID | Severity | Tester | Date |
 | ------------ | --------------------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
-| TC127      | Verify system handles network errors on Fast 3G     | Automated | Network errors under Fast 3G connection are handled gracefully; user sees a clear message and can retry actions |               |        |           | High     |        |      |
-| TC128      | Verify system handles network errors on Slow 3G     | Automated | Network errors under Slow 3G connection are handled gracefully; user sees a clear message and can retry actions |               |        |           | High     |        |      |
-| TC129      | Verify system handles Offline / no network scenario | Automated | When offline, system shows a user-friendly offline message and prevents actions that require network            |               |        |           | High     |        |      |
-| TC130        | Verify that the system displays clear, actionable error messages     | Automated | All error messages are easy to understand and provide actionable guidance to the user                                 |               |        |           | High     |        |      |
-| TC131        | Verify that the system provides guidance for resolving common issues | Automated | For common issues (e.g., invalid input, login failure), the system shows guidance or help tips to resolve the problem |               |        |           | High     |        |      |
+| TC127      | Verify system handles network errors on Fast 3G     | Automated | Network errors under Fast 3G connection are handled gracefully|               | Pass ✅  |           |  |        |      |
+| TC128      | Verify system handles network errors on Slow 3G     | Automated | Network errors under Slow 3G connection are handled gracefully|      Fails to load under slow internet connections  |  Fail ❌ | [D058](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/104)  | Major | Sally Trizer | 2025-11-16|
+| TC129      | Verify system handles Offline / no network scenario | Automated | When offline, system shows a user-friendly offline message and prevents actions that require network            |               |  Pass ✅   |           |  |        |      |
+| TC130        | Verify that the system displays clear, actionable error messages     | Automated | All error messages are easy to understand and provide actionable guidance to the user                                 |               |  Pass ✅  |           |  |        |      |
+| TC131        | Verify that the system provides guidance for resolving common issues | Manul| For common issues (e.g., invalid input, login failure), the system shows guidance or help tips to resolve the problem |               |  Pass ✅ |           |   |        |      |
 
 ---
 #### Table 14.2: Form Validation Testing
