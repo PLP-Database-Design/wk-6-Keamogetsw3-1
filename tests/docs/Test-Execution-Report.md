@@ -263,7 +263,7 @@ The purpose of this report is to validate that the application meets its functio
 | TC100  | Verify zooming to 200% does not break layout | Manual  | Page remains usable and responsive at 200% zoom | When zoomed to 200%, the menu enlarges excessively, pushing or hiding other content. Only the menu is visible at this zoom level | Fail ❌ | [D-010](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/59)  | Medium  | Keamogetswe | 2025-11-14 |
 | TC110  | Verift that the system support keyboard navigation | Manual | All fields accessible and focusable using Tab and Enter | Tabbing works smoothly and Enter button functions correctly |  Pass ✅ | — | —  | Sally Trizer | 2025-11-12 |
 | TC111  | Verify all meaningful images have descriptive alt text | Manual  | Images have descriptive alt text | alt attribute missing for awareness page images | Fail ❌ | [D-011](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/59)  | Medium | Sally Trizer | 2025-11-12 |
-| TC112  | Verify screen reader announces Form Field Labels correctly | Manual | Screen reader announce each field correctly | |  | — | —  |  Sally Trizer |  |
+| TC112  | Verify screen reader announces Form Field Labels correctly | Manual | Screen reader announce each field correctly | NVDA can announce the field correctly | Pass ✅ | — | —  |Keamogetswe| 2025-11-14 |
 | TC113  | Verify contrast ratio meets WCAG 2.1 AA (minimum 4.5:1 for text) | Lighthouse - Dev Tools | All text and UI elements meet required contrast ratios | Low Contrast Text Fails WCAG 2.1 AA | Fail ❌ | [D-009](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) | Major | Keamogetswe | 2025-11-14 |
 
 ---
