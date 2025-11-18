@@ -732,7 +732,6 @@ Users should be able to upload a profile picture successfully, and it should dis
 Uploading an image returns a 500 server error; the profile picture is not saved or displayed in the feed.
 
 ---
-# CleanCity Bug Reports – Community Feed Module
 
 ### 🐞 BUG-030
 - **Title:** Users cannot follow or unfollow other community members  
@@ -956,6 +955,318 @@ Admin cannot suspend or delete user accounts; system does not update status.
 
 ---
 
+### 🐞 BUG-039
+- **Title:** Admins cannot moderate community posts and comments  
+- **GitHub Link:** [D039](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/88)  
+- **Requirement Affected:** Administration – Content Moderation  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Admins are unable to view, review, or manage posts/comments from the moderation panel. This blocks moderation activities, reducing the ability to manage inappropriate content in the community feed.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in as an admin user.  
+3. Navigate to **Community Feed → Moderation Panel**.  
+4. Attempt to moderate posts or comments.  
+5. Observe that actions fail and moderation is not possible.  
+
+#### Expected Result
+Admins should be able to view and manage all posts/comments through the moderation panel.  
+
+#### Actual Result
+Admins cannot moderate posts or comments.
+
+---
+
+### 🐞 BUG-040
+- **Title:** Admins cannot delete inappropriate content  
+- **GitHub Link:** [D040](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/89)  
+- **Requirement Affected:** Administration – Content Moderation  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Admins are unable to delete inappropriate posts or comments. Attempts to delete content fail, leaving inappropriate content visible publicly.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in as an admin user.  
+3. Navigate to **Community Feed → Moderation Panel**.  
+4. Attempt to delete a post or comment.  
+5. Observe that the deletion action fails.  
+
+#### Expected Result
+Admins should be able to delete inappropriate posts/comments and remove them from public view.  
+
+#### Actual Result
+Admin cannot delete posts or comments.
+
+---
+
+### 🐞 BUG-041
+- **Title:** User flags/reports do not appear in admin moderation queue  
+- **GitHub Link:** [D041](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/90)  
+- **Requirement Affected:** Administration – Content Moderation  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+When users flag or report inappropriate posts/comments, the reports do not appear in the admin moderation queue. This prevents admins from reviewing reported content and enforcing community rules.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in as a regular user.  
+3. Flag or report a post/comment in the Community Feed.  
+4. Log in as an admin user and navigate to the **Moderation Panel**.  
+5. Observe that the flagged report does not appear.  
+
+#### Expected Result
+Reports submitted by users should appear in the admin moderation queue for review.  
+
+#### Actual Result
+User reports do not appear in the moderation queue.
+
+---
+
+### 🐞 BUG-042
+- **Title:** Admins cannot publish new blog posts  
+- **GitHub Link:** [D042](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/91)  
+- **Requirement Affected:** Content Management Requirements – Blog System  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Admins are unable to publish new blog posts. Attempts to create and save a blog post fail, preventing content from appearing in the blog list.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in as an admin user.  
+3. Navigate to **Blog Management → Create Post**.  
+4. Enter blog content and attempt to publish.  
+5. Observe that the post does not appear in the blog list.  
+
+#### Expected Result
+Admins should be able to create and publish blog posts, and posts should appear in the blog list.  
+
+#### Actual Result
+Blog posts fail to publish; content does not appear in the blog list.
+---
+### 🐞 BUG-043
+- **Title:** Users cannot mark notifications as read  
+- **GitHub Link:** [D043](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/92)  
+- **Requirement Affected:** Notifications  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+When users attempt to mark notifications as read, the notifications remain in the unread state and the unread counter does not update. This affects usability and prevents users from accurately tracking which notifications have been addressed.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in as a registered user.  
+3. Click on the notification bell to view notifications.  
+4. Attempt to mark one or more notifications as read.  
+5. Observe that the notifications remain in the unread state and the unread counter does not decrease.  
+
+#### Expected Result
+Selected notifications should change to a "read" state and the unread counter should update accordingly.  
+
+#### Actual Result
+Notifications cannot be marked as read, and the unread counter does not update.
+
+---
+
+### 🐞 BUG-044
+- **Title:** Contextual help and tooltips are missing  
+- **GitHub Link:** [D044](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/93)  
+- **Requirement Affected:** Support & Maintenance – Help System  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Users are unable to see contextual help or tooltips in the application. This reduces usability and may confuse new or infrequent users about functionality.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Navigate to different sections of the application.  
+3. Hover over icons, buttons, or interactive elements.  
+4. Observe that no contextual help or tooltips appear.  
+
+#### Expected Result
+Users should see contextual help and tooltips where applicable.  
+
+#### Actual Result
+Contextual help and tooltips are missing.
+
+---
+
+### 🐞 BUG-045
+- **Title:** FAQ section is missing or inaccessible  
+- **GitHub Link:** [D045](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/94)  
+- **Requirement Affected:** Support & Maintenance – Help System  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The FAQ section is not visible or cannot be accessed by users. This prevents users from finding answers to common questions independently.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Navigate to the **Help / FAQ** section.  
+3. Attempt to access frequently asked questions.  
+4. Observe that the FAQ section is missing or inaccessible.  
+
+#### Expected Result
+Users should be able to access the FAQ section and read answers to common questions.  
+
+#### Actual Result
+FAQ section is missing or cannot be accessed.
+
+---
+
+### 🐞 BUG-046
+- **Title:** Support contact information is not visible  
+- **GitHub Link:** [D046](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/95)  
+- **Requirement Affected:** Support & Maintenance – Help System  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Users cannot view support contact information, including email, phone, or chat options. This prevents users from reaching out for help when needed.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Navigate to the **Help / Support** section.  
+3. Attempt to find contact information for support.  
+4. Observe that email, phone, or chat details are not displayed.  
+
+#### Expected Result
+Users should see complete support contact information, including email, phone, and chat options.  
+
+#### Actual Result
+Support contact information is missing or incomplete.
+----
+# CleanCity Bug Reports – Support & Help System
+
+### 🐞 BUG-044
+- **Title:** Contextual help and tooltips are missing  
+- **GitHub Link:** [D044](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/93)  
+- **Requirement Affected:** Support & Maintenance – Help System  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Users are unable to see contextual help or tooltips in the application. This reduces usability and may confuse new or infrequent users about functionality.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Navigate to different sections of the application.  
+3. Hover over icons, buttons, or interactive elements.  
+4. Observe that no contextual help or tooltips appear.  
+
+#### Expected Result
+Users should see contextual help and tooltips where applicable.  
+
+#### Actual Result
+Contextual help and tooltips are missing.
+
+---
+
+### 🐞 BUG-045
+- **Title:** FAQ section is missing or inaccessible  
+- **GitHub Link:** [D045](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/94)  
+- **Requirement Affected:** Support & Maintenance – Help System  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The FAQ section is not visible or cannot be accessed by users. This prevents users from finding answers to common questions independently.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Navigate to the **Help / FAQ** section.  
+3. Attempt to access frequently asked questions.  
+4. Observe that the FAQ section is missing or inaccessible.  
+
+#### Expected Result
+Users should be able to access the FAQ section and read answers to common questions.  
+
+#### Actual Result
+FAQ section is missing or cannot be accessed.
+
+---
+
+### 🐞 BUG-046
+- **Title:** Support contact information is not visible  
+- **GitHub Link:** [D046](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/95)  
+- **Requirement Affected:** Support & Maintenance – Help System  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Users cannot view support contact information, including email, phone, or chat options. This prevents users from reaching out for help when needed.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Navigate to the **Help / Support** section.  
+3. Attempt to find contact information for support.  
+4. Observe that email, phone, or chat details are not displayed.  
+
+#### Expected Result
+Users should see complete support contact information, including email, phone, and chat options.  
+
+#### Actual Result
+Support contact information is missing or incomplete.
+
+---
+### 🐞 BUG-048
+- **Title:** Breadcrumbs do not display full page hierarchy  
+- **GitHub Link:** -  
+- **Requirement Affected:** User Interface Requirements – Navigation  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+On complex pages, the breadcrumb navigation only shows **"Profile"** when editing a page, and the full hierarchy of the page is missing. This affects user orientation and navigation clarity.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in as a user.  
+3. Navigate to a complex page (e.g., profile editing with nested sections).  
+4. Observe the breadcrumb displayed at the top of the page.  
+
+#### Expected Result
+Breadcrumbs should display the full, accurate hierarchy of the current page.  
+
+#### Actual Result
+Breadcrumb shows only **"Profile"**, and the hierarchy is missing.
+
+---
+
+### 🐞 BUG-049
+- **Title:** Search bar does not return results or apply filters  
+- **GitHub Link:** -  
+- **Requirement Affected:** User Interface Requirements – Navigation  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The search bar and filters do not function correctly. Entering a search query or selecting filters does not update the article list, preventing users from finding content efficiently.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Navigate to the articles or content listing page.  
+3. Enter a query in the search bar or apply filters.  
+4. Observe the results displayed.  
+
+#### Expected Result
+Search results and filters should update dynamically based on user input.  
+
+#### Actual Result
+Search queries and filters have no effect; the article list remains unchanged.
+---
 
 ### 🐞 BUG-012
 - **Title:** Waste type filter returns incorrect results  
