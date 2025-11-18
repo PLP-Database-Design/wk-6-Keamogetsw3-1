@@ -40,28 +40,86 @@ As the KNS software testing team, our primary objective is to ensure that the Cl
 - Validate the system’s security, usability and compatibility across devices.
 - Ensure the CleanCity application is fully ready for deployment.  
 
----
 
 ## 2. Overview of the CleanCity System
 
 CleanCity is a web-based platform designed to streamline and modernize waste management operations for residents, waste collectors, and administrators. The system allows users to report waste issues, request collection services, track the status of their submissions, and communicate directly with the management team. Administrators can monitor reports, assign tasks, update progress, and analyze waste trends. The platform aims to improve city cleanliness, enhance reporting accuracy, reduce response time, and promote transparency and accountability in urban waste management. 
 
----
 
 ## 3. Scope of Testing
 
-**Included:**
-- Test all core CleanCity features: registration, login, and waste collection requests.
-- Validate admin dashboards and data management processes.
-- Perform functional, non-functional, UI, usability, security, and compatibility testing.
-- Test across multiple devices and browsers.
-- Validate APIs, data accuracy, error handling, and system responses.
-- Assess performance under normal, peak, and extreme conditions to ensure full reliability and requirement compliance.
+The scope of testing for the CleanCity Waste Pickup Scheduler focused on ensuring that the system meets all functional and non-functional requirements.
 
-**Excluded:**
-- Load testing beyond a certain threshold.
+### 3.1 Functional Testing
+Functional testing covered the following areas:
+
+- **Authentication System**
+  - User registration, login, logout and role-based access controls.
+
+- **Waste Management**
+  - Scheduling and managing waste pickups, tracking request status and notifications.
+
+- **Dashboard & Analytics**
+  - Displaying user-specific dashboards, generating analytics and reports, and tracking  achievements.
+
+- **Content Management**
+  - Managing blog posts, community feeds and interactive eco-tips.
+
+- **Community Features**
+  - Managing user profiles, social interactions and community interaction.
+
+- **Administrative Functions**
+  - Viewing and managing user accounts, approving or modifying requests, and moderating content.
+
+- **Notification System**
+  - Displaying and managing system notifications and alerts.
+
+- **User Interface**
+  - Ensuring responsive design, accessibility compliance, intuitive navigation and proper form validation.
+
+- **Data Management**
+  - Storing and retrieving user data.
+
+- **Performance**
+  - Monitoring response times and ensuring browser compatibility.
+
+- **Error Handling**
+  - Displaying user-friendly error messages and preventing invalid form submissions.
 
 ---
+
+### 3.2 Non-Functional Testing
+Non-functional testing focused on the following:
+
+- **Performance**
+  - Assessing page load times, responsiveness and behaviour under different network conditions.
+
+- **Usability**
+  - Evaluating overall user experience, accessibility and navigation.
+
+- **Security**
+  - Validating authentication, role-based access and input validation to protect against vulnerabilities.
+
+- **Compatibility**
+  - Ensuring the system works correctly across multiple devices, screen sizes and supported browsers.
+
+- **Accessibility**
+  - Confirming compliance with accessibility standards, keyboard navigation and screen reader support.
+
+---
+
+### 3.3 Areas Not Covered
+The following areas were not included in the testing scope:
+
+- **Data Management**
+  - Sanitisation of user-generated content.
+
+- **Performance / Compatibility**
+  - Testing on Safari browser.
+
+- **Support and Maintenance**
+  - User activity logging and error reporting.
+
 ## 4 Testing proccess
 
 ### 4.1 Test Planning
