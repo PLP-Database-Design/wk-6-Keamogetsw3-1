@@ -199,21 +199,38 @@ Functional testing identified 7 defects, including 2 critical, 1 major, 3 medium
 ## 8. some of the issues  raised
 <img width="1308" height="540" alt="image" src="https://github.com/user-attachments/assets/7593d44d-efcd-4e3b-b043-be54b286be19" />
 
-## 9. Overall status
-# Overall Summary
+# 9. Overall status
+## Overall Summary
 
-## 1. Testing Summary
+. Testing Summary
 The CleanCity system underwent extensive testing across all major modules, with over 120 planned test cases executed. Testing covered functional areas such as registration, login, pickup scheduling, dashboard management, and community features. Several critical and major defects were discovered, especially in authentication, request management, and scheduling functionality. Non-functional testing also revealed issues in UI responsiveness and accessibility. Overall, testing provided strong coverage of system behavior and usability across different browsers and devices.
 
-## 2. Quality Assessment
+ Quality Assessment
 The overall quality of the system is improving, but it is not yet ready for deployment. Critical defects affecting login security, data validation, and request workflows reduce the stability and reliability of the application. Medium-level issues also impact user experience, particularly in scheduling and interface handling. While core workflows function conceptually, further refinement and bug resolution are required. The structure of the system shows strong potential once major issues are addressed.
 
-## 3. Risk Assessment
-The main risks identified include authentication vulnerabilities, acceptance of invalid data, incomplete validation checks, and inconsistent UI behavior. These issues may lead to security exposures, incorrect service requests, and negative user experiences. Additional risks include poor accessibility compliance and uncertain performance under heavy load. All risks have been documented and tied to severity levels and related test cases to guide the mitigation process.
+ Risk Assessment
+- Authentication vulnerabilities that allow invalid or unregistered users to log in.
+- Acceptance of invalid data, including pickup dates and oversized input fields.
+- Missing or incomplete validation across critical workflows.
+- UI inconsistencies across devices and screen sizes.
+- Accessibility issues such as low contrast text and unresponsive navigation.
+- Potential performance issues under increased system load.
+- Incomplete backend features causing test blocks and pending cases.
+- Risk of incorrect or delayed waste pickup due to flawed request management logic.
 
-## 4. Release Recommendation
-Based on current results, the system **should not be released** in its current state. Critical and major defects must be resolved and retested before deployment. Key priorities for developers include fixing login validation, improving request handling logic, refining UI responsiveness, and completing missing backend functionalities. A full regression testing cycle will be required once fixes are implemented. Only after these actions can the system be considered ready for a reliable and stable release.
 
-## 5. Testing Challenges
-The testing process encountered several challenges, including instability within the test environment, delayed defect resolution, and incomplete or partially implemented system modules. Some admin features were unavailable during testing, leading to pending test cases. UI responsiveness varied significantly across devices, requiring additional rechecks. Despite these challenges, the testing team maintained detailed documentation, efficient defect tracking, and continuous communication with developers to support system improvement.
+
+ Release Recommendation
+Based on current results, the system **SHOULD NOT BE RELEASED** in its current state. Critical and major defects must be resolved and retested before deployment. Key priorities for developers include fixing login validation, improving request handling logic, refining UI responsiveness, and completing missing backend functionalities. A full regression testing cycle will be required once fixes are implemented. Only after these actions can the system be considered ready for a reliable and stable release.
+
+
+ Testing Challenges
+- Unstable test environment leading to inconsistent test results.
+- Some system modules were still under development, causing incomplete or pending test cases.
+- Delayed bug fixes slowed down regression testing cycles.
+- Limited access to certain admin functionalities during the testing period.
+- UI responsiveness varied across devices, requiring repeated cross-device checks.
+- Difficulty reproducing certain defects due to intermittent system behavior.
+- Lack of complete API documentation, making backend validation slower.
+- Time constraints impacting the depth of non-functional and edge-case testing.
 
