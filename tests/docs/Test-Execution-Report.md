@@ -105,9 +105,9 @@ The purpose of this report is to validate that the application meets its functio
 #### Table 3.1:
 | Test Case ID | Objective                                                                              | Test Type | Expected Result                                                                                                   | Actual Result                                                       | Status | Defect ID | Severity | Tester      | Date       |
 | ------------ | -------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------ | --------- | -------- | ----------- | ---------- |
-| TC048        | Verify that the user dashboard displays personalized information for logged-in users   | Manual    | Dashboard shows recent pickup requests, upcoming scheduled pickups, achievement badges, and quick action buttons  | Dashboard does not show anything personlised information |Fail ❌ | D-000  | Minor  | Keamogetswe | 2025-11-16  |
-| TC049        | Verify that the system shall calculate and display user's environmental impact metrics | Manual    | Dashboard correctly calculates and displays total waste diverted, CO2 emissions saved, and trees equivalent saved |None of the impact metric is shown | Fail ❌| D-000 |   Minor | Keamogetswe | 2025-11-16  |
-| TC050        | Verify that the system awards badges for various achievements                          | Manual    | User is awarded badges based on milestones and badges are displayed on the dashboard | badges are displayed on the dashboard  | Fail ❌  | D000 | Minor | Keamogetswe  | 2025-11-16 |
+| TC048        | Verify that the user dashboard displays personalized information for logged-in users   | Major   | Dashboard shows recent pickup requests, upcoming scheduled pickups, achievement badges, and quick action buttons  | Dashboard does not show anything personlised information |Fail ❌ | [D023](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/72) | Minor  | Keamogetswe | 2025-11-16  |
+| TC049        | Verify that the system shall calculate and display user's environmental impact metrics | Minor    | Dashboard correctly calculates and displays total waste diverted, CO2 emissions saved, and trees equivalent saved |None of the impact metric is shown | Fail ❌| [D024](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/73)|   Minor | Keamogetswe | 2025-11-16  |
+| TC050        | Verify that the system awards badges for various achievements                          | Manual    | User is awarded badges based on milestones and badges are displayed on the dashboard | badges are displayed on the dashboard  | Fail ❌  | [D025](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/74) | Cosmetic | Keamogetswe  | 2025-11-16 |
 
 ---
 ### **4. 📝 Content Management Requirements**
@@ -163,17 +163,8 @@ The purpose of this report is to validate that the application meets its functio
 ---
 ### Table 6.1: Admin login and registratin
 
-| Test Case ID | Objective                                            | Test Type | Expected Result                                                                | Actual Result                                                | Status | Defect ID | Severity | Tester      | Date       |
-| ------------ | ---------------------------------------------------- | --------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------ | ------ | --------- | -------- | ----------- | ---------- |
-| TC001        | Verify registration with valid credentials | Manual | User should be registered successfully | User successfully registered   | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-| TC016      | Verify login with valid credentials       | Automated | User should be logged in successfully | User successfully logged in  | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-10 |
-| TC017      | Verify login with invalid password        | Automated  | System should display error  | User succefully logged in | Fail ❌ | [D-002](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)       | Critical     | Keamogetswe | 2025-11-11 |
-| TC018      | Verify login without email       | Automated  | System should display email required error | Error displayed: "Fill this field" | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-10 |
-| TC019      | Verify login without password    | Automated | System should display password required error| Error displayed: "Fill this field" | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-10 |
-| TC020      | Verify login with non-existent user       | Automated  | System should display error           | User logged in succefully   | Fail ❌ |[D-003](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)        | Critical       | Keamogetswe | 2025-11-10 |
 
-
-#### Table 6.1 Request Management Test case execusion report
+#### Table 6.2 Request Management Test case execusion report
 | Test Case ID | Test Description                                           | Test Type          | Expected Result                                                               | Actual Result | Status | Defect ID | Severity | Tester | Date |
 | ------------ | ---------------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
 | TC070    | Verify that admins can view all pickup requests | Manual | Admin can view a full list of all pickup requests with complete details | Admin can view a full list of all pickup requests but not the complete details  | Pass ✅ |  — |  — | Keamogetswe| 2025-11-17 |
@@ -184,7 +175,7 @@ The purpose of this report is to validate that the application meets its functio
 
 
 ---
-#### Table 6.2 User Management Test case execusion report
+#### Table 6.3 User Management Test case execusion report
 | Test Case ID | Test Description                                  | Test Type | Expected Result                                                             | Actual Result | Status | Defect ID | Severity | Tester | Date |
 | ------------ | ------------------------------------------------- | --------- | --------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
 | TC074    | Verify that admins can view all registered users  | Manual    | Admin can successfully view a complete list of all registered system users  |               |Fail ❌ |           |          |        |      |
