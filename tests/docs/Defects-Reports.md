@@ -61,12 +61,15 @@
 | D049  |             | Search bar does not return results or apply filters                 | 🟡 Minor         |  R008  | Open   |  [D049](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/96) | TC111  |
 | D057  |  🚀 Performance   | System responds slowly to user interactions, exceeding 1-second threshold  | 🟠 Major  |  R008  | Open   | [D057](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/103) | TC117 |
 | D058  |  📋 Error Handling  | Map fails to load under slow internet connections | 🟠 Major   | R011| Open   | [D050](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/96) | TC122 |
-| D050  |             | Date selection allows today and past dates                          | 🟠 Major         |         | Open   | [D050](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/96) | |
-| D051  |             | Date selection allows dates beyond 30 days                          | 🟠 Major         |         | Open   | [D051](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/97) | |
-| D052  |             | Name field accepts invalid lengths (<2 or >50 characters)           | 🟠 Major         |         | Open   | [D052](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/98) | |
-| D053  |             | Password field allows fewer than 8 characters                       | 🟠 Major         |         | Open   | [D053](httpsgithub.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/99) | |
-| D054  |             | Instructions field allows more than 200 characters                  | 🟡 Minor         |         | Open   | [D054](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/100) | |
-| D055  |             | Unicode and international characters cause email send failure       | 🟡 Minor         |         | Open   | [D055](httpsgithub.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/101) | |
-| D056  |             | Very long inputs are accepted beyond maximum length                | 🟠 Major         |         | Open   | [D056](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/102) | |
+
+---
+## Boundary Testing and Edge Case Test
+| D050  |             | Date selection allows today and past dates                          | 🟠 Major         | R006 | Open   | [D050](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/96) | TC129  |
+| D051  |             | Date selection allows dates beyond 30 days                          | 🟠 Major         | R006  | Open   | [D051](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/97) | TC130 |
+| D052  |             | Name field accepts invalid lengths (<2 or >50 characters)           | 🟠 Major         | R006 | Open   | [D052](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/98) | TC131|
+| D053  |             | Password field allows fewer than 8 characters                       | 🔴 Critical       | R006 | Open   | [D053](httpsgithub.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/99) | TC133  |
+| D054  |             | Instructions field allows more than 200 characters                  | 🟡 Minor         | R006 | Open   | [D054](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/100) | TC134 |
+| D055  |             | Unicode and international characters cause email send failure       | 🟠 Major         | R006 | Open   | [D055](httpsgithub.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/101) | TC136  |
+| D056  |             | Very long inputs are accepted beyond maximum length                | 🟠 Major         | R006 | Open   | [D056](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/102) | TC137 |
 
 
