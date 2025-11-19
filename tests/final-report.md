@@ -215,7 +215,7 @@ Test cases were designed using both white-box and black-box techniques. In total
 ### 6.2 Summary of Executed Test Cases (Pass / Fail)
 
 ---
-
+Out of **138** formulated test cases, **134** were successfully executed, resulting in a **97%** execution rate.
 ### Functional Test Execution
 
 | Category               | Total | Pass ✅ | Fail ❌ | Defects Linked          |
