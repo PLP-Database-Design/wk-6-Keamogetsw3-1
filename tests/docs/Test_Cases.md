@@ -214,6 +214,7 @@
 
 ---
 #### **6.3 Content Moderation Test Cases**
+#### Table 6.3.1 Test cases for **manual testing** 📝
 | Test Case ID | Objective | Expected Result | Risk Link  | Notes |
 |--------------|-------------|----------------|----------------| ----------------|
 | TC079  | |  | R004| |
@@ -225,7 +226,19 @@
 ---
 ### ***7. 🔔 Notification System Requirements**
 ---
+#### 7.1 System Notifications
+#### Table 7.1.1 Test cases for **manual testing** 📝
+| Test Case ID | Objective | Expected Result | Risk Link  | Notes |
+|--------------|-------------|----------------|----------------| ----------------|
+| TC084  | |  | R010 | |
+| TC085 | |  | R010 | |
+| TC086 | |  | R010 | |
+| TC087 | |  | R010 | |
 
+---
+
+
+---
 | Test Case ID | Objective | Expected Result | Risk Link  | Notes |
 |--------------|-------------|----------------|----------------| ----------------|
 |   | |  | | |
