@@ -290,19 +290,16 @@ The purpose of this report is to validate that the application meets its functio
 #### Table 13.1: Response Time Test case execusion report
 | Test Case ID | Objective                                                  | Test Type | Expected Result               | Actual Result                                                   | Status | Defect ID | Severity | Tester      | Date       |
 | ------------ | ---------------------------------------------------------- | --------- | ----------------------------- | --------------------------------------------------------------- | ------ | --------- | -------- | ----------- | ---------- |
-| TC116        | Verify that the system loads pages within 3s               | Manual    | All pages load within 3s      | FCP: 1.9s, LCP: 3.0s, Speed Index: 5.8s → page loaded within 3s | Pass ✅ | —         | —        | Keamogetswe | 2025-11-14 |
-| TC117        | Verify that system responds to user interactions within 1s | Manual    | All interactions respond ≤ 1s | Total Blocking Time: 1,720 ms → exceeds 1s  | Fail ❌ | [D057](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/103)  | Major| Keamogetswe | 2025-11-14 |
+| TC116        | Verify that the system loads pages within 3s               | Automated   | All pages load within 3s      | FCP: 1.9s, LCP: 3.0s, Speed Index: 5.8s → page loaded within 3s | Pass ✅ | —         | —        | Keamogetswe | 2025-11-14 |
+| TC117        | Verify that system responds to user interactions within 1s | Automated   | All interactions respond ≤ 1s | Total Blocking Time: 1,720 ms → exceeds 1s  | Fail ❌ | [D057](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/103)  | 🟠 Major| Keamogetswe | 2025-11-14 |
 
-
-
-13.2 CROSS BROWSER TESTING
 ---
+#### Table 13.2: Browser Compatibility Test case execusion report
 | Test Case ID | Objective | Test Type | Expected Result | Actual Result | Status | Defect ID | Severity | Tester | Date |
 |--------------|-----------|-----------|-----------------|---------------|--------|-----------|----------|--------|------|
 | TC118 | Verify system works on Google Chrome (latest 2 versions) | Manual | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer  | 2025-11-11 |
 | TC119 | Verify system works on Mozilla Firefox (latest 2 versions) | Manual| Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | Sally Trizer | 2025-11-12  |
 | TC120 | Verify system works on Microsoft Edge (latest 2 versions) |  Manual| Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer | 2025-11-12 |
-
 
 ---
 ## **14. 📋 Error Handling Requirements**
