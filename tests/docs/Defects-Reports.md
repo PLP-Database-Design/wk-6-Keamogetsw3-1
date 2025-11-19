@@ -64,6 +64,8 @@
 
 ---
 ## Boundary Testing and Edge Case Test
+| ID    | Requirement | Issue Title                                                        | Severity        | Risk ID | Status | GitHub Link | Test Case ID |
+|-------|-------------|--------------------------------------------------------------------|------------------|---------|--------|-------------|--------------|
 | D050  |             | Date selection allows today and past dates                          | 🟠 Major         | R006 | Open   | [D050](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/96) | TC129  |
 | D051  |             | Date selection allows dates beyond 30 days                          | 🟠 Major         | R006  | Open   | [D051](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/97) | TC130 |
 | D052  |             | Name field accepts invalid lengths (<2 or >50 characters)           | 🟠 Major         | R006 | Open   | [D052](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/98) | TC131|
