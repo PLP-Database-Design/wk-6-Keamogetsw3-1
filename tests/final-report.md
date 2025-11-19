@@ -212,7 +212,9 @@ Test cases were designed using both white-box and black-box techniques. In total
 
 ---
 
-## Summary of Executed Test Cases (Pass / Fail)
+### 6.2 Summary of Executed Test Cases (Pass / Fail)
+
+---
 
 ### Functional Test Execution
 
@@ -249,8 +251,7 @@ Test cases were designed using both white-box and black-box techniques. In total
 | Form Validation      | 3     | 0      | 0       | Pending                          |
 | Boundary / Edge Cases | 2+   | 0      | 0       | Pending                          |
 
-### 6.1 (b) Ssample test cases 
-<img width="1312" height="588" alt="image" src="https://github.com/user-attachments/assets/0dd3f2eb-5fd1-429f-984c-723c36d60b66" />
+
 
 ---
 
