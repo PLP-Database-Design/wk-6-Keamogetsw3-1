@@ -239,6 +239,7 @@
 ### **8. 🔒  Data Management Requirements**
 ---
 ### 8.1 Data Persistence (localStorage)
+#### Table 8.1.1 Test cases for **manual testing** 📝
 | Test Case ID | Objective                                              | Expected Result                                                 | Risk ID |
 |--------------|--------------------------------------------------------|-----------------------------------------------------------------|---------|
 | TC088   | Verify session data is stored in localStorage after login | localStorage contains session key | R003    |
@@ -247,6 +248,18 @@
 | TC091 | Verify session data is cleared after logout            | localStorage entries removed | R003    |
 | TC092  | Verify access restricted when localStorage cleared manually | User is logged oute after refresh | R003    |
 
+---
+
+### 9. 📞 Support and Maintenance
+### 9.1 Help System
+#### Table 9.1.1 Test cases for **manual testing** 📝
+| Test Case ID    | Objective                                                                                                     | Expected Result                                                                                       | Risk ID   | Notes|
+| --------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------- | --------------|
+| TC093 |  Ensure users can access the FAQ section and all content is displayed correctly. | FAQ page loads with all questions and answers correctly | R010 |
+| TC094 | Verify that contact information for support is displayed | Support email, phone, and/or chat options are visible and clickable | R010 |
+| TC095 | |  | | R010 |
+
+---
 
 | Test Case ID | Objective | Expected Result | Risk Link  | Notes |
 |--------------|-------------|----------------|----------------| ----------------|
@@ -280,12 +293,6 @@
 
 
 ---
-### 📞 Support and Maintenance
-### Table: Help System
-| Test Case ID    | Objective                                                                                                     | Expected Result                                                                                       | Risk ID   |
-| --------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | --------- |
-| TC-093 |  Ensure users can access the FAQ section and all content is displayed correctly. | FAQ page loads with all questions and answers correctly |  |
-| TC-094 | Verify that contact information for support is displayed | Support email, phone, and/or chat options are visible and clickable |  |
 
 -----
 
