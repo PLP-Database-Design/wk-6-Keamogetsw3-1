@@ -383,171 +383,25 @@ This section focuses on testing the system's non-functional requirements, which 
 | **TC127**    | Verify that the system prevents form submission with invalid data | Form cannot be submitted when required fields are empty or invalid; user is notified of errors                      | R006 | **Positive** |
 | **TC128**    | Verify that the system highlights validation errors clearly       | Invalid fields are visually highlighted so user can identify and fix them easily                                    | R006 | **Positive** |
 
-
-----
-
-| Test Case ID | Objective | Expected Result | Risk Link  | Notes |
-|--------------|-------------|----------------|----------------| ----------------|
-|   | |  | | |
-
-
-
-
-
-
-
-
-
-
-
-
----
-## Functional Test Cases - Boundary and Edge Case Test Cases
-| Test Case ID | Feature | Objective | Expected Result | Risk Link  |
-|--------------|----------|------------|----------------|----------------|
-
 ---
 
-| TC No. | Feature              | Objective                                           | Expected Result                                   | Actual Result                                         | Status     | Risk Link |
-|--------:|----------------------|----------------------------------------------------|----------------------------------------------------|-------------------------------------------------------|-------------|------------|
-| TC001  | Registration         | Register new user with valid data                   | Account created successfully                       | Account successfully created                          | ✅ Pass     | R002       |
-| TC002  | Registration         | Register user with invalid email                    | Validation error displayed                         | Error was shown                                       | ✅ Pass     | R002       |
-| TC003  | Registration         | Register user with empty name                       | Validation error displayed                         | Error was shown                                       | ✅ Pass     | R002       |
-| TC004  | Login                | Login with correct credentials                      | Access granted                                     | Logged in successfully                                | ✅ Pass     | R003       |
-| TC005  | Pickup Scheduling    | Schedule new pickup                                 | Request created successfully                       | Request created successfully                          | ✅ Pass     | R006       |
-| TC006  | Pickup Scheduling    | Cancel pickup request                               | Request status updated to "Cancelled"              | Cancel operation failed                               | ❌ Fail     | R006       |
-| TC007  | Blog Module          | Publish a new blog post                             | Post appears in blog list                          | Blog post failed to publish                           | ❌ Fail     | R007       |
-| TC008  | Admin Panel          | Admin panel login                                   | Admin successfully logs in                         | Admin logged in successfully                          | ✅ Pass     | R008       |
-| TC009  | Admin Dashboard      | Cannot receive or reply to feedback                 | Feedback system should accept and reply properly   | Admin unable to receive or reply to feedback          | ❌ Fail     | R008       |
-| TC010  | Dashboard Filters    | Filter by status (Admin & User)                     | Only requests with selected status should display  | Filter not working in both dashboards                 | ❌ Fail     | R002       |
-| TC011  | Dashboard Filters    | Filter by location (Admin & User)                   | Only requests in selected location should display  | Requests filtered correctly by location               | ✅ Pass     | R002       |
-| TC012  | Admin Panel          | Update user status                                  | User status updates successfully                   | Status updated successfully                           | ✅ Pass     | R008       |
+## Boundary and Edge Case Test Cases**
 
-
-
-
-
+### Table 15.1 Manual testing
+| Test Case ID | Objective                                                                          | Expected Result                                                | Risk Link | Notes        |
+| ------------ | ---------------------------------------------------------------------------------- | -------------------------------------------------------------- | --------- | ------------ |
+| **TC129**    | Verify date selection rejects today and past dates; allows minimum date (tomorrow) | Dates today and earlier are rejected with validation message   | R006 | **Negative** |
+| **TC130**    | Verify date selection rejects dates beyond 30 days                                 | Dates >30 days from today are rejected with validation message | R006  | **Negative** |
 
 ---
-
-
----
-
-
-
-
----
-4. CROSS ROWSER COMPATABILITY TESTING
-
-| TC No. | Feature              | Objective                                           | Expected Result                                 | Actual Result                                      | Status     | Risk Link |
-|--------:|----------------------|----------------------------------------------------|--------------------------------------------------|----------------------------------------------------|-------------|------------|
-| TC021  | Registration         | Register new user with valid data                   | Account created successfully                     | Successfully registered new user in Chrome         | ✅ Pass     | R002       |
-| TC022  | Login                | Login with correct credentials                      | Access granted                                   | Successfully logged in with correct password       | ✅ Pass     | R003       |
-| TC023  | Login                | Login with wrong credentials                        | Error message displayed                          | Error “Wrong password” displayed as expected       | ✅ Pass     | R003       |
-| TC024  | Login                | Login with the same credentials across all browsers | Invalid email or wrong password message          | Failed to login — “Invalid email or wrong password”| ❌ Fail     | R003       |
-| TC025  | Dashboard Filters    | Filter by Status                                    | Only requests with selected status display       | Requests filtered correctly by status              | ✅ Pass     | R002       |
-| TC026  | Dashboard Filters    | Filter by Location                                  | Only requests in selected location display       | Requests filtered correctly by location            | ✅ Pass     | R002       |
-| TC027  | Pickup & Rescheduling| Verify pickup and rescheduling functions properly   | Request should be successfully rescheduled/picked| Function failed to reschedule/pickup request       | ❌ Fail     | R004       |
-| TC028  | Awareness Page       | Verify awareness page loads and displays content    | Awareness page loads successfully                | Awareness page displayed correctly with all content| ✅ Pass     | R005       |
-
----
-
-### 📞 Support and Maintenance
-### Table: Help System
-|--------------|----------|------------|----------------|----------------|---------|-----------|
-| TC-  | Registration | Enter name with minimum characters (2) | Accepted and account created | TBD | TBD | R002 |
-| TC- | Registration | Enter name with maximum characters (50) | Accepted and account created | TBD | TBD | R002 |
-| TC027 | Registration | Enter email with special characters | Accepted if valid format | TBD | TBD | R002 |
----
-### **5. Boundary and Edge Case Test Cases**
-
-| TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|--------------|----------|------------|----------------|----------------|---------|-----------|
-| TC025 | Registration | Enter name with minimum characters (2) | Accepted and account created | TBD | TBD | R002 |
-| TC026 | Registration | Enter name with maximum characters (50) | Accepted and account created | TBD | TBD | R002 |
-| TC027 | Registration | Enter email with special characters | Accepted if valid format | TBD | TBD | R002 |
-| TC028 | Registration | Enter password less than 8 characters | Validation error displayed | TBD | TBD | R014 |
-| TC029 | Pickup Scheduling | Schedule pickup on minimum allowed date (tomorrow) | Accepted, request created | TBD | TBD | R006 |
-| TC030 | Pickup Scheduling | Schedule pickup on maximum allowed date (30 days) | Accepted, request created | TBD | TBD | R006 |
-| TC031 | Pickup Scheduling | Enter very long instructions (>200 chars) | Validation error displayed | TBD | TBD | R015 |
-| TC032 | Community Module | Input Unicode characters in post/comment | Displayed correctly without errors | TBD | TBD | R011 |
-| TC033 | Community Module | Input HTML or JS scripts | Sanitized, no script executed | TBD | TBD | R012 |
-| TC034 | Profile Update | Empty or whitespace-only inputs | Validation error displayed | TBD | TBD | R002 |
-
----
-
-## Automated Testing
-
-### **1. Functional Test Cases**
-
-| TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|--------------|----------|------------|----------------|----------------|---------|-----------|
-| TC035 | Registration | Register new user with valid data | Account created successfully | TBD | TBD | R002 |
-| TC036 | Registration | Register user with invalid email | Validation error displayed | TBD | TBD | R002 |
-| TC037 | Login | Login with correct credentials | Access granted | TBD | TBD | R003 |
-| TC038 | Login | Login with wrong credentials | Error message displayed | TBD | TBD | R003 |
-| TC039 | Pickup Scheduling | Schedule new pickup | Request created successfully | TBD | TBD | R006 |
-| TC040 | Pickup Scheduling | Cancel pickup request | Request status updated to "Cancelled" | TBD | TBD | R006 |
-| TC041 | Blog Module | Publish a new blog post | Post appears in blog list | TBD | TBD | R007 |
-| TC042 | Community Module | Add a new post | Post appears in community feed | TBD | TBD | R011 |
-| TC043 | Profile Management | Update profile information | Changes reflected in user profile | TBD | TBD | R002 |
-| TC044 | Admin Panel | Mark pickup as scheduled | Status updated, UI refreshed | TBD | TBD | R008 |
-
----
-
-### **2. Non-Functional Test Cases**
-
-| TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|--------------|----------|------------|----------------|----------------|---------|-----------|
-| TC045 | Performance | Load 5000+ pickup requests | UI should remain responsive | TBD | TBD | R016 |
-| TC046 | Performance | Load 1000+ user accounts | Application remains stable | TBD | TBD | R016 |
-| TC047 | Security | Test XSS payloads in inputs | Scripts should not execute | TBD | TBD | R012 |
-| TC048 | Security | Test SQL injection payloads | Should be rejected / sanitized | TBD | TBD | R012 |
-| TC049 | Usability | Validate responsive navigation | Works correctly on mobile and tablet | TBD | TBD | R009 |
-| TC050 | Data Persistence | Validate localStorage storage | Data persists across page reloads | TBD | TBD | R013 |
-
----
-
-### **3. Accessibility Test Cases**
-
-| TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|--------------|----------|------------|----------------|----------------|---------|-----------|
-| TC051 | Awareness Page | Screen reader reads images | Images have descriptive alt text | TBD | TBD | R010 |
-| TC052 | Forms | Keyboard navigation on registration form | All fields accessible and focusable | TBD | TBD | R010 |
-| TC053 | Forms | Color contrast check | Meets WCAG 2.1 AA standards | TBD | TBD | R010 |
-| TC054 | Buttons | Minimum touch target size | Buttons are ≥44x44px on mobile | TBD | TBD | R010 |
-
----
-
-### **4. Cross-Browser Compatibility Test Cases**
-
-| TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|--------------|----------|------------|----------------|----------------|---------|-----------|
-| TC055 | Registration | Test in Chrome, Firefox, Safari, Edge | Form works consistently in all browsers | TBD | TBD | R017 |
-| TC056 | Pickup Scheduling | Test in Chrome, Firefox, Safari, Edge | Requests can be created and viewed in all browsers | TBD | TBD | R017 |
-| TC057 | Blog Module | Test in Chrome, Firefox, Safari, Edge | Blog posts render correctly in all browsers | TBD | TBD | R017 |
-| TC058 | Community Module | Test in Chrome, Firefox, Safari, Edge | Posts, comments, and likes function in all browsers | TBD | TBD | R017 |
-
----
-
-
-
-### 📞 Support and Maintenance
-### Table: Help System
-
----
-
-### **5. Boundary and Edge Case Test Cases**
-
-| TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|--------------|----------|------------|----------------|----------------|---------|-----------|
-| TC059 | Registration | Enter name with minimum characters (2) | Accepted and account created | TBD | TBD | R002 |
-| TC060 | Registration | Enter name with maximum characters (50) | Accepted and account created | TBD | TBD | R002 |
-| TC061 | Registration | Enter email with special characters | Accepted if valid format | TBD | TBD | R002 |
-| TC062 | Registration | Enter password less than 8 characters | Validation error displayed | TBD | TBD | R014 |
-| TC063 | Pickup Scheduling | Schedule pickup on minimum allowed date (tomorrow) | Accepted, request created | TBD | TBD | R006 |
-| TC064 | Pickup Scheduling | Schedule pickup on maximum allowed date (30 days) | Accepted, request created | TBD | TBD | R006 |
-| TC065 | Pickup Scheduling | Enter very long instructions (>200 chars) | Validation error displayed | TBD | TBD | R015 |
-| TC066 | Community Module | Input Unicode characters in post/comment | Displayed correctly without errors | TBD | TBD | R011 |
-| TC067 | Community Module | Input HTML or JS scripts | Sanitized, no script executed | TBD | TBD | R012 |
-| TC068 | Profile Update | Empty or whitespace-only inputs | Validation error displayed | TBD | TBD | R002 |
+### Table 15.2 Automated Testing
+| Test Case ID | Objective                                            | Expected Result                                                     | Risk Link | Notes        |
+| ------------ | ---------------------------------------------------- | ------------------------------------------------------------------- | --------- | ------------ |
+| **TC131**    | Verify name field accepts 2–50 characters            | Names with <2 or >50 characters are rejected; valid length accepted | R006  | **Negative** |
+| **TC132**    | Verify email field accepts valid format              | Invalid emails rejected; valid emails accepted                      | R006   | **Positive** |
+| **TC133**    | Verify password field enforces minimum 8 characters  | Passwords <8 characters are rejected                                | R006 | **Negative** |
+| **TC134**    | Verify instructions field accepts 0–200 characters   | Instructions >200 characters are rejected                           | R006| **Negative** |
+| **TC135**    | Verify special characters in name/email/instructions | System accepts valid special characters                             | R006   | **Positive** |
+| **TC136**    | Verify Unicode and international characters work     | System accepts Unicode/international characters                     | R006 | **Negative** |
+| **TC137**    | Verify very long inputs are rejected                 | Inputs exceeding maximum length are rejected                        | R006 | **Negative** |
+| **TC138**    | Verify empty or whitespace-only inputs are rejected  | Empty or whitespace-only inputs are rejected                        | R006 | **Positive** |
