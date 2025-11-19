@@ -59,6 +59,7 @@
 | D-011 |              | Missing alt text for meaningful images                                     | 🟠 Major | R008    | Open   | [D-011](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/59)| TC105 |
 | D048  |             | Breadcrumbs do not display full page hierarchy                      | 🟡 Minor         | R008 | Open   | [D048](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/96) | TC110 |
 | D049  |             | Search bar does not return results or apply filters                 | 🟡 Minor         |  R008  | Open   |  [D049](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/96) | TC111  |
+| D057  |  🚀 Performance   | System responds slowly to user interactions, exceeding 1-second threshold  | 🟠 Major  |  R008  | Open   | [D057](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/103) | TC117 |
 | D050  |             | Date selection allows today and past dates                          | 🟠 Major         |         | Open   | [D050](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/96) | |
 | D051  |             | Date selection allows dates beyond 30 days                          | 🟠 Major         |         | Open   | [D051](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/97) | |
 | D052  |             | Name field accepts invalid lengths (<2 or >50 characters)           | 🟠 Major         |         | Open   | [D052](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/98) | |
@@ -66,5 +67,5 @@
 | D054  |             | Instructions field allows more than 200 characters                  | 🟡 Minor         |         | Open   | [D054](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/100) | |
 | D055  |             | Unicode and international characters cause email send failure       | 🟡 Minor         |         | Open   | [D055](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/101) | |
 | D056  |             | Very long inputs are accepted beyond maximum length                | 🟠 Major         |         | Open   | [D056](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/102) | |
-| D057  |              | System responds slowly to user interactions, exceeding 1-second threshold  | Major    |         | Open   | [D057](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/103) |
+
 | D058  |              | Map fails to load under slow internet connections                          | Major    |         | Open   | D0058 |
