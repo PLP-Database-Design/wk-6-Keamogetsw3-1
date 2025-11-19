@@ -3,7 +3,7 @@
 ## 📋 **Document Information**
 
 **Document Version:** 1.0  
-**Date:** [Current Date]  
+**Date:** 18  
 **Project:** CleanCity - Waste Pickup Scheduler  
 **Prepared For:** QA Testing Teams  
 
@@ -20,8 +20,6 @@ This file contains test data and scenarios for various features of the project, 
 | Registration  | New Test User | [newuser@test.com](mailto:newuser@test.com) | NewPass123 | User | Registration successful | Positive test case |
 
 
-
-
 ### **Regular User Accounts**
 | Test Scenario | Full Name     | Email                                       | Password    | Role | Expected Result        | Notes              |
 | ------------- | ------------- | ------------------------------------------- | ----------- | ---- | ---------------------- | ------------------ |
@@ -30,33 +28,11 @@ This file contains test data and scenarios for various features of the project, 
 | Login         | Jane Smith    | [user2@test.com](mailto:user2@test.com)     | TestPass123 | User | Successfully logged in | Positive test case |
 | Login         | Mike Johnson  | [user3@test.com](mailto:user3@test.com)     | TestPass123 | User | Successfully logged in | Positive test case |
 
-
-
-
-
-
 ### **Admin User Accounts**
-```
-Email: admin@cleancity.com
-Password: AdminPass123
-Role: Admin
-Name: System Administrator
-Phone: +1-555-0001
-
-Email: moderator@cleancity.com
-Password: ModPass123
-Role: Admin
-Name: Content Moderator
-Phone: +1-555-0002
-```
-
-### **Test Account for Registration Testing**
-```
-Email: newuser@test.com
-Password: NewPass123
-Name: New Test User
-Phone: +1-555-9999
-```
+| **Test Scenario** | **Full Name**        | **Email**                                                 | **Password** | **Role** | **Expected Result**    | **Notes**          |
+| ----------------- | -------------------- | --------------------------------------------------------- | ------------ | -------- | ---------------------- | ------------------ |
+| Login             | System Administrator | [admin@cleancity.com](mailto:admin@cleancity.com)         | AdminPass123 | Admin    | Successfully logged in | Positive test case |
+| Login             | Content Moderator    | [moderator@cleancity.com](mailto:moderator@cleancity.com) | ModPass123   | Admin    | Successfully logged in | Positive test case |
 
 ---
 
@@ -65,42 +41,42 @@ Phone: +1-555-9999
 ### **Pending Requests**
 ```json
 {
-  "id": 1,
-  "userId": "user1@test.com",
-  "pickupDate": "2025-07-15",
-  "wasteType": "General",
-  "quantity": "Medium",
-  "status": "Pending",
-  "specialInstructions": "Please ring doorbell when arriving",
-  "address": "123 Main St, City, State 12345"
+    "id": 1,
+    "fullName": "John Doe",
+    "email": "user1@test.com",
+    "pickupLocation": "123 Main St, City, State 12345",
+    "wasteType": "General",
+    "pickupDate": "2025-07-15",
+    "description": "Please ring the doorbell when arriving",
+    "status": "Pending"
 }
 ```
 
 ### **Confirmed Requests**
 ```json
 {
-  "id": 2,
-  "userId": "user2@test.com",
-  "pickupDate": "2025-07-12",
-  "wasteType": "Recyclable",
-  "quantity": "Large",
-  "status": "Confirmed",
-  "specialInstructions": "",
-  "address": "456 Oak Ave, City, State 12345"
+   "id": 2,
+    "fullName": "Lerato Mokoena",
+    "email": "user2@test.com",
+    "pickupLocation": "456 Oak Ave, City, State 12345",
+    "wasteType": "Recyclable",
+    "pickupDate": "2025-07-12",
+    "description": "",
+    "status": "Confirmed"
 }
 ```
 
 ### **Completed Requests**
 ```json
 {
-  "id": 3,
-  "userId": "user3@test.com",
-  "pickupDate": "2025-07-10",
-  "wasteType": "Organic",
-  "quantity": "Small",
-  "status": "Completed",
-  "specialInstructions": "Backyard access",
-  "address": "789 Pine Rd, City, State 12345"
+    "id": 3,
+    "fullName": "Sipho Ndlovu",
+    "email": "user3@test.com",
+    "pickupLocation": "789 Pine Rd, City, State 12345",
+    "wasteType": "Organic",
+    "pickupDate": "2025-07-10",
+    "description": "Backyard access available",
+    "status": "Completed"
 }
 ```
 
@@ -169,41 +145,34 @@ Phone: +1-555-9999
 ### **Form Validation Test Cases**
 
 #### **Registration Form**
-- **Valid Data:**
-  - Email: valid@email.com
-  - Password: ValidPass123
-  - Confirm Password: ValidPass123
-  - Name: Valid Name
-  - Phone: +1-555-1234
+| Test Case ID | Test Scenario                | Full Name | Email                                       | Password     | Expected Result                                   | Notes              |
+| ------------ | ---------------------------- | --------- | ------------------------------------------- | ------------ | ------------------------------------------------- | ------------------ |
+| TC-001 | Valid registration           | Valid Name  | [valid@email.com](mailto:valid@email.com)   | ValidPass123 | Registration successful                           | Positive test case |
+| TC-002       | Invalid email format         | Valid Name  | invalidemail.com                            | ValidPass123 | Error: "Enter a valid email"                      | Negative test case |
+| TC-003       | Full Name empty              |           | [valid@email.com](mailto:valid@email.com)   | ValidPass123 | Error: "Full Name is required"                    | Negative test case |
+| TC-004       | Email empty                  | John Doe  |                                             | ValidPass123 | Error: "Email is required"                        | Negative test case |
+| TC-005       | Password empty               | John Doe  | [valid@email.com](mailto:valid@email.com)   |              | Error: "Password is required"                     | Negative test case |
 
-- **Invalid Data:**
-  - Email: invalid-email
-  - Password: short
-  - Confirm Password: mismatch
-  - Name: ""
-  - Phone: invalid-phone
+---
 
 #### **Login Form**
-- **Valid Credentials:**
-  - Email: user1@test.com
-  - Password: TestPass123
-
-- **Invalid Credentials:**
-  - Email: user1@test.com
-  - Password: WrongPassword
+| Test Case ID | Test Scenario                     | Email               | Password       | Expected Result                       | Notes               |
+|--------------|----------------------------------|-------------------|----------------|---------------------------------------|-------------------|
+| TC-006      | Valid login                        | user1@test.com    | TestPass123    | Login successful                      | Positive test case |
+| TC-007      | Invalid login (wrong password)     | user1@test.com    | WrongPassword  | Error: "Invalid email or password"    | Negative test case |
+| TC-008      | Invalid login (non-existent user) | nonexist@test.com | AnyPassword    | Error: "Invalid email or password"    | Negative test case |
 
 #### **Pickup Scheduling Form**
-- **Valid Data:**
-  - Date: Tomorrow's date
-  - Waste Type: General
-  - Quantity: Medium
-  - Instructions: "Please ring doorbell"
 
-- **Invalid Data:**
-  - Date: Yesterday's date
-  - Waste Type: (empty)
-  - Quantity: (empty)
-  - Instructions: (very long text > 200 chars)
+| Test Case ID | Test Scenario                                 | Full Name   | Email                  | Location | Waste Type | Date                                     | Instructions                     |
+|--------------|-----------------------------------------------|------------|------------------------|---------|------------|-----------------------------------------|---------------------------------|
+| TC-023       | Valid pickup request                           | Check User | checkuser@email.com    | Nairobi | General    | Tomorrow’s date (e.g., **2025-11-14**) | “Please ring doorbell”          |
+| TC-024       | Invalid pickup request (no data)              | *(empty)*  | *(empty)*              | *(empty)* | *(empty)* | *(empty)*                               | *(empty)*                        |
+| TC-025       | Invalid pickup request (Yesterday’s date)     | Check User | checkuser@email.com    | Nairobi | General    | Yesterday’s date (e.g., **2025-11-12**) | “Please ring doorbell”          |
+| TC-026       | Invalid pickup request (empty Waste Type)     | Check User | checkuser@email.com    | Nairobi | *(empty)*  | Tomorrow’s date (e.g., **2025-11-14**) | “Please ring doorbell”          |
+| TC-027       | Invalid pickup request (empty Location)       | Check User | checkuser@email.com    | *(empty)* | General   | Tomorrow’s date (e.g., **2025-11-14**) | *(empty)*                        |
+| TC-028       | Invalid pickup request (Very long text >200 chars) | Check User | checkuser@email.com | Nairobi | General   | Tomorrow’s date (e.g., **2025-11-14**) | Please collect all waste bags and recyclable items placed at the front of the property. Ensure that hazardous or sharp objects are handled with care. Avoid leaving any waste behind, and make sure bins are returned to their original positions after collection. Notify me if any items cannot be collected or if additional assistance is required |
+
 
 ### **Boundary Testing Data**
 

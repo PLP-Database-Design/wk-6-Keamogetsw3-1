@@ -93,3 +93,10 @@ We will cover both both functional and non-functionaltesting of the CleanCity ap
 
 
 ### Out of Scope:
+
+### Entry Criteria:
+Availability of test environments.
+Required documentation such as  test cases and risk analysis are prepared.
+
+### Exit Criteria:
+All planned test cases have been executed.

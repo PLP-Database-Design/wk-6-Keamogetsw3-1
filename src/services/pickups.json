@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "userId": "user1@test.com",
+    "pickupDate": "2025-07-15",
+    "wasteType": "General",
+    "quantity": "Medium",
+    "status": "Pending",
+    "specialInstructions": "Please ring doorbell when arriving",
+    "address": "123 Main St, City, State 12345"
+  },
+  {
+    "id": 2,
+    "userId": "user2@test.com",
+    "pickupDate": "2025-07-12",
+    "wasteType": "Recyclable",
+    "quantity": "Large",
+    "status": "Confirmed",
+    "specialInstructions": "",
+    "address": "456 Oak Ave, City, State 12345"
+  },
+  {
+    "id": 3,
+    "userId": "user3@test.com",
+    "pickupDate": "2025-07-10",
+    "wasteType": "Organic",
+    "quantity": "Small",
+    "status": "Completed",
+    "specialInstructions": "Backyard access",
+    "address": "789 Pine Rd, City, State 12345"
+  }
+]
