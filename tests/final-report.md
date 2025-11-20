@@ -237,8 +237,7 @@ Out of **138** formulated test cases, **134** were successfully executed, result
 
 ---
 
-
-### 6.2.1 Functional Test Execution summary
+### Table 6.2.1: Functional Test Execution summary
 
 | Type                     | Total / Executed | Pass | Fail |
 |--------------------------|-----------------|------|------|
@@ -254,19 +253,19 @@ Out of **138** formulated test cases, **134** were successfully executed, result
 | **Total**                | 94              | 51   | 43   |
 
 
-### 6.2.2 Non-Functional, UI, and Compatibility Test Execution summary
+### Table 6.2.2: Non-Functional, UI, and Compatibility Test Execution summary
 
 | Type                        | Total / Executed | Pass | Fail |
 |-----------------------------|----------------:|-----:|-----:|
-| Support and Maintenance     | 2               | 0    | 0    |
+| Support and Maintenance     | 0               | 0    | 0    |
 | User Interface Requirements | 14              | 7    | 7    |
 | Data Management             | 3               | 3    | 0    |
 | Performance Requirements    | 5               | 4    | 1    |
 | Error Handling              | 8               | 7    | 1    |
-| **Total**                   | **32**          | **21** | **9** |
+| **Total**                   | **30**          | **21** | **9** |
 
 
-### 6.2.2 Boundary Value Analysis and Edge Case Testing Test Execution summary
+### Table 6.2.3: Boundary Value Analysis and Edge Case Testing Test Execution summary
 
 | Type             | Total / Executed | Pass | Fail |
 |------------------|----------------:|-----:|-----:|
@@ -275,18 +274,14 @@ Out of **138** formulated test cases, **134** were successfully executed, result
 
 ---
 
+### 6.2.4 Executed Test Cases – Summary Analysis
+| Testing Type           | Total Executed | Passed | Failed | Pass Rate (%)|
+| ---------------------- | -------------- | ------ | ------ | --------- |
+| Functional Testing     | 94             | 51     | 43     | 54.26    |
+| Non-Functional Testing | 30             | 21     | 9      | 70       |
+| Boundary / Edge Cases  | 10             | 3      | 7      | 30       |
+| **Overall Total**      | 134            | 75     | 59     | 55.97    |
 
----
-
-
-### 6.2 (a) Executed Test Cases – Summary Analysis
-
-| Testing Type           | Total Executed | Passed | Failed | Pass Rate | Remarks |
-|------------------------|----------------|--------|--------|---------|---------|
-| Functional Testing     |                |        |        |         |         |
-| Non-Functional Testing |                |        |        |         |         |
-| Boundary / Edge Cases  |                |        |        |         |         |
-| **Overall Total**      |                |        |        |         |         |
 
 ---
 ## 6.2 (b) Sample test cases execution report
