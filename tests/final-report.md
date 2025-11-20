@@ -90,8 +90,10 @@ Non-functional testing focused on the following:
   - Confirming compliance with accessibility standards, keyboard navigation and screen reader support.
 
 ---
+### 3.3 Boundary Value Analysis and Edge Case Testing
+Were conducted to evaluate system behavior at the limits of valid and invalid input range.
 
-### 3.3 Areas Not Covered
+### 3.4 Areas Not Covered
 The following areas were not included in the testing scope:
 - **Data Management**
   - Sanitisation of user-generated content.
