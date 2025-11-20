@@ -282,12 +282,11 @@ Out of **138** formulated test cases, **134** were successfully executed, result
 | Boundary / Edge Cases  | 10             | 3      | 7      | 30       |
 | **Overall Total**      | 134            | 75     | 59     | 55.97    |
 
-
 ---
-## 6.2 (b) Sample test cases execution report
+### Figure 6.2.1: Sample test cases execution report
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bd1a5fdb-4ab9-429f-b575-907df7ba44ea" />
 
-
+---
 
 ## 7. Defect Analysis and Categorization
 During testing of the CleanCity system, a total of 58 defects were identified across (42) functional and (16) non-functional modules. Defects were categorised by severity, module, and type to assess system readiness and guide remediation efforts.
