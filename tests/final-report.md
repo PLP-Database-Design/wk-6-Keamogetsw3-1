@@ -91,7 +91,7 @@ Non-functional testing focused on the following:
 
 ---
 ### 3.3 Boundary Value Analysis and Edge Case Testing
-Were conducted to evaluate system behavior at the limits of valid and invalid input range.
+Were conducted to evaluate system behaviour at the limits of valid and invalid input range.
 
 ---
 
