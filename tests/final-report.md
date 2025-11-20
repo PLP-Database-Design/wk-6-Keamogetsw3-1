@@ -323,6 +323,11 @@ Most critical defects relate to login and authentication issues, while major def
 ## 8. Logging, tracking and management of Test Cases and Issues 
 Defects were logged in a `tests/Bug-Report-Summary.md` and github used track them
 
+#### Figure 8.1: Bug report summary
+<img width="918" height="552" alt="image" src="https://github.com/user-attachments/assets/0a79ec6b-fb93-4596-83c9-328946877bca" />
+
+
+#### Figure 8.2: GitHub logged issued
 <img width="1308" height="540" alt="image" src="https://github.com/user-attachments/assets/7593d44d-efcd-4e3b-b043-be54b286be19" />
 
 ----
