@@ -212,24 +212,10 @@ Test cases were designed using both white-box and black-box techniques. In total
 | **🔢 Total**   |   2    |    8     |  10   |       10        |
 
 ---
+pie title Test Execution Status
+    "Executed (134)" : 134
+    "Not Executed (4)" : 4
 
-<div style="display: flex; justify-content: space-around; align-items: center;">
-
-  <!-- Pie 1: Test Execution Status -->
-  <svg width="200" height="200" viewBox="0 0 32 32">
-    <circle r="16" cx="16" cy="16" fill="#ddd"/>
-    <circle r="16" cx="16" cy="16" fill="#4CAF50" stroke="#ddd" stroke-width="32" stroke-dasharray="134 4" stroke-dashoffset="25"/>
-    <text x="16" y="16" text-anchor="middle" dominant-baseline="middle" font-size="4" fill="#000">Executed</text>
-  </svg>
-
-  <!-- Pie 2: Automation Coverage -->
-  <svg width="200" height="200" viewBox="0 0 32 32">
-    <circle r="16" cx="16" cy="16" fill="#ddd"/>
-    <circle r="16" cx="16" cy="16" fill="#2196F3" stroke="#ddd" stroke-width="32" stroke-dasharray="34 100" stroke-dashoffset="50"/>
-    <text x="16" y="16" text-anchor="middle" dominant-baseline="middle" font-size="4" fill="#000">Automated</text>
-  </svg>
-
-</div>
 
 
 
