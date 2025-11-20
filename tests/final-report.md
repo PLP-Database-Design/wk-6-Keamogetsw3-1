@@ -289,7 +289,11 @@ Out of **138** formulated test cases, **134** were successfully executed, result
 ---
 
 ## 7. Defect Analysis and Categorization
-During testing of the CleanCity system, a total of 58 defects were identified across (42) functional and (16) non-functional modules. Defects were categorised by severity, module, and type to assess system readiness and guide remediation efforts.
+
+### 7.1 Overview of Identified Defects
+---
+During the comprehensive testing of the CleanCity-Waste Scheduler web application, a total of 59 defects were identified. Forty-three (43) were discovered during functional testing, nine (9) during non-functional testing and seven (7) through Boundary Value Analysis and Edge Case Testing.
+
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4a827ff8-c81e-48c9-8b8d-b73eb2a2e07c" />
 
