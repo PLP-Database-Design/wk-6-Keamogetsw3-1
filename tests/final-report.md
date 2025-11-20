@@ -208,8 +208,8 @@ Test cases were designed using both white-box and black-box techniques. In total
 #### Table 6.1.3: Summary of Manual and Automated Test Cases formulated for  **Boundary Value Analysis**
 | Module         | Manual | Automated | Total | Total Executed |
 |----------------|:------:|:---------:|:-----:|:---------------:|
-| Boundary Value Analysis |   2    |    10     |  12   |       10        |
-| **🔢 Total**   |   2    |    10     |  12   |       10        |
+| Boundary Value Analysis |   2    |    8     |  10   |       10        |
+| **🔢 Total**   |   2    |    8     |  10   |       10        |
 
 ---
 #### Figure 6.1.1: Example of test cases that were formulated in this project
