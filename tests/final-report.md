@@ -298,11 +298,13 @@ During the comprehensive testing of the CleanCity-Waste Scheduler web applicatio
 <img width="738" height="370" alt="image" src="https://github.com/user-attachments/assets/453f65f6-24f5-4122-aa04-c9366812f316" />
 
 ---
-### 7.1 Categorisation of Identified Defects
+### 7.2 Categorisation of Identified Defects
 ---
-Defects were categorised based on severity, with testing identifying 3 critical, 39 major, 12 minor, and 3 cosmetic issues. This classification highlights the areas of highest risk, allowing the team to prioritise fixes and retesting, focusing first on critical and major defects to ensure the stability and reliability of the CleanCity system before release.
+Defects were categorised based on severity, with testing identifying **3 Critical**, **39 Major**, **12 Minor** and **3 Cosmetic** issues.
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/48fafebf-4612-4442-904f-dd42a1b1c69d" />
+#### Figure 7.2.1: Catergorisation of identified defectd
+<img width="494" height="420" alt="image" src="https://github.com/user-attachments/assets/bf41c36f-8f6c-4f0c-9682-6519af9cffed" />
+
 
 ---
 
