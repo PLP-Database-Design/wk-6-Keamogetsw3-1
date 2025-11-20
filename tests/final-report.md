@@ -189,7 +189,7 @@ Test cases were designed using both white-box and black-box techniques. In total
 | Notification System       |    4   |     0     |   4   |        4        |
 | Data Management           |    5   |     0     |   5   |        5        |
 | Support & Maintenance     |    3   |     0     |   3   |        3        |
-| **🔢 Total**              | **83** | **12**    | **95** |     **94**      |
+| **Total**              | **83** | **12**    | **95** |     **94**      |
 
 ---
 
@@ -201,7 +201,7 @@ Test cases were designed using both white-box and black-box techniques. In total
 | Data Management                 |   2    |     2     |   4   |        3        |
 | Performance Requirements        |   3    |     2     |   5   |        5        |
 | Error Handling                  |   1    |     7     |   8   |        8        |
-| **🔢 Total**                     | **18** | **15**   | **33** |      **30**     |
+| **Total**                     | **18** | **15**   | **33** |      **30**     |
 
 ---
 
@@ -209,7 +209,7 @@ Test cases were designed using both white-box and black-box techniques. In total
 | Module         | Manual | Automated | Total | Total Executed |
 |----------------|:------:|:---------:|:-----:|:---------------:|
 | Boundary Value Analysis |   2    |    8     |  10   |       10        |
-| **🔢 Total**   |   2    |    8     |  10   |       10        |
+| **Total**   |   2    |    8     |  10   |       10        |
 
 ---
 ### 6.1.4 Overall formulated and executed test case
