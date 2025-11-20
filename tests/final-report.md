@@ -93,6 +93,8 @@ Non-functional testing focused on the following:
 ### 3.3 Boundary Value Analysis and Edge Case Testing
 Were conducted to evaluate system behavior at the limits of valid and invalid input range.
 
+---
+
 ### 3.4 Areas Not Covered
 The following areas were not included in the testing scope:
 - **Data Management**
@@ -101,6 +103,8 @@ The following areas were not included in the testing scope:
   - Testing on Safari browser.
 - **Support and Maintenance**
   - User activity logging and error reporting.
+
+---
     
 ## 4. Test Strategy and Approach
 
@@ -218,7 +222,7 @@ Test cases were designed using both white-box and black-box techniques. In total
 ---
 Out of **138** formulated test cases, **134** were successfully executed, resulting in a **97%** execution rate.
 
-### 6.2.1 Functional Test Execution
+### 6.2.1 Functional Test Execution summary
 
 | Type                     | Total / Executed | Pass | Fail |
 |--------------------------|-----------------|------|------|
@@ -233,20 +237,27 @@ Out of **138** formulated test cases, **134** were successfully executed, result
 | Support & Maintenance    | 3               | 0    | 3    |
 | **Total**                | 94              | 51   | 43   |
 
+
+### 6.2.2 Non-Functional, UI, and Compatibility Test Execution summary
+
+| Type                        | Total / Executed | Pass | Fail |
+|-----------------------------|----------------:|-----:|-----:|
+| Support and Maintenance     | 2               | 0    | 0    |
+| User Interface Requirements | 14              | 7    | 7    |
+| Data Management             | 3               | 3    | 0    |
+| Performance Requirements    | 5               | 4    | 1    |
+| Error Handling              | 8               | 7    | 1    |
+| **Total**                   | **32**          | **21** | **9** |
+
+
+### 6.2.2 Boundary Value Analysis and Edge Case Testing Test Execution summary
+
+| Type             | Total / Executed | Pass | Fail |
+|------------------|----------------:|-----:|-----:|
+| Boundary Testing | 10              | 3    | 7    |
+| **Total**        | **10**          | **3** | **7** |
+
 ---
-
-### Non-Functional, UI, and Compatibility Test Execution
-
-| Category             | Total | Pass ✅ | Fail ❌ | Defects Linked                   |
-|----------------------|-------|--------|---------|----------------------------------|
-| UI / Responsiveness  | 4     | 1      | 1       | D-008, D-010, D-011, D-009       |
-| Navigation           | 4     | 2      | 2       | —                                |
-| Performance          | 4     | 0      | 0       | Pending                          |
-| Cross-Browser        | 8     | 8      | 0       | —                                |
-| Error Handling       | 10    | 0      | 0       | Pending                          |
-| Form Validation      | 3     | 0      | 0       | Pending                          |
-| Boundary / Edge Cases | 2+   | 0      | 0       | Pending                          |
-
 
 
 ---
