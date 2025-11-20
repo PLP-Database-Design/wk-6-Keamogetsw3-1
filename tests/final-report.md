@@ -212,6 +212,15 @@ Test cases were designed using both white-box and black-box techniques. In total
 | **🔢 Total**   |   2    |    8     |  10   |       10        |
 
 ---
+### 6.1.4 Overall formulated and executed test case
+
+| Testing Type           | Total Formulated | Total Executed |
+| ---------------------- | ---------------- | -------------- |
+| Functional Testing     | 95               | 94             |
+| Non-Functional Testing | 33               | 30             |
+| Boundary / Edge Cases  | 10               | 10             |
+| **Overall Total**      | 138              | 134            |
+
 Out of **138** formulated test cases, **134** were successfully executed, resulting in a **97%** execution rate. From the 134 executed test, **25.4%** were **automated**
 
 #### Figure 6.1.1: test execution summary
