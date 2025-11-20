@@ -302,23 +302,24 @@ During the comprehensive testing of the CleanCity-Waste Scheduler web applicatio
 ---
 Defects were categorised based on severity, with testing identifying **3 Critical**, **39 Major**, **12 Minor** and **3 Cosmetic** issues.
 
-#### Figure 7.2.1: Catergorisation of identified defectd
+#### Figure 7.2.1: Catergorisation of identified defects
 <img width="647" height="417" alt="image" src="https://github.com/user-attachments/assets/bc2dc1d7-e524-41f0-848b-58de0ab2bfe6" />
 
-
+---
+### 7.3 Summary of identified defect
+Most critical defects relate to login and authentication issues, while major defects primarily involve scheduling and input validations. Non-functional and accessibility defects require UI and compliance fixes. Continuous monitoring is recommended for pending and in-progress defects to ensure timely resolution.
 
 ---
 
-Most critical defects relate to login and authentication issues, while medium defects primarily involve scheduling and input validations. Non-functional and accessibility defects require UI and compliance fixes. Continuous monitoring is recommended for pending and in-progress defects to ensure timely resolution.
-
-### 7.1 Sample of defect log
+### 7.4 Sample of defect log
+#### Table 7.4.1: Sample of defect log
 | ID    | Issue Title                                           | Severity  | Risk ID | Status | GitHub Link | Test Case ID |
 |-------|-------------------------------------------------------|----------|---------|--------|-------------|--------------|
 | D-002 | Existing user can login with a completely invalid password | Critical | R001    | Open   | Issue #31   | TC-002       |
 | D-003 | System allows login with unregistered credentials    | Critical | R001    | Open   | Issue #32   | TC-003       |
 | D-004 | Pick-up request submitted without user registration  | Critical | R001    | Open   | Issue #33   | TC-020       |
 
-
+---
 ## 8. Logging, tracking and management of Test Cases and Issues 
 Defects were logged in a `tests/Bug-Report-Summary.md` and github used track them
 
@@ -340,6 +341,8 @@ The CleanCity system underwent extensive testing across all major modules, with 
 ## 9.2 Quality Assessment
 The overall quality of the system is improving, but it is not yet ready for deployment. Critical defects affecting login security, data validation, and request workflows reduce the stability and reliability of the application. Medium-level issues also impact user experience, particularly in scheduling and interface handling. While core workflows function conceptually, further refinement and bug resolution are required. The structure of the system shows strong potential once major issues are addressed.
 
+---
+
 ## 10. Risk Assessment
 - Authentication vulnerabilities that allow invalid or unregistered users to log in.
 - Acceptance of invalid data, including pickup dates and oversized input fields.
@@ -350,9 +353,12 @@ The overall quality of the system is improving, but it is not yet ready for depl
 - Incomplete backend features causing test blocks and pending cases.
 - Risk of incorrect or delayed waste pickup due to flawed request management logic.
 
+---
+
 ## 11. Release Recommendation
 Based on current results, the system **SHOULD NOT BE RELEASED** in its current state. Critical and major defects must be resolved and retested before deployment. Key priorities for developers include fixing login validation, improving request handling logic, refining UI responsiveness, and completing missing backend functionalities. A full regression testing cycle will be required once fixes are implemented. Only after these actions can the system be considered ready for a reliable and stable release.
 
+---
 ## 12. Testing Challenges
 - Unstable test environment leading to inconsistent test results.
 - Some system modules were still under development, causing incomplete or pending test cases.
@@ -363,9 +369,9 @@ Based on current results, the system **SHOULD NOT BE RELEASED** in its current s
 - Lack of complete API documentation, making backend validation slower.
 - Time constraints impacting the depth of non-functional and edge-case testing.
 
+---
 
-
-## 13. how to acces the data 
+## 13. How to access files
 ### 📂 Folder Structure
 
 ```bash
@@ -385,10 +391,7 @@ Based on current results, the system **SHOULD NOT BE RELEASED** in its current s
 │   └── Final-Test-Report.md                # Final summary report at test cycle completion
 │
 ├── Scripts/                                # Automated scripts for testing or preparing test data
-│   ├──                  
-│   ├──                        
-│   ├──                
-│   └──                         
+│   ├──                                        
 │
 ├── Final-Test-Report.pdf                   # Exported PDF version of the final full test report
 └── README.md                               # Documentation file explaining the test folder structure
