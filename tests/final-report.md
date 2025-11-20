@@ -315,9 +315,9 @@ Most critical defects relate to login and authentication issues, while major def
 #### Table 7.4.1: Sample of defect log
 | ID    | Issue Title                                           | Severity  | Risk ID | Status | GitHub Link | Test Case ID |
 |-------|-------------------------------------------------------|----------|---------|--------|-------------|--------------|
-| D-002 | Existing user can login with a completely invalid password | Critical | R001    | Open   | Issue #31   | TC-002       |
-| D-003 | System allows login with unregistered credentials    | Critical | R001    | Open   | Issue #32   | TC-003       |
-| D-004 | Pick-up request submitted without user registration  | Critical | R001    | Open   | Issue #33   | TC-020       |
+| D002 | Existing user can login with a completely invalid password | 🔴 Critical| R001    | Open   | Issue #31   | TC012       |
+| D003 | System allows login with unregistered credentials | 🔴 Critical | R001    | Open   | Issue #32   | TC020       |
+| D053| Password field allows fewer than 8 characters   | 🔴 Critical | R006  | Open   | Issue #73   | TC133     |
 
 ---
 ## 8. Logging, tracking and management of Test Cases and Issues 
