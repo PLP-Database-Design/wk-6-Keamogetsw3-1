@@ -284,7 +284,7 @@ Out of **138** formulated test cases, **134** were successfully executed, result
 
 ---
 ### Figure 6.2.1: Sample test cases execution report
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bd1a5fdb-4ab9-429f-b575-907df7ba44ea" />
+<img width="1080" height="600" alt="image" src="https://github.com/user-attachments/assets/df4148c3-5bbf-4e4c-a389-9b40b5e3bf92" />
 
 ---
 
