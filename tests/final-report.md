@@ -288,17 +288,18 @@ Out of **138** formulated test cases, **134** were successfully executed, result
 
 ---
 
-## 7. Defect Analysis and Categorization
+## 7. Defect Analysis and Categorisation
 
 ### 7.1 Overview of Identified Defects
 ---
 During the comprehensive testing of the CleanCity-Waste Scheduler web application, a total of 59 defects were identified. Forty-three (43) were discovered during functional testing, nine (9) during non-functional testing and seven (7) through Boundary Value Analysis and Edge Case Testing.
 
-
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4a827ff8-c81e-48c9-8b8d-b73eb2a2e07c" />
+#### Figure 7.1.1: Defects identified across functional testing, non-functional testing and BVA
+<img width="738" height="370" alt="image" src="https://github.com/user-attachments/assets/453f65f6-24f5-4122-aa04-c9366812f316" />
 
 ---
-
+### 7.1 Categorisation of Identified Defects
+---
 Defects were categorised based on severity, with testing identifying 3 critical, 39 major, 12 minor, and 3 cosmetic issues. This classification highlights the areas of highest risk, allowing the team to prioritise fixes and retesting, focusing first on critical and major defects to ensure the stability and reliability of the CleanCity system before release.
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/48fafebf-4612-4442-904f-dd42a1b1c69d" />
