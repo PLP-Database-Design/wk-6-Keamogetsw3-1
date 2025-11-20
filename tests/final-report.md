@@ -212,16 +212,14 @@ Test cases were designed using both white-box and black-box techniques. In total
 | **🔢 Total**   |   2    |    8     |  10   |       10        |
 
 ---
-pie title Test Execution Status
-    "Executed (134)" : 134
-    "Not Executed (4)" : 4
+Out of **138** formulated test cases, **134** were successfully executed, resulting in a **97%** execution rate. From the 134 executed test, **25.4%** were **automated**
 
-
-
-
+#### Figure 6.1.1: test execution summary
+<img width="745" height="395" alt="image" src="https://github.com/user-attachments/assets/79f7ac95-7d71-4199-9a55-25dafb2d5806" />
 
 ---
-#### Figure 6.1.1: Example of test cases that were formulated in this project
+
+#### Figure 6.1.3: Example of test cases that were formulated in this project
 <img width="1312" height="588" alt="image" src="https://github.com/user-attachments/assets/0dd3f2eb-5fd1-429f-984c-723c36d60b66" />
 
 ---
@@ -229,7 +227,7 @@ pie title Test Execution Status
 ### 6.2 Summary of Executed Test Cases (Pass / Fail)
 
 ---
-Out of **138** formulated test cases, **134** were successfully executed, resulting in a **97%** execution rate.
+
 
 ### 6.2.1 Functional Test Execution summary
 
